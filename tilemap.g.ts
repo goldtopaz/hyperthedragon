@@ -3,19 +3,9 @@ namespace myTiles {
     //% fixedInstance jres blockIdentity=images._tile
     export const transparency16 = image.ofBuffer(hex``);
     //% fixedInstance jres blockIdentity=images._tile
-    export const tile42 = image.ofBuffer(hex``);
-    //% fixedInstance jres blockIdentity=images._tile
-    export const tile45 = image.ofBuffer(hex``);
-    //% fixedInstance jres blockIdentity=images._tile
     export const tile5 = image.ofBuffer(hex``);
     //% fixedInstance jres blockIdentity=images._tile
     export const transparency8 = image.ofBuffer(hex``);
-    //% fixedInstance jres blockIdentity=images._tile
-    export const tile100 = image.ofBuffer(hex``);
-    //% fixedInstance jres blockIdentity=images._tile
-    export const tile16 = image.ofBuffer(hex``);
-    //% fixedInstance jres blockIdentity=images._tile
-    export const tile108 = image.ofBuffer(hex``);
     //% fixedInstance jres blockIdentity=images._tile
     export const tile145 = image.ofBuffer(hex``);
     //% fixedInstance jres blockIdentity=images._tile
@@ -41,49 +31,7 @@ namespace myTiles {
     //% fixedInstance jres blockIdentity=images._tile
     export const tile152 = image.ofBuffer(hex``);
     //% fixedInstance jres blockIdentity=images._tile
-    export const tile105 = image.ofBuffer(hex``);
-    //% fixedInstance jres blockIdentity=images._tile
-    export const tile137 = image.ofBuffer(hex``);
-    //% fixedInstance jres blockIdentity=images._tile
-    export const tile136 = image.ofBuffer(hex``);
-    //% fixedInstance jres blockIdentity=images._tile
-    export const tile106 = image.ofBuffer(hex``);
-    //% fixedInstance jres blockIdentity=images._tile
-    export const tile129 = image.ofBuffer(hex``);
-    //% fixedInstance jres blockIdentity=images._tile
-    export const tile128 = image.ofBuffer(hex``);
-    //% fixedInstance jres blockIdentity=images._tile
-    export const tile104 = image.ofBuffer(hex``);
-    //% fixedInstance jres blockIdentity=images._tile
-    export const tile17 = image.ofBuffer(hex``);
-    //% fixedInstance jres blockIdentity=images._tile
-    export const tile134 = image.ofBuffer(hex``);
-    //% fixedInstance jres blockIdentity=images._tile
-    export const tile133 = image.ofBuffer(hex``);
-    //% fixedInstance jres blockIdentity=images._tile
-    export const tile135 = image.ofBuffer(hex``);
-    //% fixedInstance jres blockIdentity=images._tile
-    export const tile77 = image.ofBuffer(hex``);
-    //% fixedInstance jres blockIdentity=images._tile
-    export const tile73 = image.ofBuffer(hex``);
-    //% fixedInstance jres blockIdentity=images._tile
-    export const tile51 = image.ofBuffer(hex``);
-    //% fixedInstance jres blockIdentity=images._tile
-    export const tile130 = image.ofBuffer(hex``);
-    //% fixedInstance jres blockIdentity=images._tile
     export const tile66 = image.ofBuffer(hex``);
-    //% fixedInstance jres blockIdentity=images._tile
-    export const tile2 = image.ofBuffer(hex``);
-    //% fixedInstance jres blockIdentity=images._tile
-    export const tile124 = image.ofBuffer(hex``);
-    //% fixedInstance jres blockIdentity=images._tile
-    export const tile41 = image.ofBuffer(hex``);
-    //% fixedInstance jres blockIdentity=images._tile
-    export const tile44 = image.ofBuffer(hex``);
-    //% fixedInstance jres blockIdentity=images._tile
-    export const tile97 = image.ofBuffer(hex``);
-    //% fixedInstance jres blockIdentity=images._tile
-    export const tile158 = image.ofBuffer(hex``);
     //% fixedInstance jres blockIdentity=images._tile
     export const tile90 = image.ofBuffer(hex``);
     //% fixedInstance jres blockIdentity=images._tile
@@ -93,29 +41,9 @@ namespace myTiles {
     //% fixedInstance jres blockIdentity=images._tile
     export const tile46 = image.ofBuffer(hex``);
     //% fixedInstance jres blockIdentity=images._tile
-    export const tile63 = image.ofBuffer(hex``);
-    //% fixedInstance jres blockIdentity=images._tile
-    export const tile19 = image.ofBuffer(hex``);
-    //% fixedInstance jres blockIdentity=images._tile
-    export const tile64 = image.ofBuffer(hex``);
-    //% fixedInstance jres blockIdentity=images._tile
-    export const tile102 = image.ofBuffer(hex``);
-    //% fixedInstance jres blockIdentity=images._tile
-    export const tile99 = image.ofBuffer(hex``);
-    //% fixedInstance jres blockIdentity=images._tile
-    export const tile141 = image.ofBuffer(hex``);
-    //% fixedInstance jres blockIdentity=images._tile
-    export const tile6 = image.ofBuffer(hex``);
-    //% fixedInstance jres blockIdentity=images._tile
-    export const tile132 = image.ofBuffer(hex``);
-    //% fixedInstance jres blockIdentity=images._tile
     export const tile143 = image.ofBuffer(hex``);
     //% fixedInstance jres blockIdentity=images._tile
     export const tile84 = image.ofBuffer(hex``);
-    //% fixedInstance jres blockIdentity=images._tile
-    export const tile10 = image.ofBuffer(hex``);
-    //% fixedInstance jres blockIdentity=images._tile
-    export const tile81 = image.ofBuffer(hex``);
     //% fixedInstance jres blockIdentity=images._tile
     export const tile151 = image.ofBuffer(hex``);
     //% fixedInstance jres blockIdentity=images._tile
@@ -135,35 +63,15 @@ namespace myTiles {
     //% fixedInstance jres blockIdentity=images._tile
     export const tile83 = image.ofBuffer(hex``);
     //% fixedInstance jres blockIdentity=images._tile
-    export const tile3 = image.ofBuffer(hex``);
-    //% fixedInstance jres blockIdentity=images._tile
-    export const tile94 = image.ofBuffer(hex``);
-    //% fixedInstance jres blockIdentity=images._tile
-    export const tile48 = image.ofBuffer(hex``);
-    //% fixedInstance jres blockIdentity=images._tile
-    export const tile47 = image.ofBuffer(hex``);
-    //% fixedInstance jres blockIdentity=images._tile
     export const tile140 = image.ofBuffer(hex``);
     //% fixedInstance jres blockIdentity=images._tile
     export const tile139 = image.ofBuffer(hex``);
-    //% fixedInstance jres blockIdentity=images._tile
-    export const tile122 = image.ofBuffer(hex``);
-    //% fixedInstance jres blockIdentity=images._tile
-    export const tile58 = image.ofBuffer(hex``);
-    //% fixedInstance jres blockIdentity=images._tile
-    export const tile52 = image.ofBuffer(hex``);
-    //% fixedInstance jres blockIdentity=images._tile
-    export const tile93 = image.ofBuffer(hex``);
-    //% fixedInstance jres blockIdentity=images._tile
-    export const tile57 = image.ofBuffer(hex``);
     //% fixedInstance jres blockIdentity=images._tile
     export const tile98 = image.ofBuffer(hex``);
     //% fixedInstance jres blockIdentity=images._tile
     export const tile153 = image.ofBuffer(hex``);
     //% fixedInstance jres blockIdentity=images._tile
     export const tile146 = image.ofBuffer(hex``);
-    //% fixedInstance jres blockIdentity=images._tile
-    export const tile50 = image.ofBuffer(hex``);
     //% fixedInstance jres blockIdentity=images._tile
     export const tile150 = image.ofBuffer(hex``);
     //% fixedInstance jres blockIdentity=images._tile
@@ -209,95 +117,31 @@ namespace myTiles {
     //% fixedInstance jres blockIdentity=images._tile
     export const tile95 = image.ofBuffer(hex``);
     //% fixedInstance jres blockIdentity=images._tile
-    export const tile15 = image.ofBuffer(hex``);
-    //% fixedInstance jres blockIdentity=images._tile
-    export const tile113 = image.ofBuffer(hex``);
-    //% fixedInstance jres blockIdentity=images._tile
-    export const tile68 = image.ofBuffer(hex``);
-    //% fixedInstance jres blockIdentity=images._tile
-    export const tile110 = image.ofBuffer(hex``);
-    //% fixedInstance jres blockIdentity=images._tile
     export const tile115 = image.ofBuffer(hex``);
     //% fixedInstance jres blockIdentity=images._tile
     export const tile80 = image.ofBuffer(hex``);
     //% fixedInstance jres blockIdentity=images._tile
     export const tile159 = image.ofBuffer(hex``);
     //% fixedInstance jres blockIdentity=images._tile
-    export const tile112 = image.ofBuffer(hex``);
-    //% fixedInstance jres blockIdentity=images._tile
-    export const tile56 = image.ofBuffer(hex``);
-    //% fixedInstance jres blockIdentity=images._tile
     export const tile111 = image.ofBuffer(hex``);
-    //% fixedInstance jres blockIdentity=images._tile
-    export const tile13 = image.ofBuffer(hex``);
-    //% fixedInstance jres blockIdentity=images._tile
-    export const tile75 = image.ofBuffer(hex``);
-    //% fixedInstance jres blockIdentity=images._tile
-    export const tile101 = image.ofBuffer(hex``);
-    //% fixedInstance jres blockIdentity=images._tile
-    export const tile96 = image.ofBuffer(hex``);
     //% fixedInstance jres blockIdentity=images._tile
     export const tile142 = image.ofBuffer(hex``);
     //% fixedInstance jres blockIdentity=images._tile
     export const tile54 = image.ofBuffer(hex``);
     //% fixedInstance jres blockIdentity=images._tile
-    export const tile71 = image.ofBuffer(hex``);
-    //% fixedInstance jres blockIdentity=images._tile
-    export const tile53 = image.ofBuffer(hex``);
-    //% fixedInstance jres blockIdentity=images._tile
     export const tile11 = image.ofBuffer(hex``);
-    //% fixedInstance jres blockIdentity=images._tile
-    export const tile1 = image.ofBuffer(hex``);
-    //% fixedInstance jres blockIdentity=images._tile
-    export const tile76 = image.ofBuffer(hex``);
-    //% fixedInstance jres blockIdentity=images._tile
-    export const tile20 = image.ofBuffer(hex``);
-    //% fixedInstance jres blockIdentity=images._tile
-    export const tile14 = image.ofBuffer(hex``);
-    //% fixedInstance jres blockIdentity=images._tile
-    export const tile70 = image.ofBuffer(hex``);
-    //% fixedInstance jres blockIdentity=images._tile
-    export const tile78 = image.ofBuffer(hex``);
     //% fixedInstance jres blockIdentity=images._tile
     export const tile87 = image.ofBuffer(hex``);
     //% fixedInstance jres blockIdentity=images._tile
     export const tile88 = image.ofBuffer(hex``);
     //% fixedInstance jres blockIdentity=images._tile
-    export const tile12 = image.ofBuffer(hex``);
-    //% fixedInstance jres blockIdentity=images._tile
-    export const tile21 = image.ofBuffer(hex``);
-    //% fixedInstance jres blockIdentity=images._tile
-    export const tile23 = image.ofBuffer(hex``);
-    //% fixedInstance jres blockIdentity=images._tile
-    export const tile22 = image.ofBuffer(hex``);
-    //% fixedInstance jres blockIdentity=images._tile
     export const tile25 = image.ofBuffer(hex``);
     //% fixedInstance jres blockIdentity=images._tile
-    export const tile26 = image.ofBuffer(hex``);
-    //% fixedInstance jres blockIdentity=images._tile
-    export const tile27 = image.ofBuffer(hex``);
-    //% fixedInstance jres blockIdentity=images._tile
     export const tile4 = image.ofBuffer(hex``);
-    //% fixedInstance jres blockIdentity=images._tile
-    export const tile28 = image.ofBuffer(hex``);
-    //% fixedInstance jres blockIdentity=images._tile
-    export const tile29 = image.ofBuffer(hex``);
-    //% fixedInstance jres blockIdentity=images._tile
-    export const tile30 = image.ofBuffer(hex``);
-    //% fixedInstance jres blockIdentity=images._tile
-    export const tile31 = image.ofBuffer(hex``);
-    //% fixedInstance jres blockIdentity=images._tile
-    export const tile32 = image.ofBuffer(hex``);
     //% fixedInstance jres blockIdentity=images._tile
     export const tile43 = image.ofBuffer(hex``);
     //% fixedInstance jres blockIdentity=images._tile
     export const tile89 = image.ofBuffer(hex``);
-    //% fixedInstance jres blockIdentity=images._tile
-    export const tile33 = image.ofBuffer(hex``);
-    //% fixedInstance jres blockIdentity=images._tile
-    export const tile34 = image.ofBuffer(hex``);
-    //% fixedInstance jres blockIdentity=images._tile
-    export const tile35 = image.ofBuffer(hex``);
     //% fixedInstance jres blockIdentity=images._tile
     export const tile36 = image.ofBuffer(hex``);
     //% fixedInstance jres blockIdentity=images._tile
@@ -321,9 +165,151 @@ namespace myTiles {
     //% fixedInstance jres blockIdentity=images._tile
     export const tile74 = image.ofBuffer(hex``);
     //% fixedInstance jres blockIdentity=images._tile
+    export const tile55 = image.ofBuffer(hex``);
+    //% fixedInstance jres blockIdentity=images._tile
+    export const tile136 = image.ofBuffer(hex``);
+    //% fixedInstance jres blockIdentity=images._tile
+    export const tile106 = image.ofBuffer(hex``);
+    //% fixedInstance jres blockIdentity=images._tile
+    export const tile129 = image.ofBuffer(hex``);
+    //% fixedInstance jres blockIdentity=images._tile
+    export const tile137 = image.ofBuffer(hex``);
+    //% fixedInstance jres blockIdentity=images._tile
+    export const tile105 = image.ofBuffer(hex``);
+    //% fixedInstance jres blockIdentity=images._tile
+    export const tile128 = image.ofBuffer(hex``);
+    //% fixedInstance jres blockIdentity=images._tile
+    export const tile104 = image.ofBuffer(hex``);
+    //% fixedInstance jres blockIdentity=images._tile
+    export const tile17 = image.ofBuffer(hex``);
+    //% fixedInstance jres blockIdentity=images._tile
+    export const tile134 = image.ofBuffer(hex``);
+    //% fixedInstance jres blockIdentity=images._tile
+    export const tile133 = image.ofBuffer(hex``);
+    //% fixedInstance jres blockIdentity=images._tile
+    export const tile135 = image.ofBuffer(hex``);
+    //% fixedInstance jres blockIdentity=images._tile
+    export const tile96 = image.ofBuffer(hex``);
+    //% fixedInstance jres blockIdentity=images._tile
+    export const tile101 = image.ofBuffer(hex``);
+    //% fixedInstance jres blockIdentity=images._tile
+    export const tile75 = image.ofBuffer(hex``);
+    //% fixedInstance jres blockIdentity=images._tile
+    export const tile13 = image.ofBuffer(hex``);
+    //% fixedInstance jres blockIdentity=images._tile
+    export const tile56 = image.ofBuffer(hex``);
+    //% fixedInstance jres blockIdentity=images._tile
+    export const tile112 = image.ofBuffer(hex``);
+    //% fixedInstance jres blockIdentity=images._tile
+    export const tile77 = image.ofBuffer(hex``);
+    //% fixedInstance jres blockIdentity=images._tile
+    export const tile73 = image.ofBuffer(hex``);
+    //% fixedInstance jres blockIdentity=images._tile
+    export const tile51 = image.ofBuffer(hex``);
+    //% fixedInstance jres blockIdentity=images._tile
+    export const tile130 = image.ofBuffer(hex``);
+    //% fixedInstance jres blockIdentity=images._tile
+    export const tile97 = image.ofBuffer(hex``);
+    //% fixedInstance jres blockIdentity=images._tile
+    export const tile158 = image.ofBuffer(hex``);
+    //% fixedInstance jres blockIdentity=images._tile
+    export const tile68 = image.ofBuffer(hex``);
+    //% fixedInstance jres blockIdentity=images._tile
+    export const tile110 = image.ofBuffer(hex``);
+    //% fixedInstance jres blockIdentity=images._tile
+    export const tile141 = image.ofBuffer(hex``);
+    //% fixedInstance jres blockIdentity=images._tile
+    export const tile132 = image.ofBuffer(hex``);
+    //% fixedInstance jres blockIdentity=images._tile
+    export const tile15 = image.ofBuffer(hex``);
+    //% fixedInstance jres blockIdentity=images._tile
+    export const tile10 = image.ofBuffer(hex``);
+    //% fixedInstance jres blockIdentity=images._tile
+    export const tile6 = image.ofBuffer(hex``);
+    //% fixedInstance jres blockIdentity=images._tile
+    export const tile102 = image.ofBuffer(hex``);
+    //% fixedInstance jres blockIdentity=images._tile
+    export const tile94 = image.ofBuffer(hex``);
+    //% fixedInstance jres blockIdentity=images._tile
+    export const tile3 = image.ofBuffer(hex``);
+    //% fixedInstance jres blockIdentity=images._tile
+    export const tile48 = image.ofBuffer(hex``);
+    //% fixedInstance jres blockIdentity=images._tile
+    export const tile47 = image.ofBuffer(hex``);
+    //% fixedInstance jres blockIdentity=images._tile
+    export const tile113 = image.ofBuffer(hex``);
+    //% fixedInstance jres blockIdentity=images._tile
+    export const tile20 = image.ofBuffer(hex``);
+    //% fixedInstance jres blockIdentity=images._tile
+    export const tile14 = image.ofBuffer(hex``);
+    //% fixedInstance jres blockIdentity=images._tile
+    export const tile45 = image.ofBuffer(hex``);
+    //% fixedInstance jres blockIdentity=images._tile
+    export const tile1 = image.ofBuffer(hex``);
+    //% fixedInstance jres blockIdentity=images._tile
+    export const tile76 = image.ofBuffer(hex``);
+    //% fixedInstance jres blockIdentity=images._tile
+    export const tile53 = image.ofBuffer(hex``);
+    //% fixedInstance jres blockIdentity=images._tile
+    export const tile71 = image.ofBuffer(hex``);
+    //% fixedInstance jres blockIdentity=images._tile
+    export const tile70 = image.ofBuffer(hex``);
+    //% fixedInstance jres blockIdentity=images._tile
+    export const tile19 = image.ofBuffer(hex``);
+    //% fixedInstance jres blockIdentity=images._tile
+    export const tile64 = image.ofBuffer(hex``);
+    //% fixedInstance jres blockIdentity=images._tile
+    export const tile63 = image.ofBuffer(hex``);
+    //% fixedInstance jres blockIdentity=images._tile
+    export const tile99 = image.ofBuffer(hex``);
+    //% fixedInstance jres blockIdentity=images._tile
+    export const tile78 = image.ofBuffer(hex``);
+    //% fixedInstance jres blockIdentity=images._tile
+    export const tile171 = image.ofBuffer(hex``);
+    //% fixedInstance jres blockIdentity=images._tile
+    export const tile172 = image.ofBuffer(hex``);
+    //% fixedInstance jres blockIdentity=images._tile
+    export const tile174 = image.ofBuffer(hex``);
+    //% fixedInstance jres blockIdentity=images._tile
+    export const tile175 = image.ofBuffer(hex``);
+    //% fixedInstance jres blockIdentity=images._tile
+    export const tile176 = image.ofBuffer(hex``);
+    //% fixedInstance jres blockIdentity=images._tile
+    export const tile177 = image.ofBuffer(hex``);
+    //% fixedInstance jres blockIdentity=images._tile
+    export const tile178 = image.ofBuffer(hex``);
+    //% fixedInstance jres blockIdentity=images._tile
+    export const tile16 = image.ofBuffer(hex``);
+    //% fixedInstance jres blockIdentity=images._tile
+    export const tile108 = image.ofBuffer(hex``);
+    //% fixedInstance jres blockIdentity=images._tile
+    export const tile44 = image.ofBuffer(hex``);
+    //% fixedInstance jres blockIdentity=images._tile
+    export const tile2 = image.ofBuffer(hex``);
+    //% fixedInstance jres blockIdentity=images._tile
+    export const tile41 = image.ofBuffer(hex``);
+    //% fixedInstance jres blockIdentity=images._tile
+    export const tile124 = image.ofBuffer(hex``);
+    //% fixedInstance jres blockIdentity=images._tile
     export const tile160 = image.ofBuffer(hex``);
     //% fixedInstance jres blockIdentity=images._tile
-    export const tile55 = image.ofBuffer(hex``);
+    export const tile162 = image.ofBuffer(hex``);
+    //% fixedInstance jres blockIdentity=images._tile
+    export const tile163 = image.ofBuffer(hex``);
+    //% fixedInstance jres blockIdentity=images._tile
+    export const tile164 = image.ofBuffer(hex``);
+    //% fixedInstance jres blockIdentity=images._tile
+    export const tile165 = image.ofBuffer(hex``);
+    //% fixedInstance jres blockIdentity=images._tile
+    export const tile166 = image.ofBuffer(hex``);
+    //% fixedInstance jres blockIdentity=images._tile
+    export const tile167 = image.ofBuffer(hex``);
+    //% fixedInstance jres blockIdentity=images._tile
+    export const tile168 = image.ofBuffer(hex``);
+    //% fixedInstance jres blockIdentity=images._tile
+    export const tile169 = image.ofBuffer(hex``);
+    //% fixedInstance jres blockIdentity=images._tile
+    export const tile170 = image.ofBuffer(hex``);
 
     helpers._registerFactory("tilemap", function(name: string) {
         switch(helpers.stringTrim(name)) {
@@ -1139,64 +1125,64 @@ namespace myTiles {
 . . . . . . . . . . . . . . . . 
 `, [myTiles.transparency16,myTiles.tile4,myTiles.tile72], TileScale.Sixteen);
             case "crystal tundra":
-            case "level13":return tiles.createTilemap(hex`7b00380023282828293e0500000000000000000000004400001e2323223e3e3e060e073e3e3e0500000003000000000000000000000000000000000000000000000000000c241c4200100a0000000000001f23231d6b1e232323232323232323232323232323232323232300000000000000000000000000000000000000002a3e3e3e3e3e060044000a0a0a00000000004438001f2323223e3e3e3e1b3e3e3e3e1000000001004400030303021500000000440000000000000000000000000724681b1112030067000000001e23231c481f232323232323232323232323232323232323232300000000000000000000000000000000000000002a3e11123e110500445d0c3e055d00440000525351602323223e3e3e5454545454545100004401004443000000535100000044440000000000000000000000000c24685100000300020000005a040404040460232323232323232323232323232323232323232300000000000000000000000000000000000000002a0500000c0a06005256073e505600440000702b2b2b2b2b711112113232323232324e000044614d5255000000572c000000525200000000000000005a5b0000072408750000005a5b0001007432322b2b2b2b2b2b20212323232323232323232323232323232300000000000000000000000000000000000000002a100900071b0500574e0c3e574e00440000073e11121112110000001e2373123e26710000440457324e000000571c000000574e000a000a000a000a574e00360c246900000000574e0001007223771f232323231d0d421f23232323232323232323232323232300000000000000000000000000000000000000002a54514d5354505a574e462d574e004400000c0500480000000000001f2306396d121100004417322b2b1b191b2f1d000000574e0f0f0f0f0f0f0f0f7b4e5b5c4f245801010101574e0001007223771e232323231c426b6023232323232323232323232323232300000000000000000000000000000000000000002b2b2b2b2b2b2b2b2b2b2b323275004400004f5053514d00000144002120121b06000101014460223e3e3e3e3e271c000000702b2b2b2b2b2b2b2b2b2b2b2b2b2b2b71131b191b74750001007223772120210404045b4d7432323232323223232323232323232300000000000000000000000000000000000000003e3e3e3e11123e1112113e24591d01440000702b2b2b7100000144000000000705000000005257223e1112113e271d00440011121112111211123e11121112111211123e11123e2477000100722358000000702b2b2b2b2b32323232322323232323232323232300000000000000000000000000000000000000003e3e055f00005f00000e4924085801440000111211121100000144006700000c02000000435732221000000007271c00440000000101005d44005f5d000000020000675f01010c24770001005d300b0000000000000000722323232323232323232323232323230000000000000000000000000000000000000000055f00444d5a04045b5e4f262871014400000001010100445d4344000000004f5100000055573222050e1a000c271d5d44000000435d6156520052560000535100004d52000013635b000100566058000000000200000074232323232323232323232323232323230000000000000000000000000000000000000006440044702b2b2b2b2b7118181800440000000044005d4456555200000000304e00000057323222505354514f2758565200010055565a574e0f574e0f0f7b4e0f0f74751b193e4a75000100702b710000004d4d00000086000000232323232323232323232323230000000000000000000000000000000000000005440044123e3e111211120000030344000200004443565257324e000a0000574e0f0f0f2b282828322b2b2b2b2b2b2b75000100742b2b2b2b2b2b2b2b2b2b2b2b2b232987123e4a69000100121112000000740b00000086000000232323232323232323232323230000000000000000000000000000000000000006660044000c055d00005d02000c5152000c05005255573232324e00000000702b2b2b2923202123623e3e3e7312111263100113633e1112232323232323231112113d3e10480c4a1c000100000200000000721c0000005a5b0000232323232323232323232323230000000000000000000000000000000000000051525a045b4f50565a5b5653514f574e5b140600572b2b2b2b3275000a00001e232323232000421f6273123e0602000012110012111200001f2323232323690000443c3e3e1b654a690001004d4d00005a5b72690f0000744e000023232323232323232323232323000000000000000000000000000000000000002b2b2b2b3232323232323232323232324e0c05002e3e11123e241d000000001f7f7f7f691548151e6206360c515e000000001500000000001e23232323231c000e443d3e11123e7e584d4d5a574e0000574e60581f0f0f1d0000002323232323232323232323232300000000000000000000000000000000000000100a0a132423232323232323232332324e46470f2e103900132458000a005a04040404045354510462515c4f574e0000445a045b0000000404040404040404044d526e050000535732323232324e0f0f573232713223750000000023232323232323232323232323000000000000000000000000000000000000003e1b193e26252525252525454545252b2b2b2b2b2a3e191b3e244e000000172b2b2b2b2b2b2b32323232322b2b71000044702b71000000702b2b2b2b2b2b2b2b2b2b29100000702b2b2b2b2b2b2b2b3232322e4c1f1d00000000002323232323232323232323232300000000000000000000000000000000000000541112111211121112111200000012111211121163111211122671000a003c7312111211123e242323232a3e111203034407123e1b0000121112111211121112111211120000131112111211121180282828291000000000000074751f232323232323232323232300000000000000000000000000000000000000160000000000000000004301010144020101000018004401011f1c0000003d101a021500000c242323232a054403035d446d020c0501010100000201010100000000000067015f000002000000000012111211120000000000744545722323232323232323232323230000000000000000000000000000000000001c00000053545454514d5500000052045d00000200434443001e69000a006e5153545100001363454545631044000056525351651000670000143e10005a5b0c3e055e5e01014400005a5b0000000000000001000084010101000000722323232323232323232323230000000000000000000000000000000000001d0000005732323232324e000000574e56000c055a5552555a0404000000173232320b000012110000001211440000702b324e54515a045b5e533e0500574e4b3e4c574e045b520000574e00005a5b01010101010085000000000000722323232323232323232323230000000000000000000000000000000000001c0001007b3232323232750f0f0f74324e004b4c5732323232320b000a001e0808231c000000010100020000440000144a32323232323232324e3e4c00574e464147573232324e000f7b4e00007b4e000000015a040404045b000000722323232323232323232323230000000000000000000000000000000000001d000000702b296a6a6a2628282828324e0f46475732322323231c00000021202120210000000404000c05434400000c4a23232323323232324e41470f572b2b2b2b2b2b2b2b4e0f7b324e0f0f7071000000007b323232324e000000722323232323232323232323230000000000000000000000000000000000001c000100111211123e3e1112111211742b2b2b2b71212021282820000a000303030003030344303100141055520000072629454545452369702b2b2b327511123e1112111211702b2b2b2b2b7112110000005a7b322b2b2b71000000722323232323232323232323230000000000000000000000000000000000001d004467000000000c0500004402333d3e111211060044000c05000044000c3e05000000004460580f0c057b4e00000c3e0600000000721c1211123e241d00005f00020000001e23111211121100000002007b324e1211121100000072232323232323232323232323230000000000000000000000000000000000585d445d430000004f5000004453516e110003005f44440213060043445d143e10430000004457324e46477b37191b65731200390e00726942350d0c24580001445a040000021f690000000002000000045b747d75000a0000020000001f23232323232323232323232300000000000000000000000000000000004e565256550000447071000044702b7100000300525253510c050055525653545155000000525732323232322a3e3e3e065d0000000072585c0000072f710000447416000004041c0000005a0404045b702b2910000003005a045b4d5e602323232323232323232323230000000000000000000000000000000000323232324e000144141000014412111200000300702b2b31130600302b2b2b2b2b71010100742b2945456a6a623e3e3e5156000000005a7b7100000c621100014472580000574e040000007b3232324e121112050000030074323232323232323232232323232323232300000000000000000000000000000000006a6a6a6a2c4301440c05000144000002000003001e23233a0c05006e3e11123e3e1101010062731200000c3e635454547b4e5b0f0f0f5737110000073b0000004472750f0f7b2b71000a0074754545750003030a0002000072232323232323232323232323232323232300000000000000000000000000000000003e73123e6f554d521410005d44000c05004344001f23232646470f290500000c05000101006210814200133e4a322b2b2b2b2b2b2b2b2b1d030000536f5b000144602332322e3e11000a132477000000000000005a5b000072232323232323232323232323232323232300000000000000000000000000000000003e10420c262b2b160c05005652000706005552041e2323232625683e100d000404040404046254510000121180682323232323232021233a03000057324e000044702b2b2b220539000a0c2477000a0000020000744e000072232323232323232323232323232323232323000000000000000000000000000000003e050d133e3e3e3a140600574e000c050057324e1f2323202123623e3e1b192f2b2b2b2b2b2b2b7100000000726823232323231d0a641f3b030000702b71000144073e3e1162505c0003132477000a005a04045b724e0f0f5a7b3232322323232323232323232323232323000000000000000000000000000000003e6c193e3e3e3e3b0c0500574e0f46470f57324e0423690a341f623e11123e3a480c3e111211121100000000606820212021231c00001e3a0000020000000000440c3e056b1f324e00030c262e150300743232751e32323232323232232323232323232323232323232323000000000000000000000000000000005454543e3e3e3e3a141000742b2b2b2b323232324e0404040404625100000c621b651100000000444300000070710000000004047879233b000c050101010000444f54505c60084e0003000c62050300204545454521282828282823232323232323232323232323232323000000000000000000000000000000002b2b7111121112110c05003d23202123242320702b2b2b2b2b2b2971000013633e1101010100005255000000121100000000574e7a7a236f004b4c5a04045b4d525732323275457500000013621000000000000000863e3e11123e24232323232323232323232323232323000000000000000000000000000000003e3e1100020001011410003c690d001f24690011123e3e111211123e1b193e11120000004400007071000001010100000000702b2b2b2b2b0f46472b2b2b2b2b2b2b2b2b237700000000000c62050000000a0a0000863e0500420c24232323232323232323232323232323000000000000000000000000000000003e1100000c055a5b0c05003d1c00000424580044000c05000201015f0c055f0102005a5b4402004b1000000c3e050000000012111211123e2f322e232021232323232323247700030301014f6210670200030a0000863e104339132423232323232323232323232323232300000000000000000000000000000000050000001310574e4f505a6e2378792f324e0044014f501f1d004d524f50525e53517b4e520c05130500004f54500200000001010100000c2423681d0d001f23232323232477000c055a04574e515e5e5e030300005a0404555e5324232323232323232323232323232323000000000000000000000000000000000e0000000c05573232323216212021262b71004401574e1e1c00573232323232323232324e4f50124c00007b324e510000000404040000142423680404040404212021202477001310302b2b2b2b2b327500000000702b3232323232323232232323232323232323232323000000000000000000000000000000004040400f464757323232231c000000111210444401574e2323785737454545454545743232327500820101702b2b710f0f0f57324e00000c243232322b2b2b71000000007071000c053c871211123e24770000000011122723232323232323232323232323232323232323000000000000000000000000000000003232323232323232322323690001005d026d4444437b4e202120576878791d0000134a23232377006d000112111211702b2b322b7100001463454569123e3e110000000012110013103d10000e000c24770000000000021f232323232323232323232323232323232323230000000000000000000000000000000023232323232323232323231c0001005653505252557b4e426b00306823231c000d0c4a232323770082000003030300121180683e1100000c05000000035f1800004367000002000c056e510000004f2458000003035a5b602323232323232323232323232323232323232300000000000000000000000000000000232323232323232323232120000100573232323232324e5b5a5b60682021205c5c4f7e23324e5b4d6d44004d4d0000440072680548001512110101034344000000554d00000c054f507b4e000000702b71000000007432323232323223232323232323232323232323232300000000000000000000000000000000202120212021232323237700000100702b2b2b2b2b2b3232322b2b71000000702b2b2b2b2b2b2b718244007475000044006068100a00045b0044000055520000007b4e00004b4c7b32324e0000001211120000000221232323232323232323232323232323232323232323000000000000000000000000000000000000000000001f2323237700000100121112111211124a23223e11120000001211121112111211126d4400726903004400702e050a00574e00524d00574e0000007b4e000f46477b4545750000000002010101000c051f2323232323232323232323232323232323232323000000000000000000000000000000000000000000001e2323237744434400430002000000007223220542000300006703030344445d0002824400721c0303440014626c191b744e0f574e0f574e0f0f0f74750f743232750000000067000c055a045b0046471e2323232323232323232323232323232323232323000000000000000000000000000000000000000000001f232323585255524d55535100000044602322505e0003005a5b0000005252565c535152537e76510344000c633e3e3e262b2b2b2b2b2b2b3220212021202120211d0003030302004b4c57324e0f7b4e1f2323232323232323232323232323232323232300000000000000000000000000000000000000000000001e233232322b2b2b2b2b327100000144702b2b2b710003007b4e000000702b2b2b3232323232324e5e4400000c3e1112111211123e87123e6210000a0000000000000000005a0400131057323232324e602323232323232323232323232323232323232300000000000000000000000000000000000000000000001f232323772021202123621c440001441211121112000044574e797879232323201f237d45456a2f1644434407050101444302000c10030c6205000a5d0002435d00000000574e000c05573232323232323232323232232323232323232323232323232300000000000000000000000000000000000000000000001e23232377000d48001f6369440044440001030000004444574e2323231d1f1d481e7c4c00000c2458525552535053515255045b130503136310000356535155565c0000007b4e0f46477b3232232323232323232323232323232323232323232323232300000000000000000000000000000000000000000000001f23232377000000001e231c4400525200000200004d5252574e2323231c1e1c421f7c06830a007071702b2b2b2b2b2b2b2b2b71126c193e3e11000357322b2b2b717978797432323232323223232323232323232323232323232323232323232323232300000000000000000000000000000000000000000000001e23232377000002001f23694400574e0053510000573232324e04040404040404607c050a0000134c133e11121112111211121100121112050000037029212021202120210a1f232323232323232323232323232323232323232323232323232323230000000000000000000000000000000000000000000000001f23232377000c050004041c4443574e00574e000f573232323232323232323232327c060000000c060c05020a0a5d00020a0a5d435d44005d000200212000000000000000391e232323232323232323232323232323232323232323232323232323230000000000000000000000000000000000000000000000001e2323237700134c00574e045255574e0f574e0f57323232323232323232323232327c0500005e4f5113060c5451560c3e055c565556525c56000c060000000000020000000a1f232323232323232323232323232323232323232323232323232323230000000000000000000000000000000000000000000000001f23232377000c470f573232323232323232323232323232323232322323232323236900000057324e0c054b57324e463f475732323232324e5e4f510000000000404d5a5b5e60232323232323232323232323232323232323232323232323232323230000000000000000000000000000000000000000000000001e232323770f467b3232323232323232323232323232322323232323232323232323580f0f0f57324e4647465732323232323232323232323232324e40404040407b323232323232232323232323232323232323232323232323232323232323232323000000000000000000000000000000000000`, img`
-22222................2222........................................22...............222222222222222222222....................
-2....................2222........................................22...............222222222222222222222....................
-2....................2222........................................22...............222222222222222222222....................
-2.................2222222...2222222..........22..................222........222222222222222222222222222....................
-2.......22..22..............22...22....222...22...22........22...22....22....2.........2222222222222222....................
-2.......22..22..............22........2222...22...222222222222...22....22....2.........2222222222222222....................
-22222222222222..............22........22.....22...22222222222222222....22....2.........2222222222222222....................
-...........222....22222...............22.....22........................2.....22...222222222222222222222....................
-...........222.......................222.....22........................2.....22.........222222222222222....................
-...........222.......................222.....22........................2.....22........22222222222222222...................
-....2222222....................22...2222.....22........22.22..22..22....2...222.............222222222222...................
-........................222....22...2222222222222...2222222222222222....2.........22........222222222222...................
-......................22222....22222....2.......2...2.............2.....2..........2........222222222222...................
-..............22....2222222.............2.........................2.....2..........2...22...222222222222...................
-22222222222222222...2....22.............2.........................2....22...22..22222..2....222222222222...................
-....2222222222222...2....22.............2...22....................2....2222222..2222222.....222222222222...................
-....2222222...2222222....22...2222222222222222...222...222222222222...2222222222222.22......222222222222...................
-....................2....22...2.......22222....................................2222.......22222222222222...................
-2.............................2.......22222..................................................222222222222..................
-2.............................2.......2...2..................................................222222222222..................
-2...2222222...22..............22222............2222..........22...22.....22..................222222222222..................
-2...2222222...222...2222222...22222..............222222222...22...22222..22..22..............222222222222..................
-2...222...2222222...2222222...22222..............222222222...2222222222.222..22....222222....222222222222..................
-2..............222222222222...........22........22....22222222........2222222......222222....222222222222..................
-2..............2......................22...22..........2....22....................222........2222222222222.................
-2..............2......................222..22..........2....22....................2.2........2222222222222.................
-2.......22...222......................2222222..........2....22...22.............222..........2222222222222.................
-22222...............2222...2222222...222....2..........22...2.....2..22....22222........222222222222222222.................
-....2..................2...2.........2......2...22....22....2.....2..222...22..2.........22222222222222222.................
-....2..................2...2.........2.......22222222222....2....22222.....2.............22222222222222222.................
-....2222................222..........2.......2.........2...222...22222.....2........22...222222222222222222................
-.......2...22....222......2....222222222.....2.........2...222.......2.....2.........2...222222222222222222................
-.......2...22....222......2....2............22.........2.............222...22...222222222222222222222222222................
-.......2...2222222222.....2....2............22.........2.............222....2...2....2222222222222222222222................
-222........2....222222222222...2..................22...2.........22222.2....2..............2222222222222222................
-...........2....22.....................22.........222222...2222222222.......2..............2222222222222222................
-...........2....22......................................222.........2.......2..............2222222222222222................
-......22...2...222................22....................222.........2......22..............2222222222222222................
-......222222...222...22...22222222222......222..........222.........2....22222222....2222222222222222222222................
-222...222222.........22...22......22222....2222...222...22222222....22...2.....2.......22222222222222222222................
-222222222222.........22...22.......222.........222222...2..2.............2.....2.......22222222222222222222................
-222222222222.........22...22.......222............2......................2.....22......22222222222222222222................
-222222222222...22222222...22......2222............2......................22...222....2222222222222222222222................
-2222222222.....2222222222222...222222222...22....22..............22....2222..........2222222222222222222222................
-......2222.............22...................2....22...22....22...22....2..2...........222222222222222222222................
-......2222.............22...................2.....2...22.22.22...22.2222..............222222222222222222222................
-......22222...........222..................22.....2...222222222222222222........222.2222222222222222222222.................
-......222222222222....22222...22...22222222222................2.................22222222222222222222222222.................
-......2222......2.............22.......22....22...............2............22...22222222222222222222222222.................
-......2222......2.............22.......22....22...............2............22...22222222222222222222222222.................
-......2222....................22.......22....2222222222222........222222...2222222222222222222222222222222.................
-......2222..........22.....22222.......22.........................22........22222222222222222222222222222..................
-......2222..........22.22..22222222222222...................................22222222222222222222222222222..................
-......2222.....22...22.22.222222222222222...................................22222222222222222222222222222..................
-......2222.....22222222222222222222222222...222...222...2222222........2....22222222222222222222222222222..................
-......2222...2222222222222222222222222222...222...2222222222222222222222222222222222222222222222222222222..................
-`, [myTiles.transparency16,myTiles.tile4,myTiles.tile42,myTiles.tile87,myTiles.tile84,myTiles.tile104,myTiles.tile106,myTiles.tile105,myTiles.tile2,myTiles.tile12,myTiles.tile88,myTiles.tile122,myTiles.tile17,myTiles.tile89,myTiles.tile43,myTiles.tile90,myTiles.tile129,myTiles.tile135,myTiles.tile136,myTiles.tile128,myTiles.tile137,myTiles.tile99,myTiles.tile139,myTiles.tile140,myTiles.tile141,myTiles.tile133,myTiles.tile22,myTiles.tile134,myTiles.tile149,myTiles.tile150,myTiles.tile146,myTiles.tile153,myTiles.tile155,myTiles.tile156,myTiles.tile109,myTiles.tile145,myTiles.tile82,myTiles.tile85,myTiles.tile91,myTiles.tile116,myTiles.tile119,myTiles.tile147,myTiles.tile81,myTiles.tile79,myTiles.tile93,myTiles.tile102,myTiles.tile117,myTiles.tile118,myTiles.tile57,myTiles.tile58,myTiles.tile59,myTiles.tile29,myTiles.tile32,myTiles.tile34,myTiles.tile35,myTiles.tile125,myTiles.tile72,myTiles.tile65,myTiles.tile60,myTiles.tile61,myTiles.tile121,myTiles.tile120,myTiles.tile13,myTiles.tile3,myTiles.tile11,myTiles.tile94,myTiles.tile123,myTiles.tile14,myTiles.tile158,myTiles.tile46,myTiles.tile19,myTiles.tile63,myTiles.tile18,myTiles.tile45,myTiles.tile47,myTiles.tile73,myTiles.tile77,myTiles.tile8,myTiles.tile80,myTiles.tile68,myTiles.tile110,myTiles.tile112,myTiles.tile15,myTiles.tile56,myTiles.tile113,myTiles.tile20,myTiles.tile10,myTiles.tile98,myTiles.tile114,myTiles.tile124,myTiles.tile115,myTiles.tile143,myTiles.tile95,myTiles.tile6,myTiles.tile7,myTiles.tile132,myTiles.tile62,myTiles.tile152,myTiles.tile151,myTiles.tile154,myTiles.tile33,myTiles.tile75,myTiles.tile97,myTiles.tile16,myTiles.tile103,myTiles.tile50,myTiles.tile48,myTiles.tile69,myTiles.tile101,myTiles.tile51,myTiles.tile86,myTiles.tile107,myTiles.tile92,myTiles.tile127,myTiles.tile49,myTiles.tile96,myTiles.tile138,myTiles.tile157,myTiles.tile1,myTiles.tile24,myTiles.tile148,myTiles.tile144,myTiles.tile142,myTiles.tile159,myTiles.tile71,myTiles.tile64,myTiles.tile76,myTiles.tile111,myTiles.tile78,myTiles.tile40,myTiles.tile130,myTiles.tile30,myTiles.tile5,myTiles.tile55,myTiles.tile54,myTiles.tile70], TileScale.Sixteen);
+            case "level13":return tiles.createTilemap(hex`7b0038001c1e1e1f2b2b0400000000000000000000002f0000151a1a191a1a1a130a00151a1a140000007000000000000000000001002f151a1a1a1a1a1a1a1a1a140000081b132d000507000000000000161a1a146d151a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a00000000000000005e0d2b2b2b2b05002f0707020202000000002f2500161a1a191a1a1a1a5f601a1a1a1300000001002f000202026f7e0001002f161a1a1a1a1a1a1a1a1a136f72061b19120c0d020050006f0000151a1a1333161a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a00000000000000005e000c0d2b0c04002f6f082b0447002f00003d3e3c4a1a1a191a1a1a0303030303030300002f01002f2e0000003e3c0001002f151a1a1a1a1a1a1a1a1a140000081b193c000002007b0000004403030303034a1a1718171817181718171817181718161a1a1a1a1a1a1a1a1a1a1a1a1a1a1a0000000000000000005e000202080705383d00062b3b41002f0000572020202020581718175b24202020243900002f4b383d40000000420e0001000303171817181718171803450000061b245811121144450001005b2424202020201f5f00000000000000000000000000151a1a1a1a1a1a1a1a1a1a1a1a1a1a1a0000000000000000005e007502061204623900082b4239002f0000062b0c0d0c0d0c00000016192b0c0d1d5800002f0342245c00000042130001004239000000000000000062390075081b140c0d0c0d4239000100591a5e161a1a1a1a14096e0000003372070707077f0a161a1a1a1a1a1a1a1a1a1a1a1a1a1a1a000000000000000000433e3c383e3f3b62390b317c4239002f000008042d330000000000004a19042600080500002f0f241e1f121112231400010042390b0b0b0b0b0b0b0b62394544031b43081211124239000100591a5e151a1a1a1a132d6c38383838383838383838384a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a000000000000000000185720202020202020202024245c002f000003030303030000002f00571f050000060c01012f4a192b2b2b2b2b1b130001005720202020202020202020202020202058062b2b2b235c000100591a5e18171803030345386224242424242424242424241a1a1a1a1a1a1a1a1a1a1a1a1a1a1a0000000000000000005e062b2b0c0d2b0c0d0c2b1b1a14012f000057202020580000002f000d0c0d12110c00002e3d42192b0c0d0c2b1b14002f000c0d0c0d0c0d0c0d2b0c0d0c0d0c0d0c0d2b0c0d2b1b5e000100591a4300000057202020202024242424241a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a0000000000000000005e54102f00004900260a341b1a43012f00000c0d0c0d0c0101012f00500000547d0000004042241904000000081b13002f000001010100472f00494700007600000050490101081b5e00010047000e0000000c0d0c0d0c651a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a0000000000000000005e66002f3844030345483a1d1e58012f000000000000002f472e2f000000003e3c00000062242419370a6c6e361b14472f0000002e474b413d003d4100003e3c0000383d0000064d45000100414a430202020000000000696a3030301617181718171817181a1a1a1a1a1a1a1a1a1a1a1a1a0000000000000000001354002f57202020202058101010002f000000002f00472f41403d000700006239000b0b422424193b3e3f3c3a1b43413d00010040414442390b42390b0b62390b0b5b5c12112b355c00010057205800000038380000006814000000000000006e6e2d096e161a1a1a1a1a1a1a1a1a1a1a1a0000000000000000001466002f0d2b2b0c0d0c0d000002022f007b00002f2e413d4224390007000042390b6224201e1e1e24202020202020205c0001005b202020202020202020202020201a195a0d2b35140001000d0c0d007d005b0e00000068130001007f0000006e6e2d736e4a1a1a1a1a1a1a1a1a1a1a1a1a0000000000000000004354794f7a080447507b470000083c3d000804003d40422424243900070000572020201f1a17181a4c2b2b2b5a0d0c0d4d0501084d2b0c0d161a1a1a1a1a140c0d0c161f0533083513000100006f0000000059130000004403000100440303030303030303421a1a1a1a1a1a1a1a1a1a1a1a00000000000000000039030303453a3b414445413e3c3a4239450605005b20202020245c00070000151a1a1a1a177200164c5a0d2b050000000d2b124e0d0c0000151a1a1a1a1a13006e2f292b2b124e351400010038380000444559140b00005b580001005b2424242424242424241a1a1a1a1a1a1a1a1a1a1a1a00000000000000000024242424242424242424242424242424390804002a2b0c0d2b1b1400070000161a1a1a147e337e154c0575083c48000000082b0400000000161a146f161a146e0a2f2a2b0c0d2b64433838444239000042394a43160b0b1f0c000100591a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a00000000000000000024241a1a1a2424240e5b2424242424243931320b2905526e061b430007004403030303033e3f3c034c3c463a423900002f062b37000000030303030303030345383d550400003e422424242424390b0b422424394a1a1f0c6f00010000161a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a0000000000000000001a1a1a1a1a1a1a1a4318175720202020202020201f2b11122b1b390007000f20202020202020242424242420205800702f082b0500000057202020202020202020201f05000057201f5151511d202024242424242422040000003844454a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a00000000000000000024242424242424240e0000151a1a1a1417181a1a140c0d0c0d1d58000700295a0d0c0d0c0d2b1b1a1a1a192b0c0d02022f060d2b1200000d0c0d0c0d0c0d0c0d0c0d0c0d0000060c0d0c0d0c0d0c0d4d51515151514d055000385b2424241a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a0000000000000000001a1a1a1a1a1a1a1a13260a161a1a1a137500161a13002f000016130007002a056d777e0000081b1a1a1a19042f0202472f546f080401010100006f01017800000000000050014900006f00000000000d0c0d0c0d0c0d0c00005b3030161a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a0000000000000000001a1a1a1a1a1a1a1a140000151a1a1a140000151a142e2f2e001514000700553c3e3f3c0000064d3030304d052f0000413d3e3c4e0500500000062b05004445000000484801012f000044450000007f00000000000000786700000000591a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a0000000000000000001a1a1a1a1a1a1a1a43384403030303030303030303403d404403030007000f2424240e00000d0c0000000d0c2f0000572024393f3c440345483e2b04004239000000423903453d000042390000444501010100006f00000000070000591a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a0000000000000000001a1a1a1a1a1a24242424242424242424242424242424242424240e000700151a1a1a130000000101007b00002f000006352424242424242424392b370042390202024224242439000b62390000623945000000000303030345070000591a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a0000000000000000001a1a1a1a1a1a1a1a1c1c1c1c1c1a1a1a1a1a1a1a1a1a1a1a1a1a43000700181718171800700003030008042e2f000008351a1a1a1a242424243921320b4258062b050f242424390b6224390b0b6224392c2c0b0b42242424390270001817181718171817181a1a1a1a1a1a1a1a1a1a1a1a1a0000000000000000001a1e1e1e1e1e1e1f1a17181a1a1d1c1c1c1c1c1c1c1c1c20202058000700020202000202022f0f0e000605403d0000061d1f5151511d1a1457202020245c0c0d2b0c151a1a1a24242424242424242424242424242420202058020000745f605f605f2d2d2d161a1a1a1a1a1a1a1a1a1a1a1a000000000000000000191a1a1a1a1a1a19140a0a161a1a1a1a1a1a1a1a1a1a1a1a1a1a13002f00082b0400006f002f4a430b080462390000082b2b0c0d0c651a130d0c0d2b1b1400004947161a1a1a1a1a171817181a24242424242424390d0c0d0c500000741a1a1a1a1409736e151a1a1a1a1a1a1a1a1a1a1a1a000000000000000000191a2b2b2b2b2b19130a0a151a1a1a1a1a1a1a1a1a1a1a1a1a1a142e2f47062b052e0000002f4224393132622211124e5a0d007209591a14337252081b4300012f414a1a1a1a1a14006700591a1a1a24242422635c000700006f000000161a1a1a132d2d2d161a1a1a1a1a1a1a1a1a1a1a1a000000000000000000191a2b2b2b2b2b191a5f601a1a1a1a146f161a1a1a1a1a1a1a0303403d413e3f3c400000003d422424242424192b2b2b0547000000591a4346000006235800002f5b2424241a1a43000000591a1a1a1a1e1e1f0500000200440303454403030303034538384a1a1a1a1a1a1a1a1a1a1a1a1a000000000000000000191a1a1a1a1a1a1903030303030303030303030303030303034224242020202020580202000f201f515151514c2b2b2b3c41000000446224580000084c0c00012f5924242424243900000044622424390c0d2b04000002005b2424242424242424242424242424241a1a1a1a1a1a1a1a1a1a000000000000000000191a1a1a1a23242424242424242424242424242424242424242424192b0c0d0c0d0c020200295a0d0c0d082b4d3f3f3f6239450b0b6224390c000006280000002f5924242424245c00077e5b5c30305c0002490700760000591a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a000000000000000000191a2b2b1a1b1a1a1a1a1a1a1a1a1a1a1a1a1a1c1c1c1c1c1c1c1c1f0401010000000202002a05092500062b35242020202020202020200e0200003e564500012f4a1a1a1a1a1a5e0007081b5e00000000002f0044450000591a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a000000000000000000191a2b2b1a1b1a1a1a1a1a1a1a1a1a1a1a1a192b0c0d2b2b2b2b2b2b050101030303034544553f3c00000d0c65191a1a1a1a1a1a17181a2702000057205800002f57202058161a5e0007061b5e000700007b2f2e62390000591a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a000000000000000000191a1a1a1a1b1a1a1a1a1a1a1a1a1a1a1a1a19046b6c082b2b2b2b2b2b12112320202020202020580000000059191a1a1a1a1a140a6b16280200000c0d0c00012f151a1a174a1a5e0002081b5e00070044453d4062390b0b44622424241a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a000000000000000000191a1a1a1a1b1a1a1a1a1a1a1a1a1a1a1a1a1905006e062b2b2b2b2b0c0d2b286e082b0c0d0c0d0c000000004a19171817181a130a0015276f007000000000002f161a14266239450002061d140002005b24242424242424242424241a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a000000000000000000191a2b2b1a1b1a1a1a1a1a1a1e1e1e1e1a1a1903030303030303030301010827124e0c000000002f2e00000057580000000003035f601a2800080401010100002f151a134662240e00020c65130002001730303030181e1e1e1e1e1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a000000000000000000191a2b2b1a1b1a1a1a1a1a191a17181a1b14175720202020202020580101064d2b0c01010100003d4000000015130000700042396161615600363744030345383d161a140f5c301300007059140000002f00000000682b2b0c0d2b1b1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a000000000000000000191a1a1a1a1b1a1a1a1a1a19147233161b43000c0d2b2b0c0d0c0d2b12112b0c0d0000002f000057580001001614000000005b24242020200b3132202020202058151a13155e000000000059130000002f07070000682b047f2d081b1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a000000000000000000191a17181a1b1a1a1a1a1a19130000031b39002f6f0804007b010149080449507b0044452f7600360500010015136f007800591a195a0d2b2324221a17181a1a1a1a1a1a1b5e0002020176591400507b2f02070000682b052e52061b1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a00000000000000000019140a73161b1a1a1a1a1a191a5f60232439002f013a3b161400383d3a3b3d483e3c62393d08040604000103030300000000591a19050a081b1a19147500161a1a1a1a1a1b5e00080444454a434848483d0202000044030340483e1b1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a00000000000000000019137100151b1a1a2424240e1817181d2058002f01423915130042242424242424242424393a3b0d370001622439030000004a1a192b124e1b1a190303030303181718174c450006050f2020202020245c7d700000572020242424242424241a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a00000000000000000019030303031b1a1a1a2b2b130000000c0d052f2f0142391a1a5f4222303030303030161a24245c00660001572020580b0b0b4224222b2b2b1b24242420202058000000005758000804295a0d0c0d2b1b5e000000000d0c0d1b1a2b2b1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a0000000000000000002424242424241a1a1a2b2b14000100476f542f2f2e623917181742195f6014000006351a1a1a5e005400010d0c0d0c572020241e1f2b2b2b4d3030140d2b2b0c000000000d0c0006052a05000a00081b5e000000002f7b2e161a2b2b1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a0000000000000000001718171817181a1a1a1a1a13000100413e3b3d3d4062392d26000f191a1a13000908351a1a1a5e00660000020202000d0c65192b0c0d0c0d0400000000491000002e507f007b000804553c0000003a1b43000002023d38404a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a000000000000000000000000000000161a1a1a171800010042242424242424394544454a1917181746463a641a1a1a4338542f003838006f2f0059190433007e0000076f072e2f0000004038380008043a3b6239000000572058000000005b2424242424241a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a000000000000000000000000000000151a1a1a5e2f01010157202020202020202424202058000000572020202020202058662f005b5c00002f004a19052d000345002f4700403d000000622439003637622424390000000d0c0d0000007b181a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a000000000000000000111211121105161a1a1a5e2f0001000c0d0c0d0c0d0c651a192b0c0d0000000d0c0d0c0d0c0d0c0d542f00591402002f005722046e004239003d410042390000006224390b31326230305c000000006f010101000804161a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a0000000000000000005a0d2b2b2b0c4a1a1a1a5e2f2e2f472e006f00000000591a19042d00020000500202022f2f784700662f00591302022f00064c5311125b390b42390b42390b0b0b5b24242424245c0000000050000804440345003132151a1a1a1a1a1a17181a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a0000000000000000000571082b0c004224241a433d403d41403e3c0000002f4a1a193b4800020044450000003d3d48413e3c3d3e645d3c022f00084d2b2b2b1d202020202020201a171817181718171814000202027b0036374224390b6239161a1a1a1a1a146c73151a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a0000000000000000000303030400004224242424242020202024580000012f572020205800020062390000005720202024242424242439452f0000082b0c0d0c0d0c0d2b5a0d2b4c050007000000000000007d0044030006054224242424394a1a1a1a1a1a137100161a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a00000000000000000024245c00002f0f24241a1a1f1817181a4c132f00012f0d0c0d0c0d00022f4239605f601a1a1a17161a14303051230e2f2e2f060401012f2e6f00080578084c0400074700772e472e00000042390008044224242424242424242424241a5f601a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a0000000000000000001a1a5e00002f151a1a1a1a5e096e00164d142f002f2f0001020000002f2f42391a1a1a1a1a1472151a5e0000081b433d403d3e3b3e3c3d400345060402064d050002413e3c40414000000062390b31326224241a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a0000000000000000001a1a5e00722f161a1a1a1a5e000000151a132f003d3d00007b0000383d3d42391a1a1a1a1a136d161a5e6c6e00575857202020202020202020580d53112b2b0c0002422420202058605f605b2424242424241a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a0000000000000000001a1a13006c2f151a1a1a1a5e007b00161a142f004239003e3c00004224242439030303030303454a1a5e3370000637062b0c0d0c0d0c0d0c0d0c000d0c0d04070702571f181718171817182d161a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a0000000000000000001a1a19050a2f591a1a1a1a5e0804000303132f2e4239004239000b422424242424242424242424241a5e000000080508046f070747007b0707072e472f5047007b0018170000000000000026151a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a0000000000000000001a1a19046d2f591a1a1a1a5e3637004239033d4042390b42390b42242424242424242424242424241a5e0000483a3c0605083f3c41082b04383840413d46410008050000000000002e00006e161a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a0000000000000000001a1a193b463d161a1a1a1a5e31320b422424242424242424242424242424242424241a1a1a1a1a1a1a5e000042243908043642243931213242242424242439483a3c000000000046404445384a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a0000000000000000002424242424242424241a1a5e42242424242424242424242424242424241a1a1a1a1a1a1a1a1a1a1a1a130b0b422439313231422424242424242424242424242424392c2c2c2c2c622424242424241a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a000000000000000000`, img`
+2222.................2222........................................22...............222222222222222222222222222222222........
+.....................2222........................................22...............222222222222222222222222222222222........
+.....................2222........................................22...............22222222222222222222222222222222.........
+..................2222222...2222222..........22..................222........22222222..............2222222222222222.........
+.......22...22..............22...22....222...22...22........22...22....22....2....................2222222222222222.........
+2......22...22..............22........2222...22...22........22...22....22....2....................2222222222222222.........
+22222222222222..............22........22.....22...22222222222222222....22....2.........222222222222222222222222222.........
+...........222....22222...............22.....22........................2.....22...22222222222222222222222222222222.........
+...........222.......................222.....22........................2.....22.........22222222222222222222222222.........
+...........222......................2222.....22........................2.....22........22...2222222222222222222222.........
+2...2222222....................22...2222.....22........22.22..22..22....2...222......................2222222222222.........
+2.......................222....22.222222222222222...2222222222222222....2.........22.................2222222222222.........
+2.....................22222....22222....2.......2...2.............22....2..........2.................2222222222222.........
+2.............22....2222222.............2.........................2.....2..........2...22...2222222222222222222222.........
+22222222222222222...2....22.............2.........................2....22...22..22222..2.....222222222222222222222.........
+22222222222222222...2....22.............2...22....................2....2222222..2222222......222222222222222222222.........
+222222222222222222222....22...2222222222222222.........222222222222...222...2222222222.......222222222222222222222.........
+222222222................22...2.......22222....................................2.....2....222222222222222222222222.........
+222222222.....................2.......22222..............................................2..2222222222222222222222.........
+222222222.....................2.......2...2..................................................222222222222222222222.........
+222222222.....................22222............2222..........22...22.....22..................222222222222222222222.........
+222222222222222222222222222...22222..............222222222...22...22222..22..22..............222222222222222222222.........
+222222222222222222222222222...22222..............222222222...22...22222.222..22222..22222...2222222222222222222222.........
+22222222.....22222222222222...........22........22...222222222....22222222222222222222222............2222222222222.........
+2.....................................22...22.........22....22....2222222222222222222................2222222222222.........
+2.....................................222..22.........22....22....222222....2222222.2................2222222222222.........
+2.....................................2222222.........22....22...2222222....2222222..................2222222222222.........
+2........................222222222...222....2.........222...2.....222222....2222........22222222222222222222222222.........
+2....22222222222222222222222.........2......2...22...222....2.....222222...22..2.........2222222222222222222222222.........
+2....22222222222222222222222.........2.......22222222222....2....222222....2.............2222222222222222222222222.........
+2....22222222222222..................2.......2.........2...222...222222....2........22...2222222222222222222222222.........
+2....22222222222222............222222222.....2.........2.............22....2........22...2222222222222222222222222.........
+2....22222222222222............2............22.........2.............22....22...2222222222222222222222222222222222.........
+2....22222222222222............2............22.........2.............222....2...2....22222222222222222222222222222.........
+2....2222222....222222222222...2..................22...2............22.2....2..............22222222222222222222222.........
+2....2222222....22.....................22.........222222...222222...2.......2..............22222222222222222222222.........
+2....2222222....22.................................22...222.........2.......2..............22222222222222222222222.........
+2....2222222...222................22...............22...222.........2......22..............22222222222222222222222.........
+2....2222222...222...22...22222222222......222....222...222.........2....22222222....22222222222222222222222222222.........
+2....2...............22...22......22222....2222...222...22222222....22...2.....2................222222222222222222.........
+222222...............22...22.......222.........222222...2..2.............2.....2................222222222222222222.........
+.....................22...22.......222............2......................2.....22...............222222222222222222.........
+.........222...22222222...22......22222...........2......................22...222....2222222....222222222222222222.........
+.........2.....2222222222222...222222222...22....22..............222...2222..........2222222....222222222222222222.........
+.........2.............22...................2....22...22....22...222...2..2...........222222....222222222222222222.........
+.........2.............22...................2.....2...22.22.22...2222222..............222222....222222222222222222.........
+......22222...........222..................22.....2...222222222222222222........222.22222222....222222222222222222.........
+......222222222222....22222...22...22222222222................2.................222222222222....222222222222222222.........
+222...222222....2.............22.......222...22...............2............22...222222222222....222222222222222222.........
+22....22222.....2.............22.......22....22...............2............22...2222222222222222222222222222222222.........
+22....22222...................22.......22....2222222222222........222222...222222222222222222222222222222222222222.........
+222...22222.........22.....22222.......22.........................22........22222222222222222222222222222222222222.........
+222....2222.........22.22..22222222222222...................................22222222222222222222222222222222222222.........
+222....2222....22...22.22.222222222222222...................................22222222222222222222222222222222222222.........
+222...22222....22222222222222222222222222...222...222...2222222.............22222222222222222222222222222222222222.........
+22222222222.222222222222222222222222222222..222...2222222222222222222222222222222222222222222222222222222222222222.........
+`, [myTiles.transparency16,myTiles.tile4,myTiles.tile87,myTiles.tile84,myTiles.tile104,myTiles.tile106,myTiles.tile105,myTiles.tile88,myTiles.tile17,myTiles.tile89,myTiles.tile43,myTiles.tile90,myTiles.tile135,myTiles.tile136,myTiles.tile139,myTiles.tile140,myTiles.tile141,myTiles.tile133,myTiles.tile134,myTiles.tile149,myTiles.tile150,myTiles.tile146,myTiles.tile153,myTiles.tile155,myTiles.tile156,myTiles.tile109,myTiles.tile145,myTiles.tile82,myTiles.tile85,myTiles.tile91,myTiles.tile119,myTiles.tile147,myTiles.tile79,myTiles.tile102,myTiles.tile117,myTiles.tile118,myTiles.tile59,myTiles.tile72,myTiles.tile65,myTiles.tile60,myTiles.tile61,myTiles.tile121,myTiles.tile120,myTiles.tile13,myTiles.tile11,myTiles.tile123,myTiles.tile14,myTiles.tile158,myTiles.tile46,myTiles.tile19,myTiles.tile63,myTiles.tile18,myTiles.tile45,myTiles.tile47,myTiles.tile73,myTiles.tile77,myTiles.tile8,myTiles.tile80,myTiles.tile68,myTiles.tile110,myTiles.tile112,myTiles.tile15,myTiles.tile56,myTiles.tile113,myTiles.tile20,myTiles.tile10,myTiles.tile98,myTiles.tile114,myTiles.tile115,myTiles.tile143,myTiles.tile95,myTiles.tile6,myTiles.tile7,myTiles.tile132,myTiles.tile62,myTiles.tile152,myTiles.tile151,myTiles.tile154,myTiles.tile75,myTiles.tile97,myTiles.tile16,myTiles.tile48,myTiles.tile69,myTiles.tile101,myTiles.tile51,myTiles.tile86,myTiles.tile107,myTiles.tile92,myTiles.tile127,myTiles.tile49,myTiles.tile96,myTiles.tile138,myTiles.tile157,myTiles.tile1,myTiles.tile24,myTiles.tile148,myTiles.tile144,myTiles.tile142,myTiles.tile159,myTiles.tile64,myTiles.tile76,myTiles.tile78,myTiles.tile130,myTiles.tile55,myTiles.tile54,myTiles.tile9,myTiles.tile131,myTiles.tile74,myTiles.tile2,myTiles.tile41,myTiles.tile124,myTiles.tile160,myTiles.tile162,myTiles.tile163,myTiles.tile164,myTiles.tile165,myTiles.tile166,myTiles.tile167,myTiles.tile168,myTiles.tile169,myTiles.tile170,myTiles.tile171,myTiles.tile172,myTiles.tile174,myTiles.tile175,myTiles.tile176,myTiles.tile177,myTiles.tile178], TileScale.Sixteen);
         }
         return null;
     })
@@ -1204,19 +1190,9 @@ namespace myTiles {
     helpers._registerFactory("tile", function(name: string) {
         switch(helpers.stringTrim(name)) {
             case "transparency16":return transparency16;
-            case "myTile34":
-            case "tile42":return tile42;
-            case "myTile37":
-            case "tile45":return tile45;
             case "myTile3":
             case "tile5":return tile5;
             case "transparency8":return transparency8;
-            case "myTile90":
-            case "tile100":return tile100;
-            case "myTile12":
-            case "tile16":return tile16;
-            case "myTile98":
-            case "tile108":return tile108;
             case "myTile135":
             case "tile145":return tile145;
             case "myTile74":
@@ -1241,50 +1217,8 @@ namespace myTiles {
             case "tile67":return tile67;
             case "myTile142":
             case "tile152":return tile152;
-            case "myTile95":
-            case "tile105":return tile105;
-            case "myTile127":
-            case "tile137":return tile137;
-            case "myTile126":
-            case "tile136":return tile136;
-            case "myTile96":
-            case "tile106":return tile106;
-            case "myTile119":
-            case "tile129":return tile129;
-            case "myTile118":
-            case "tile128":return tile128;
-            case "myTile94":
-            case "tile104":return tile104;
-            case "myTile13":
-            case "tile17":return tile17;
-            case "myTile124":
-            case "tile134":return tile134;
-            case "myTile123":
-            case "tile133":return tile133;
-            case "myTile125":
-            case "tile135":return tile135;
-            case "myTile69":
-            case "tile77":return tile77;
-            case "myTile65":
-            case "tile73":return tile73;
-            case "myTile43":
-            case "tile51":return tile51;
-            case "myTile120":
-            case "tile130":return tile130;
             case "myTile58":
             case "tile66":return tile66;
-            case "myTile0":
-            case "tile2":return tile2;
-            case "myTile114":
-            case "tile124":return tile124;
-            case "myTile33":
-            case "tile41":return tile41;
-            case "myTile36":
-            case "tile44":return tile44;
-            case "myTile87":
-            case "tile97":return tile97;
-            case "myTile148":
-            case "tile158":return tile158;
             case "myTile80":
             case "tile90":return tile90;
             case "myTile41":
@@ -1293,30 +1227,10 @@ namespace myTiles {
             case "tile24":return tile24;
             case "myTile38":
             case "tile46":return tile46;
-            case "myTile55":
-            case "tile63":return tile63;
-            case "myTile15":
-            case "tile19":return tile19;
-            case "myTile56":
-            case "tile64":return tile64;
-            case "myTile92":
-            case "tile102":return tile102;
-            case "myTile89":
-            case "tile99":return tile99;
-            case "myTile131":
-            case "tile141":return tile141;
-            case "myTile4":
-            case "tile6":return tile6;
-            case "myTile122":
-            case "tile132":return tile132;
             case "myTile133":
             case "tile143":return tile143;
             case "myTile76":
             case "tile84":return tile84;
-            case "myTile8":
-            case "tile10":return tile10;
-            case "myTile73":
-            case "tile81":return tile81;
             case "myTile141":
             case "tile151":return tile151;
             case "myTile115":
@@ -1335,36 +1249,16 @@ namespace myTiles {
             case "tile126":return tile126;
             case "myTile75":
             case "tile83":return tile83;
-            case "myTile1":
-            case "tile3":return tile3;
-            case "myTile84":
-            case "tile94":return tile94;
-            case "myTile40":
-            case "tile48":return tile48;
-            case "myTile39":
-            case "tile47":return tile47;
             case "myTile130":
             case "tile140":return tile140;
             case "myTile129":
             case "tile139":return tile139;
-            case "myTile112":
-            case "tile122":return tile122;
-            case "myTile50":
-            case "tile58":return tile58;
-            case "myTile44":
-            case "tile52":return tile52;
-            case "myTile83":
-            case "tile93":return tile93;
-            case "myTile49":
-            case "tile57":return tile57;
             case "myTile88":
             case "tile98":return tile98;
             case "myTile143":
             case "tile153":return tile153;
             case "myTile136":
             case "tile146":return tile146;
-            case "myTile42":
-            case "tile50":return tile50;
             case "myTile140":
             case "tile150":return tile150;
             case "myTile145":
@@ -1409,96 +1303,32 @@ namespace myTiles {
             case "tile7":return tile7;
             case "myTile85":
             case "tile95":return tile95;
-            case "myTile11":
-            case "tile15":return tile15;
-            case "myTile103":
-            case "tile113":return tile113;
-            case "myTile60":
-            case "tile68":return tile68;
-            case "myTile100":
-            case "tile110":return tile110;
             case "myTile105":
             case "tile115":return tile115;
             case "myTile72":
             case "tile80":return tile80;
             case "myTile149":
             case "tile159":return tile159;
-            case "myTile102":
-            case "tile112":return tile112;
-            case "myTile48":
-            case "tile56":return tile56;
             case "myTile101":
             case "tile111":return tile111;
-            case "myTile7":
-            case "tile13":return tile13;
-            case "myTile67":
-            case "tile75":return tile75;
-            case "myTile91":
-            case "tile101":return tile101;
-            case "myTile86":
-            case "tile96":return tile96;
             case "myTile132":
             case "tile142":return tile142;
             case "myTile46":
             case "tile54":return tile54;
-            case "myTile63":
-            case "tile71":return tile71;
-            case "myTile45":
-            case "tile53":return tile53;
             case "myTile9":
             case "tile11":return tile11;
-            case "myTile":
-            case "tile1":return tile1;
-            case "myTile68":
-            case "tile76":return tile76;
-            case "myTile16":
-            case "tile20":return tile20;
-            case "myTile10":
-            case "tile14":return tile14;
-            case "myTile62":
-            case "tile70":return tile70;
-            case "myTile70":
-            case "tile78":return tile78;
             case "radient shard5":
             case "tile87":return tile87;
             case "radient shard6":
             case "tile88":return tile88;
-            case "radient shard":
-            case "tile12":return tile12;
-            case "radient shard1":
-            case "tile21":return tile21;
-            case "radient shard3":
-            case "tile23":return tile23;
-            case "radient shard2":
-            case "tile22":return tile22;
             case "radient shard4":
             case "tile25":return tile25;
-            case "myTile18":
-            case "tile26":return tile26;
-            case "myTile19":
-            case "tile27":return tile27;
             case "radient shard0":
             case "tile4":return tile4;
-            case "myTile20":
-            case "tile28":return tile28;
-            case "myTile21":
-            case "tile29":return tile29;
-            case "myTile22":
-            case "tile30":return tile30;
-            case "myTile23":
-            case "tile31":return tile31;
-            case "myTile24":
-            case "tile32":return tile32;
             case "myTile35":
             case "tile43":return tile43;
             case "myTile79":
             case "tile89":return tile89;
-            case "myTile25":
-            case "tile33":return tile33;
-            case "myTile26":
-            case "tile34":return tile34;
-            case "myTile27":
-            case "tile35":return tile35;
             case "myTile28":
             case "tile36":return tile36;
             case "myTile29":
@@ -1521,10 +1351,145 @@ namespace myTiles {
             case "tile39":return tile39;
             case "myTile66":
             case "tile74":return tile74;
-            case "myTile150":
-            case "tile160":return tile160;
             case "myTile47":
             case "tile55":return tile55;
+            case "myTile126":
+            case "tile136":return tile136;
+            case "myTile96":
+            case "tile106":return tile106;
+            case "myTile119":
+            case "tile129":return tile129;
+            case "myTile127":
+            case "tile137":return tile137;
+            case "myTile95":
+            case "tile105":return tile105;
+            case "myTile118":
+            case "tile128":return tile128;
+            case "myTile94":
+            case "tile104":return tile104;
+            case "myTile13":
+            case "tile17":return tile17;
+            case "myTile124":
+            case "tile134":return tile134;
+            case "myTile123":
+            case "tile133":return tile133;
+            case "myTile125":
+            case "tile135":return tile135;
+            case "myTile86":
+            case "tile96":return tile96;
+            case "myTile91":
+            case "tile101":return tile101;
+            case "myTile67":
+            case "tile75":return tile75;
+            case "myTile7":
+            case "tile13":return tile13;
+            case "myTile48":
+            case "tile56":return tile56;
+            case "myTile102":
+            case "tile112":return tile112;
+            case "myTile69":
+            case "tile77":return tile77;
+            case "myTile65":
+            case "tile73":return tile73;
+            case "myTile43":
+            case "tile51":return tile51;
+            case "myTile120":
+            case "tile130":return tile130;
+            case "myTile87":
+            case "tile97":return tile97;
+            case "myTile148":
+            case "tile158":return tile158;
+            case "myTile60":
+            case "tile68":return tile68;
+            case "myTile100":
+            case "tile110":return tile110;
+            case "myTile131":
+            case "tile141":return tile141;
+            case "myTile122":
+            case "tile132":return tile132;
+            case "myTile11":
+            case "tile15":return tile15;
+            case "myTile8":
+            case "tile10":return tile10;
+            case "myTile4":
+            case "tile6":return tile6;
+            case "myTile92":
+            case "tile102":return tile102;
+            case "myTile84":
+            case "tile94":return tile94;
+            case "myTile1":
+            case "tile3":return tile3;
+            case "myTile40":
+            case "tile48":return tile48;
+            case "myTile39":
+            case "tile47":return tile47;
+            case "myTile103":
+            case "tile113":return tile113;
+            case "myTile16":
+            case "tile20":return tile20;
+            case "myTile10":
+            case "tile14":return tile14;
+            case "myTile37":
+            case "tile45":return tile45;
+            case "myTile":
+            case "tile1":return tile1;
+            case "myTile68":
+            case "tile76":return tile76;
+            case "myTile45":
+            case "tile53":return tile53;
+            case "myTile63":
+            case "tile71":return tile71;
+            case "myTile62":
+            case "tile70":return tile70;
+            case "myTile15":
+            case "tile19":return tile19;
+            case "myTile56":
+            case "tile64":return tile64;
+            case "myTile55":
+            case "tile63":return tile63;
+            case "myTile89":
+            case "tile99":return tile99;
+            case "myTile70":
+            case "tile78":return tile78;
+            case "tile171":return tile171;
+            case "tile172":return tile172;
+            case "tile174":return tile174;
+            case "tile175":return tile175;
+            case "tile176":return tile176;
+            case "tile177":return tile177;
+            case "tile178":return tile178;
+            case "myTile12":
+            case "tile16":return tile16;
+            case "myTile98":
+            case "tile108":return tile108;
+            case "myTile36":
+            case "tile44":return tile44;
+            case "myTile0":
+            case "tile2":return tile2;
+            case "myTile33":
+            case "tile41":return tile41;
+            case "myTile114":
+            case "tile124":return tile124;
+            case "myTile150":
+            case "tile160":return tile160;
+            case "myTile152":
+            case "tile162":return tile162;
+            case "myTile153":
+            case "tile163":return tile163;
+            case "myTile154":
+            case "tile164":return tile164;
+            case "myTile155":
+            case "tile165":return tile165;
+            case "myTile156":
+            case "tile166":return tile166;
+            case "myTile157":
+            case "tile167":return tile167;
+            case "myTile158":
+            case "tile168":return tile168;
+            case "myTile159":
+            case "tile169":return tile169;
+            case "myTile160":
+            case "tile170":return tile170;
         }
         return null;
     })
