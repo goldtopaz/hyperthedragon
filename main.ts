@@ -1506,11 +1506,7 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile15`, function (sprite, 
     info.setScore(0)
 })
 sprites.onOverlap(SpriteKind.Projectile, SpriteKind.badguy001, function (sprite, otherSprite) {
-    otherSprite.destroy(effects.disintegrate, 500)
-    otherSprite.destroy(effects.fire, 500)
-    music.play(music.createSoundEffect(WaveShape.Noise, 1902, 3290, 255, 255, 300, SoundExpressionEffect.Vibrato, InterpolationCurve.Curve), music.PlaybackMode.UntilDone)
-    music.play(music.createSoundEffect(WaveShape.Noise, 2763, 3367, 185, 185, 300, SoundExpressionEffect.Tremolo, InterpolationCurve.Linear), music.PlaybackMode.UntilDone)
-    music.play(music.createSoundEffect(WaveShape.Noise, 1600, 1, 255, 0, 300, SoundExpressionEffect.None, InterpolationCurve.Curve), music.PlaybackMode.UntilDone)
+	
 })
 controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
     if (rightdir == true) {
@@ -1732,7 +1728,7 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
     }
     if (GOLDIESVSTHEWATERHATSERBULTUMATERAPBATTLE == true) {
         if (rightdir == true) {
-            projectile_5 = sprites.createProjectileFromSprite(img`
+            projectile5 = sprites.createProjectileFromSprite(img`
                 ................................
                 ...........fffffff..............
                 ..........f4ee3ee4f.............
@@ -1750,17 +1746,17 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
                 ................................
                 ................................
                 `, Hyper_the_dragon, -1000, 0)
-            projectile_5.setVelocity(10000, 0)
-            projectile_5.startEffect(effects.fire)
-            projectile_5.startEffect(effects.coolRadial)
-            projectile_5.startEffect(effects.warmRadial)
-            projectile_5.startEffect(effects.halo)
-            projectile_5.follow(Robot_mini_001)
+            projectile5.setVelocity(1000000, 0)
+            projectile5.startEffect(effects.fire)
+            projectile5.startEffect(effects.coolRadial)
+            projectile5.startEffect(effects.warmRadial)
+            projectile5.startEffect(effects.halo)
+            projectile5.follow(Robot_mini_001)
             music.beamUp.play()
             music.buzzer.play()
         }
         if (rightdir == false) {
-            projectile_6 = sprites.createProjectileFromSprite(img`
+            projectile6 = sprites.createProjectileFromSprite(img`
                 ................................
                 ...........fffffff..............
                 ..........f4ee3ee4f.............
@@ -1778,13 +1774,13 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
                 ................................
                 ................................
                 `, Hyper_the_dragon, -1000, 0)
-            projectile_6.setVelocity(-10000, 0)
-            projectile_6.startEffect(effects.coolRadial)
-            projectile_6.startEffect(effects.warmRadial)
-            projectile_6.startEffect(effects.fire)
-            projectile_6.startEffect(effects.halo)
-            projectile_6.follow(Robot_mini_001)
-            projectile_6.follow(Robot_mini_001)
+            projectile6.setVelocity(-1000000, 0)
+            projectile6.startEffect(effects.coolRadial)
+            projectile6.startEffect(effects.warmRadial)
+            projectile6.startEffect(effects.fire)
+            projectile6.startEffect(effects.halo)
+            projectile6.follow(Robot_mini_001)
+            projectile6.follow(Robot_mini_001)
             music.beamUp.play()
             music.buzzer.play()
         }
@@ -2500,8 +2496,8 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile70`, function (sprite, 
 let moving = false
 let HELLOEVERYONEMARKPLIERHEREPLAYINGFIVENIGHTSATFREDDYS: Sprite = null
 let harharharharhararharharhararfreddyfazbear: Sprite = null
-let projectile_6: Sprite = null
-let projectile_5: Sprite = null
+let projectile6: Sprite = null
+let projectile5: Sprite = null
 let Projectile_4: Sprite = null
 let Robot_mini_001: Sprite = null
 let projectile3: Sprite = null
