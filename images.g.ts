@@ -1137,44 +1137,6 @@ ffffffbfffbcbffbffdf
 .....fffffffff......
 ....................
 `;
-            case "image10":
-            case "PLAMSA SPIRAL NOT ANIMATED":return img`
-3..3.3333ffffffffffff333.3....3.
-.33333ffff5ffff555555fff3..3....
-33fffff5555f55f55ff5555ff3...3.3
-3ffffff555ff5fffffffffffff3...3.
-3fff55ffffffffff555ffff55f333..3
-3fff555fffffffff555555ff5f3..3..
-3333fffff55fffffff5fffff5f33....
-.333ff5fffff555ffff5555f5f3.3...
-33ff55fff5555555fff5555f5f3...3.
-3ff55ff5555f555fffff5fffff3.3...
-3f55fff55ff5ffffff55ff5fff3.....
-ff55ff55ff55ff55ffff555f33...3..
-ffffff5ff555555ff5f555ff3......3
-33ffffff555fffff55ffff33..3.3...
-3ff555fffffff555ffff333.......3.
-3ffffffffffffffff3333..3.3.3.3..
-`;
-            case "IV+kpO)6DDcM3X}gFxNL":
-            case "leftist":return img`
-.3....3.333ffffffffffff3333.3..3
-....3..3fff555555ffff5ffff33333.
-3.3...3ff5555ff55f55f5555fffff33
-.3...3fffffffffffff5ff555ffffff3
-3..333f55ffff555ffffffffff55fff3
-..3..3f5ff555555fffffffff555fff3
-....33f5fffff5fffffff55fffff3333
-...3.3f5f5555ffff555fffff5ff333.
-.3...3f5f5555fff5555555fff55ff33
-...3.3fffff5fffff555f5555ff55ff3
-.....3fff5ff55ffffff5ff55fff55f3
-..3...33f555ffff55ff55ff55ff55ff
-3......3ff555f5ff555555ff5ffffff
-...3.3..33ffff55fffff555ffffff33
-.3.......333ffff555fffffff555ff3
-..3.3.3.3..3333ffffffffffffffff3
-`;
             case "image15":
             case "welcome to crystal tundra":return img`
 ...ffffffffff...............................................
@@ -1880,6 +1842,44 @@ ccccccccccccccccccccccccccccccccccccccccccccccccccccccccaa777777e7aaaa7ee78777ee
 3 3 . . 4 2 2 4 4 4 4 4 c 3 3 . 
 3 3 . 4 1 1 d 2 1 1 4 . 2 3 3 . 
 . . 4 4 4 4 2 2 2 4 4 4 . . . . 
+`;
+            case "image10":
+            case "PLAMSA SPIRAL NOT ANIMATED":return img`
+. . . . . . . f . . . . . . . . 
+. . . . . . f 2 f . . . . . . . 
+. . . . . f 2 4 2 f . . . . . . 
+. . . . f 2 4 3 4 2 f . . . . . 
+. . . f 2 4 3 5 3 4 2 f . . . . 
+. . f 9 6 f 1 1 1 f 6 9 f . . . 
+f f 9 6 8 1 f 1 f 1 8 6 9 f f f 
+f 9 6 8 1 1 1 f 1 3 1 8 6 9 9 f 
+f 9 6 8 1 1 1 4 1 4 1 1 8 6 9 f 
+f c b d 1 1 1 2 1 2 1 1 d b c f 
+f c b d 1 1 1 1 1 1 1 d b c f . 
+. f c b d 1 1 1 1 1 d b c f . . 
+. . f c b d 1 1 1 d b c f . . . 
+. . f 3 3 5 f 5 1 5 3 3 3 f . . 
+. f 3 3 5 f . f 5 5 5 3 3 3 f . 
+f f f f f . . . f f f f f f f . 
+`;
+            case "IV+kpO)6DDcM3X}gFxNL":
+            case "leftist":return img`
+. . . . . . . . f . . . . . . . 
+. . . . . . . f 2 f . . . . . . 
+. . . . . . f 2 4 2 f . . . . . 
+. . . . . f 2 4 3 4 2 f . . . . 
+. . . . f 2 4 3 5 3 4 2 f . . . 
+. . . f 9 6 f 1 1 1 f 6 9 f . . 
+f f f 9 6 8 1 f 1 f 1 8 6 9 f f 
+f 9 9 6 8 1 3 1 f 1 1 1 8 6 9 f 
+f 9 6 8 1 1 4 1 4 1 1 1 8 6 9 f 
+f c b d 1 1 2 1 2 1 1 1 d b c f 
+. f c b d 1 1 1 1 1 1 1 d b c f 
+. . f c b d 1 1 1 1 1 d b c f . 
+. . . f c b d 1 1 1 d b c f . . 
+. . f 3 3 3 5 1 5 f 5 3 3 f . . 
+. f 3 3 3 5 5 5 f . f 5 3 3 f . 
+. f f f f f f f . . . f f f f f 
 `;
         }
         return null;
@@ -7606,146 +7606,6 @@ ffffff9f9f999f1f18f8
 .........686........
 ..........6.........
 ....................
-`];
-            case "DOWNWARDS SPIRAL -emplemon":
-            case "Vz9,jm+64EX[dA;,vpKu":return [img`
-33..3..3..333333333333333333.5.5
-..3...33333ffffffffffffffff33.3.
-3..3333ffff555fff5555555ffff333.
-..333fff5ffffffffff555fffff5ff33
-3.3ff55fff55ff55f5ffff5ffffffff3
-.33f555fff5ff5fff5ff5fff55ff3333
-.33f55ff5f5f5ff55ff555fffffff333
-.3f555ffff5fff5ffff55ff555555ff3
-.3f555f5f5fff5ff55fffffffffffff3
-33fff5ff5fffffffff5555f5ff333333
-.3ff5fffffff55555ff555f55ff33.3.
-.3ff555fff5f5ff555ff555ff5fff3.5
-33fff555fff5ffff555ff555ff55f3..
-.3333fff5ffffffff555fffff55ff3.5
-..3.3333ffff5555ffff555fffff3.5.
-3..3.3.33333ffffffffffff3333.5.5
-`, img`
-5.5..5..555555555ffffffffff5..5.
-.5.5.5.55fffff5fff55555f5ff5555.
-5.....55ff5555fffff5ffff5f555f55
-...55.5ff555555f5fffffffff55ff5.
-.5....5f5555fffff5ff555fffffff5.
-....555fffffff5ffffffff55fff5f55
-5.5..5f55fffffff55555fff55f55f5.
-...5.5f55f55ff5fff5fff5fffff5f5.
-5....5f55f5fff555fff55ff5fff5f55
-.5...5f55fff5f5ff5555555ffffff5.
-...5.5ff5fffffffff5555555ff5ff55
-.5...55fff555fffffff555555f5fff5
-5..5..55fff555f55ffff555ffffff55
-..5....5555ffff555ffffffffff5fff
-.....5....55555fffffff555ffff55f
-5...5..5..5..55555555fffffffffff
-`, img`
-.5....5.555ffffffffffff5555.5..5
-....5..5fff555555ffff5ffff55555.
-5.5...5ff5555ff55f55f5555fffff55
-.5...5fffffffffffff5ff555ffffff5
-5..555f55ffff555ffffffffff55fff5
-..5..5f5ff555555fffffffff555fff5
-....55f5fffff5fffffff55fffff5555
-...5.5f5f5555ffff555fffff5ff555.
-.5...5f5f5555fff5555555fff55ff55
-...5.5fffff5fffff555f5555ff55ff5
-.....5fff5ff55ffffff5ff55fff55f5
-..5...55f555ffff55ff55ff55ff55ff
-5......5ff555f5ff555555ff5ffffff
-...5.5..55ffff55fffff555ffffff55
-.5.......555ffff555fffffff555ff5
-..5.5.5.5..5555ffffffffffffffff5
-`, img`
-...5....555fffffffffffffffffff55
-5....5.55ff5555555555fffffff55..
-..55..55f5f555555ff55f555ffff555
-.5....5ff5fffffff5ffff55ff555ff5
-...5.55f55ff55f55fffffffffffffff
-.5...5f55ff555ff5f55ff5fffff5555
-5..5.5ffffff5fff5f55555f5ff5555.
-..5..5ffff5fff5ff555ffff5fffff5.
-....55ff5555f55f5ffff5ffffff5f55
-.5..5f5f555fffffff55fff555ffff5.
-5...5f5ff55f55ffff5ffff55ff5f555
-..5.55f5ffff55f555ff5fffff5f55..
-.....5f5f555ffffffff555f5fff5..5
-5.5.555fff5555fff5fffffffff55...
-......5555ffffffffffffff5555..5.
-5..5..5..5555555555555555...5..5
-`];
-            case "hyper sonic supremacy":
-            case "anim8":return [img`
-3.3.333333333333333333..3..3..33
-.3.33ffffffffffffffff33333...3..
-.333ffff5555555fff555ffff3333..3
-33ff5fffff555ffffffffff5fff333..
-3ffffffff5ffff5f55ff55fff55ff3.3
-3333ff55fff5ff5fff5ff5fff555f33.
-333fffffff555ff55ff5f5f5ff55f33.
-3ff555555ff55ffff5fff5ffff555f3.
-3fffffffffffff55ff5fff5f5f555f3.
-333333ff5f5555fffffffff5ff5fff33
-.3.33ff55f555ff55555fffffff5ff3.
-3.3fff5ff555ff555ff5f5fff555ff3.
-..3f55ff555ff555ffff5fff555fff33
-3.3ff55fffff555ffffffff5fff3333.
-.3.3fffff555ffff5555ffff3333.3..
-3.3.3333ffffffffffff33333.3.3..3
-`, img`
-.3..3ffffffffff333333333..3..3.3
-.3333ff5f55555fff3fffff33.3.3.3.
-33f333f5ffff5fffff5555ff33.....3
-.3ff33fffffffff5f555555ff3.33...
-.3fffffff555ff5fffff5555f3....3.
-33f5fff55ffffffff5fffffff333....
-.3f55f55fff55555fffffff55f3..3.3
-.3f5fffff5fff5fff5ff55f55f3.3...
-33f5fff5ff55fff555fff5f55f3....3
-.3ffffff5555555ff5f5fff55f3...3.
-33ff5ff5555555fffffffff5ff3.3...
-3fff5f555555fffffff555fff33...3.
-33ffffff555ffff55f555fff33..3..3
-fff5ffffffffff555ffff3333....3..
-f55ffff555fffffff33333....3.....
-fffffffffff33333333..3..3..3...3
-`, img`
-3..3.3333ffffffffffff333.3....3.
-.33333ffff5ffff555555fff3..3....
-33fffff5555f55f55ff5555ff3...3.3
-3ffffff555ff5fffffffffffff3...3.
-3fff55ffffffffff555ffff55f333..3
-3fff555fffffffff555555ff5f3..3..
-3333fffff55fffffff5fffff5f33....
-.333ff5fffff555ffff5555f5f3.3...
-33ff55fff5555555fff5555f5f3...3.
-3ff55ff5555f555fffff5fffff3.3...
-3f55fff55ff5ffffff55ff5fff3.....
-ff55ff55ff55ff55ffff555f33...3..
-ffffff5ff555555ff5f555ff3......3
-33ffffff555fffff55ffff33..3.3...
-3ff555fffffff555ffff333.......3.
-3ffffffffffffffff3333..3.3.3.3..
-`, img`
-33fffffffffffffffffff333....3...
-..33fffffff5555555555ff33.3....3
-333ffff555f55ff555555f5f33..33..
-3ff555ff55ffff5fffffff5ff3....3.
-fffffffffffffff55f55ff55f33.3...
-3333fffff5ff55f5ff555ff55f3...3.
-.3333ff5f55555f5fff5ffffff3.3..3
-.3fffff5ffff555ff5fff5ffff3..3..
-33f5ffffff5ffff5f55f5555ff33....
-.3ffff555fff55fffffff555f5f3..3.
-333f5ff55ffff5ffff55f55ff5f3...3
-..33f5fffff5ff555f55ffff5f33.3..
-3..3fff5f555ffffffff555f5f3.....
-...33fffffffff5fff5555fff333.3.3
-.3..3333ffffffffffffff3333......
-3..3...3333333333333333..3..3..3
 `];
             case "hyper moving left":
             case "anim4":return [img`
@@ -14816,6 +14676,146 @@ c5fffbcccff5ffcfcccf...............
 .................a5e..afaaa5533a........
 ..................e...aa...aaaa.........
 ........................................
+`];
+            case "hyper sonic supremacy":
+            case "anim8":return [img`
+3.3.333333333333333333..3..3..33
+.3.33ffffffffffffffff33333...3..
+.333ffff5555555fff555ffff3333..3
+33ff5fffff555ffffffffff5fff333..
+3ffffffff5ffff5f55ff55fff55ff3.3
+3333ff55fff5ff5fff5ff5fff555f33.
+333fffffff555ff55ff5f5f5ff55f33.
+3ff555555ff55ffff5fff5ffff555f3.
+3fffffffffffff55ff5fff5f5f555f3.
+333333ff5f5555fffffffff5ff5fff33
+.3.33ff55f555ff55555fffffff5ff3.
+3.3fff5ff555ff555ff5f5fff555ff3.
+..3f55ff555ff555ffff5fff555fff33
+3.3ff55fffff555ffffffff5fff3333.
+.3.3fffff555ffff5555ffff3333.3..
+3.3.3333ffffffffffff33333.3.3..3
+`, img`
+.3..3ffffffffff333333333..3..3.3
+.3333ff5f55555fff3fffff33.3.3.3.
+33f333f5ffff5fffff5555ff33.....3
+.3ff33fffffffff5f555555ff3.33...
+.3fffffff555ff5fffff5555f3....3.
+33f5fff55ffffffff5fffffff333....
+.3f55f55fff55555fffffff55f3..3.3
+.3f5fffff5fff5fff5ff55f55f3.3...
+33f5fff5ff55fff555fff5f55f3....3
+.3ffffff5555555ff5f5fff55f3...3.
+33ff5ff5555555fffffffff5ff3.3...
+3fff5f555555fffffff555fff33...3.
+33ffffff555ffff55f555fff33..3..3
+fff5ffffffffff555ffff3333....3..
+f55ffff555fffffff33333....3.....
+fffffffffff33333333..3..3..3...3
+`, img`
+3..3.3333ffffffffffff333.3....3.
+.33333ffff5ffff555555fff3..3....
+33fffff5555f55f55ff5555ff3...3.3
+3ffffff555ff5fffffffffffff3...3.
+3fff55ffffffffff555ffff55f333..3
+3fff555fffffffff555555ff5f3..3..
+3333fffff55fffffff5fffff5f33....
+.333ff5fffff555ffff5555f5f3.3...
+33ff55fff5555555fff5555f5f3...3.
+3ff55ff5555f555fffff5fffff3.3...
+3f55fff55ff5ffffff55ff5fff3.....
+ff55ff55ff55ff55ffff555f33...3..
+ffffff5ff555555ff5f555ff3......3
+33ffffff555fffff55ffff33..3.3...
+3ff555fffffff555ffff333.......3.
+3ffffffffffffffff3333..3.3.3.3..
+`, img`
+33fffffffffffffffffff333....3...
+..33fffffff5555555555ff33.3....3
+333ffff555f55ff555555f5f33..33..
+3ff555ff55ffff5fffffff5ff3....3.
+fffffffffffffff55f55ff55f33.3...
+3333fffff5ff55f5ff555ff55f3...3.
+.3333ff5f55555f5fff5ffffff3.3..3
+.3fffff5ffff555ff5fff5ffff3..3..
+33f5ffffff5ffff5f55f5555ff33....
+.3ffff555fff55fffffff555f5f3..3.
+333f5ff55ffff5ffff55f55ff5f3...3
+..33f5fffff5ff555f55ffff5f33.3..
+3..3fff5f555ffffffff555f5f3.....
+...33fffffffff5fff5555fff333.3.3
+.3..3333ffffffffffffff3333......
+3..3...3333333333333333..3..3..3
+`];
+            case "DOWNWARDS SPIRAL -emplemon":
+            case "Vz9,jm+64EX[dA;,vpKu":return [img`
+33..3..3..333333333333333333.3.3
+..3...33333ffffffffffffffff33.3.
+3..3333ffff555fff5555555ffff333.
+..333fff5ffffffffff555fffff5ff33
+3.3ff55fff55ff55f5ffff5ffffffff3
+.33f555fff5ff5fff5ff5fff55ff3333
+.33f55ff5f5f5ff55ff555fffffff333
+.3f555ffff5fff5ffff55ff555555ff3
+.3f555f5f5fff5ff55fffffffffffff3
+33fff5ff5fffffffff5555f5ff333333
+.3ff5fffffff55555ff555f55ff33.3.
+.3ff555fff5f5ff555ff555ff5fff3.3
+33fff555fff5ffff555ff555ff55f3..
+.3333fff5ffffffff555fffff55ff3.3
+..3.3333ffff5555ffff555fffff3.3.
+3..3.3.33333ffffffffffff3333.3.3
+`, img`
+3.3..3..333333333ffffffffff3..3.
+.3.3.3.33fffff3fff55555f5ff3333.
+3.....33ff5555fffff5ffff5f333f33
+...33.3ff555555f5fffffffff33ff3.
+.3....3f5555fffff5ff555fffffff3.
+....333fffffff5ffffffff55fff5f33
+3.3..3f55fffffff55555fff55f55f3.
+...3.3f55f55ff5fff5fff5fffff5f3.
+3....3f55f5fff555fff55ff5fff5f33
+.3...3f55fff5f5ff5555555ffffff3.
+...3.3ff5fffffffff5555555ff5ff33
+.3...33fff555fffffff555555f5fff3
+3..3..33fff555f55ffff555ffffff33
+..3....3333ffff555ffffffffff5fff
+.....3....33333fffffff555ffff55f
+3...3..3..3..33333333fffffffffff
+`, img`
+.3....3.333ffffffffffff3333.3..5
+....3..3fff555555ffff5ffff33333.
+3.3...3ff5555ff55f55f5555fffff33
+.3...3fffffffffffff5ff555ffffff3
+3..333f55ffff555ffffffffff55fff3
+..3..3f5ff555555fffffffff555fff3
+....33f5fffff5fffffff55fffff3333
+...3.3f5f5555ffff555fffff5ff333.
+.3...3f5f5555fff5555555fff55ff33
+...3.3fffff5fffff555f5555ff55ff3
+.....3fff5ff55ffffff5ff55fff55f3
+..3...33f555ffff55ff55ff55ff55ff
+3......3ff555f5ff555555ff5ffffff
+...3.3..33ffff55fffff555ffffff33
+.3.......333ffff555fffffff555ff3
+..3.3.3.3..3333ffffffffffffffff3
+`, img`
+...3....333fffffffffffffffffff33
+3....3.33ff5555555555fffffff33..
+..33..33f5f555555ff55f555ffff333
+.3....3ff5fffffff5ffff55ff555ff3
+...3.33f55ff55f55fffffffffffffff
+.3...3f55ff555ff5f55ff5fffff3333
+3..3.3ffffff5fff5f55555f5ff3333.
+..3..3ffff5fff5ff555ffff5fffff3.
+....33ff5555f55f5ffff5ffffff5f33
+.3..3f5f555fffffff55fff555ffff3.
+3...3f5ff55f55ffff5ffff55ff5f333
+..3.33f5ffff55f555ff5fffff5f33..
+.....3f5f555ffffffff555f5fff3..3
+3.3.333fff5555fff5fffffffff33...
+......3333ffffffffffffff3333..3.
+3..3..3..3333333333333333...3..3
 `];
         }
         return null;

@@ -1514,7 +1514,24 @@ sprites.onOverlap(SpriteKind.Projectile, SpriteKind.badguy001, function (sprite,
 })
 controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
     if (rightdir == true) {
-        projectile = sprites.createProjectileFromSprite(assets.image`PLAMSA SPIRAL NOT ANIMATED`, Hyper_the_dragon, 1000, 0)
+        projectile = sprites.createProjectileFromSprite(img`
+            3.3.333333333333333333..3..3..33
+            .3.33ffffffffffffffff33333...3..
+            .333ffff5555555fff555ffff3333..3
+            33ff5fffff555ffffffffff5fff333..
+            3ffffffff5ffff5f55ff55fff55ff3.3
+            3333ff55fff5ff5fff5ff5fff555f33.
+            333fffffff555ff55ff5f5f5ff55f33.
+            3ff555555ff55ffff5fff5ffff555f3.
+            3fffffffffffff55ff5fff5f5f555f3.
+            333333ff5f5555fffffffff5ff5fff33
+            .3.33ff55f555ff55555fffffff5ff3.
+            3.3fff5ff555ff555ff5f5fff555ff3.
+            ..3f55ff555ff555ffff5fff555fff33
+            3.3ff55fffff555ffffffff5fff3333.
+            .3.3fffff555ffff5555ffff3333.3..
+            3.3.3333ffffffffffff33333.3.3..3
+            `, Hyper_the_dragon, 1000, 0)
         animation.runImageAnimation(
         projectile,
         assets.animation`hyper sonic supremacy`,
@@ -1527,7 +1544,24 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
         megamanx2renefrence = 0
     }
     if (rightdir == false) {
-        projectile2 = sprites.createProjectileFromSprite(assets.image`leftist`, Hyper_the_dragon, -1000, 0)
+        projectile2 = sprites.createProjectileFromSprite(img`
+            33..3..3..333333333333333333.3.3
+            ..3...33333ffffffffffffffff33.3.
+            3..3333ffff555fff5555555ffff333.
+            ..333fff5ffffffffff555fffff5ff33
+            3.3ff55fff55ff55f5ffff5ffffffff3
+            .33f555fff5ff5fff5ff5fff55ff3333
+            .33f55ff5f5f5ff55ff555fffffff333
+            .3f555ffff5fff5ffff55ff555555ff3
+            .3f555f5f5fff5ff55fffffffffffff3
+            33fff5ff5fffffffff5555f5ff333333
+            .3ff5fffffff55555ff555f55ff33.3.
+            .3ff555fff5f5ff555ff555ff5fff3.3
+            33fff555fff5ffff555ff555ff55f3..
+            .3333fff5ffffffff555fffff55ff3.3
+            ..3.3333ffff5555ffff555fffff3.3.
+            3..3.3.33333ffffffffffff3333.3.3
+            `, Hyper_the_dragon, -1000, 0)
         animation.runImageAnimation(
         projectile2,
         assets.animation`DOWNWARDS SPIRAL -emplemon`,
@@ -1696,6 +1730,65 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
             music.buzzer.play()
         }
     }
+    if (GOLDIESVSTHEWATERHATSERBULTUMATERAPBATTLE == true) {
+        if (rightdir == true) {
+            projectile_5 = sprites.createProjectileFromSprite(img`
+                ................................
+                ...........fffffff..............
+                ..........f4ee3ee4f.............
+                .........f43a5a5a34f............
+                ........f4a5aaaaa5e4f...........
+                ........f43a11111a34f...........
+                ........fe3a11111a3ef...........
+                ........f4aa11111aa4f...........
+                ........f43a11111a34f...........
+                ........feaa11111aaef...........
+                ........f435aaaaa534f...........
+                .........f4a33a33a4f............
+                ..........f44e4e44f.............
+                ...........fffffff..............
+                ................................
+                ................................
+                `, Hyper_the_dragon, -1000, 0)
+            projectile_5.setVelocity(10000, 0)
+            projectile_5.startEffect(effects.fire)
+            projectile_5.startEffect(effects.coolRadial)
+            projectile_5.startEffect(effects.warmRadial)
+            projectile_5.startEffect(effects.halo)
+            projectile_5.follow(Robot_mini_001)
+            music.beamUp.play()
+            music.buzzer.play()
+        }
+        if (rightdir == false) {
+            projectile_6 = sprites.createProjectileFromSprite(img`
+                ................................
+                ...........fffffff..............
+                ..........f4ee3ee4f.............
+                .........f43a5a5a34f............
+                ........f4a5aaaaa5e4f...........
+                ........f43a11111a34f...........
+                ........fe3a11111a3ef...........
+                ........f4aa11111aa4f...........
+                ........f43a11111a34f...........
+                ........feaa11111aaef...........
+                ........f435aaaaa534f...........
+                .........f4a33a33a4f............
+                ..........f44e4e44f.............
+                ...........fffffff..............
+                ................................
+                ................................
+                `, Hyper_the_dragon, -1000, 0)
+            projectile_6.setVelocity(-10000, 0)
+            projectile_6.startEffect(effects.coolRadial)
+            projectile_6.startEffect(effects.warmRadial)
+            projectile_6.startEffect(effects.fire)
+            projectile_6.startEffect(effects.halo)
+            projectile_6.follow(Robot_mini_001)
+            projectile_6.follow(Robot_mini_001)
+            music.beamUp.play()
+            music.buzzer.play()
+        }
+    }
     megamanx2renefrence += 1
 })
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Pickup8, function (sprite, otherSprite) {
@@ -1777,7 +1870,15 @@ controller.combos.attachCombo("B+DOWN", function () {
     }
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile33`, function (sprite, location) {
-	
+    for (let index = 0; index < 1; index++) {
+        tiles.replaceAllTiles(assets.tile`transparency8`, assets.tile`transparency8`)
+        tiles.setTileAt(location, assets.tile`transparency8`)
+        effects.clearParticles(Hyper_the_dragon)
+        Hyper_the_dragon.startEffect(effects.rings)
+        Hyper_the_dragon.startEffect(effects.coolRadial)
+        Hyper_the_dragon.startEffect(effects.halo)
+        GOLDIESVSTHEWATERHATSERBULTUMATERAPBATTLE = true
+    }
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile12`, function (sprite, location) {
     tiles.replaceAllTiles(assets.tile`myTile36`, assets.tile`myTile98`)
@@ -1816,14 +1917,6 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile154`, function (sprite,
         Hyper_the_dragon.startEffect(effects.warmRadial, 500)
         Hyper_the_dragon.startEffect(effects.rings, 500)
         Hyper_the_dragon.startEffect(effects.halo, 500)
-    }
-})
-sprites.onOverlap(SpriteKind.Player, SpriteKind.Pickup18, function (sprite, otherSprite) {
-    for (let index = 0; index < 1; index++) {
-        otherSprite.destroy(effects.rings, 500)
-        music.playMelody("C5 C F C B D F F ", 500)
-        info.player4.changeScoreBy(1)
-        statusbar.value += 25
     }
 })
 controller.combos.attachCombo("DOWN", function () {
@@ -1924,14 +2017,6 @@ info.onScore(100, function () {
         music.play(music.createSong(hex`0078000408020208001c000e050046006603320000040a002d0000006400140001320002010002240004000800012708000c00012510001400012c18001c0001271c002000012524002800012c09010e02026400000403780000040a000301000000640001c80000040100000000640001640000040100000000fa0004af00000401c80000040a00019600000414000501006400140005010000002c0104dc00000401fa0000040a0001c8000004140005d0076400140005d0070000c800029001f40105c201f4010a0005900114001400039001000005c201f4010500058403050032000584030000fa00049001000005c201f4010500058403c80032000584030500640005840300009001049001000005c201f4010500058403c80064000584030500c8000584030000f40105ac0d000404a00f00000a0004ac0d2003010004a00f0000280004ac0d9001010004a00f0000280002d00700040408070f0064000408070000c80003c800c8000e7d00c80019000e64000f0032000e78000000fa00032c01c8000ee100c80019000ec8000f0032000edc000000fa0003f401c8000ea901c80019000e90010f0032000ea4010000fa0001c8000004014b000000c800012c01000401c8000000c8000190010004012c010000c80002c800000404c8000f0064000496000000c80002c2010004045e010f006400042c010000640002c409000404c4096400960004f6090000f40102b80b000404b80b64002c0104f40b0000f401022003000004200300040a000420030000ea01029001000004900100040a000490010000900102d007000410d0076400960010d0070000c80048000000010001010400050001040800090001041000110001041400150001041c001d0001042400250001042800290001062c002d0001063000310001063800390001083c003d00010a`), music.PlaybackMode.InBackground)
     }
 })
-sprites.onOverlap(SpriteKind.Player, SpriteKind.pickup2, function (sprite, otherSprite) {
-    for (let index = 0; index < 1; index++) {
-        otherSprite.destroy(effects.rings, 500)
-        music.playMelody("C5 C F C B D F F ", 500)
-        info.player4.changeScoreBy(1)
-        statusbar.value += 25
-    }
-})
 sprites.onOverlap(SpriteKind.Player, SpriteKind.pickup13, function (sprite, otherSprite) {
     for (let index = 0; index < 1; index++) {
         otherSprite.destroy(effects.rings, 500)
@@ -1953,6 +2038,9 @@ statusbars.onZero(StatusBarKind.Health, function (status) {
             controller.moveSprite(Hyper_the_dragon, 0, 0)
         })
         _2014nostalgia = false
+        yo_what = false
+        eatyourvegtables = false
+        IdontevenknowanymoreconmeonguyslikethisgameisthegameyouknowwhatImean = false
         controller.moveSprite(Hyper_the_dragon, 130, 0)
         effects.clearParticles(Hyper_the_dragon)
         Hyper_the_dragon.ay = 100
@@ -2174,6 +2262,22 @@ info.onLifeZero(function () {
     game.over(false, effects.melt)
     game.setGameOverMessage(false, "Get you life together, keep on trying no matter what pops up in your life, and don't give up on what matters!")
 })
+controller.A.onEvent(ControllerButtonEvent.Repeated, function () {
+    if (IdontevenknowanymoreconmeonguyslikethisgameisthegameyouknowwhatImean == true) {
+        if (rightdir == true) {
+            harharharharhararharharhararfreddyfazbear = sprites.createProjectileFromSprite(assets.image`PLAMSA SPIRAL NOT ANIMATED`, Hyper_the_dragon, 1000, 0)
+            harharharharhararharharhararfreddyfazbear.setVelocity(1000, 0)
+            harharharharhararharharhararfreddyfazbear.startEffect(effects.halo)
+            music.beamUp.play()
+        }
+        if (rightdir == false) {
+            HELLOEVERYONEMARKPLIERHEREPLAYINGFIVENIGHTSATFREDDYS = sprites.createProjectileFromSprite(assets.image`leftist`, Hyper_the_dragon, -1000, 0)
+            HELLOEVERYONEMARKPLIERHEREPLAYINGFIVENIGHTSATFREDDYS.setVelocity(-1000, 0)
+            HELLOEVERYONEMARKPLIERHEREPLAYINGFIVENIGHTSATFREDDYS.startEffect(effects.warmRadial)
+            music.beamUp.play()
+        }
+    }
+})
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Pickup6, function (sprite, otherSprite) {
     for (let index = 0; index < 1; index++) {
         info.player3.changeScoreBy(1)
@@ -2329,6 +2433,17 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`radient shard6`, function (sp
         music.play(music.createSong(hex`0078000408010305001c000f0a006400f4010a0000040000000000000000000000000000000002060000000400012c06001c00010a006400f401640000040000000000000000000000000000000002060000000400012c08001c000e050046006603320000040a002d0000006400140001320002010002060000000400012c`), music.PlaybackMode.InBackground)
     }
 })
+scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile155`, function (sprite, location) {
+    for (let index = 0; index < 1; index++) {
+        tiles.replaceAllTiles(assets.tile`transparency8`, assets.tile`transparency8`)
+        tiles.setTileAt(location, assets.tile`transparency8`)
+        effects.clearParticles(Hyper_the_dragon)
+        Hyper_the_dragon.startEffect(effects.hearts)
+        Hyper_the_dragon.startEffect(effects.confetti)
+        Hyper_the_dragon.startEffect(effects.smiles)
+        IdontevenknowanymoreconmeonguyslikethisgameisthegameyouknowwhatImean = true
+    }
+})
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile35`, function (sprite, location) {
     for (let index = 0; index < 1; index++) {
         info.changeLifeBy(2)
@@ -2356,7 +2471,7 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile14`, function (sprite, 
         timer.after(3000, function () {
             statusbar.value = 150
             statusbar.max = 750
-            statusbar.setColor(7, 2)
+            statusbar.setColor(7, 14)
             effects.clearParticles(Hyper_the_dragon)
         })
     }
@@ -2380,7 +2495,13 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile70`, function (sprite, 
     statusbar.value += -150
     info.setScore(0)
 })
+/**
+ */
 let moving = false
+let HELLOEVERYONEMARKPLIERHEREPLAYINGFIVENIGHTSATFREDDYS: Sprite = null
+let harharharharhararharharhararfreddyfazbear: Sprite = null
+let projectile_6: Sprite = null
+let projectile_5: Sprite = null
 let Projectile_4: Sprite = null
 let Robot_mini_001: Sprite = null
 let projectile3: Sprite = null
@@ -2388,7 +2509,9 @@ let projectile2: Sprite = null
 let projectile: Sprite = null
 let rightdir = false
 let welcome_to_crystal_tundra: Sprite = null
+let GOLDIESVSTHEWATERHATSERBULTUMATERAPBATTLE = false
 let eatyourvegtables = false
+let IdontevenknowanymoreconmeonguyslikethisgameisthegameyouknowwhatImean = false
 let yo_what = false
 let _2014nostalgia = false
 let megamanx2renefrence = 0
@@ -2563,12 +2686,12 @@ if (lastdirection == 1) {
 }
 scaling.scaleToPixels(Hyper_the_dragon, 40, ScaleDirection.Vertically, ScaleAnchor.TopRight)
 controller.moveSprite(Hyper_the_dragon, 150, 0)
-statusbar = statusbars.create(4, 80, StatusBarKind.Health)
+statusbar = statusbars.create(9, 80, StatusBarKind.Health)
 let status_bar_list = statusbars.allOfKind(StatusBarKind.Health)
 statusbar.value = 150
 statusbar.max = 750
 statusbar.setLabel("HP")
-statusbar.setColor(7, 0, 2)
+statusbar.setColor(7, 10)
 statusbar.positionDirection(CollisionDirection.Left)
 Hyper_the_dragon.setFlag(SpriteFlag.BounceOnWall, false)
 Hyper_the_dragon.ay = 100
@@ -2615,6 +2738,21 @@ tileUtil.coverAllTiles(assets.tile`myTile28`, assets.tile`transparency8`)
 tileUtil.coverAllTiles(assets.tile`myTile30`, assets.tile`transparency8`)
 tileUtil.coverAllTiles(assets.tile`myTile32`, assets.tile`transparency8`)
 tileUtil.coverAllTiles(assets.tile`myTile31`, assets.tile`transparency8`)
+tileUtil.coverAllTiles(assets.tile`myTile158`, assets.tile`transparency8`)
+tileUtil.coverAllTiles(assets.tile`myTile159`, assets.tile`transparency8`)
+tileUtil.coverAllTiles(assets.tile`tile176`, assets.tile`transparency8`)
+tileUtil.coverAllTiles(assets.tile`myTile160`, assets.tile`transparency8`)
+tileUtil.coverAllTiles(assets.tile`myTile155`, assets.tile`transparency8`)
+tileUtil.coverAllTiles(assets.tile`myTile153`, assets.tile`transparency8`)
+tileUtil.coverAllTiles(assets.tile`myTile154`, assets.tile`transparency8`)
+tileUtil.coverAllTiles(assets.tile`myTile33`, assets.tile`transparency8`)
+tileUtil.coverAllTiles(assets.tile`myTile150`, assets.tile`transparency8`)
+tileUtil.coverAllTiles(assets.tile`myTile152`, assets.tile`transparency8`)
+tileUtil.coverAllTiles(assets.tile`myTile33`, assets.tile`transparency8`)
+tileUtil.coverAllTiles(assets.tile`myTile0`, assets.tile`transparency8`)
+tileUtil.coverAllTiles(assets.tile`myTile157`, assets.tile`transparency8`)
+tileUtil.coverAllTiles(assets.tile`myTile66`, assets.tile`transparency8`)
+tileUtil.coverAllTiles(assets.tile`myTile114`, assets.tile`transparency8`)
 tileUtil.coverAllTiles(assets.tile`tile174`, assets.tile`transparency8`)
 tileUtil.coverAllTiles(assets.tile`myTile37`, assets.tile`transparency8`)
 let spawnDistance = 130
@@ -2623,8 +2761,10 @@ let collectthonchad = 0
 megamanx2renefrence = 0
 _2014nostalgia = false
 yo_what = false
+IdontevenknowanymoreconmeonguyslikethisgameisthegameyouknowwhatImean = false
 let supersayianswagger = false
 eatyourvegtables = false
+GOLDIESVSTHEWATERHATSERBULTUMATERAPBATTLE = false
 for (let value999 of tiles.getTilesByType(assets.tile`myTile37`)) {
     welcome_to_crystal_tundra = sprites.create(assets.image`welcome to crystal tundra`, SpriteKind.sign1)
     tiles.placeOnTile(welcome_to_crystal_tundra, value999)
