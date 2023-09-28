@@ -1824,25 +1824,6 @@ cccccccccccccccccccccccccccccccccccccccccccccccccccccceeee77777e7e787ae77eee77aa
 ccccccccccccccccccccccccccccccccccccccccccccccccccccccccceeeeee7eea77a7e7e7eeeecccccccccccccccccccccc811111886681111118886666ccccccccccccccccccccccccccccccccccc
 ccccccccccccccccccccccccccccccccccccccccccccccccccccccccaa777777e7aaaa7ee78777eecccccccccccccccccccc88811188888881111888886666cccccccccccccccccccccccccccccccccc
 `;
-            case "image36":
-            case "robot mini 001":return img`
-. . . . . . 2 . . . 2 . . . . . 
-. . . . . 2 c 2 . 2 c 2 . . . . 
-. . . . 2 c c c 2 c c c 2 . . . 
-. . . 2 3 4 4 4 3 3 5 c c 2 . . 
-. . 2 3 c c c c c c c 5 c c 2 . 
-. 2 c 4 e b b b b b e 3 c b c 2 
-2 c c 4 c a d d d a c 3 c c 2 . 
-. 2 c 2 c d e 1 e d c 4 c 2 . . 
-. . 2 2 c 1 4 1 4 1 c 4 2 . . . 
-. 2 c 2 c d 2 1 2 d c 4 c 2 . . 
-2 c c 2 c b d d d b c 2 c c 2 . 
-. 2 c 2 c b b b b b c 2 c b c 2 
-. . 2 2 c c c c c c c 4 c c 2 . 
-3 3 . . 4 2 2 4 4 4 4 4 c 3 3 . 
-3 3 . 4 1 1 d 2 1 1 4 . 2 3 3 . 
-. . 4 4 4 4 2 2 2 4 4 4 . . . . 
-`;
             case "image10":
             case "PLAMSA SPIRAL NOT ANIMATED":return img`
 . . . . . . . f . . . . . . . . 
@@ -1880,6 +1861,25 @@ f c b d 1 1 2 1 2 1 1 1 d b c f
 . . f 3 3 3 5 1 5 f 5 3 3 f . . 
 . f 3 3 3 5 5 5 f . f 5 3 3 f . 
 . f f f f f f f . . . f f f f f 
+`;
+            case "image36":
+            case "robot mini 001":return img`
+. . . . . . 2 . . . 2 . . . . . 
+. . . . . 2 c 2 . 2 c 2 . . . . 
+. . . . 2 c c c 2 c c c 2 . . . 
+. . . 2 3 4 4 4 3 3 5 c c 2 . . 
+. . 2 3 c c c c c c c 5 c c 2 . 
+. 2 c 4 e b b b b b e 3 c b c 2 
+2 c c 4 c a d d d a c 3 c c 2 . 
+. 2 c 2 c d e 1 e d c 4 c 2 . . 
+. . 2 2 c 1 4 1 4 1 c 4 2 . . . 
+. 2 c 2 c d 2 1 2 d c 4 c 2 . . 
+2 c c 2 c b d d d b c 2 c c 2 . 
+. 2 c 2 c b b b b b c 2 c b c 2 
+. . 2 2 c c c c c c c 4 c c 2 . 
+3 3 . . 4 2 2 4 4 4 4 4 c 3 3 . 
+3 3 . 4 1 1 d 2 1 1 4 . 2 3 3 . 
+. . 4 4 4 4 2 2 2 4 4 4 . . . . 
 `;
         }
         return null;

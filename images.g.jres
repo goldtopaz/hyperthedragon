@@ -194,11 +194,6 @@
         "mimeType": "image/x-mkcd-f4",
         "displayName": "donkey country stuff"
     },
-    "image36": {
-        "data": "hwQQABAAAAAAAAACAAIwAwAAICwgLDADAADCzMLMAkAAIEMkIiICRAAy7MzMzExBIEy82tG7LEHCTLztJL0sLSBMvB0RvUwiADK87SS9TCEgPLza0btMQcJc7MzMzExEIMw1Q0QiREAAwszMwszMAgAgvCwgvDwDAADCAgDCMgMAACAAACAAAA==",
-        "mimeType": "image/x-mkcd-f4",
-        "displayName": "robot mini 001"
-    },
     "image10": {
         "data": "hwQQABAAAAAAAAD//w8A8AAAAJ/J/AD/AADwabbL//MAAJ+G2L088wDwYhgR0Tv1AC/0ERERXQ/wQhMfERHxAC80FfEkEVEP8EITHxEREfUAL/QxJBFd9QDwYhgR0Tv1AACfhhG9PPMAAPBp2Ms/8wAAAJ+2/PDzAAAAn8kPAP8AAAD//wAAAA==",
         "mimeType": "image/x-mkcd-f4",
@@ -208,6 +203,11 @@
         "data": "hwQQABAAAAAAAAD//wAAAAAAAJ/JDwD/AAAAn7b88PMAAPBp2Ms/8wAAn4YRvTzzAPBiGBHRO/UAL/QxJBFd9fBCEx8RERH1LzQV8SQRUQ/wQhMfERHxAAAv9BEREV0PAPBiGBHRO/UAAJ+G2L088wAA8Gm2y//zAAAAn8n8AP8AAAD//w8A8A==",
         "mimeType": "image/x-mkcd-f4",
         "displayName": "leftist"
+    },
+    "image36": {
+        "data": "hwQQABAAAAAAAAACAAIwAwAAICwgLDADAADCzMLMAkAAIEMkIiICRAAy7MzMzExBIEy82tG7LEHCTLztJL0sLSBMvB0RvUwiADK87SS9TCEgPLza0btMQcJc7MzMzExEIMw1Q0QiREAAwszMwszMAgAgvCwgvDwDAADCAgDCMgMAACAAACAAAA==",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "robot mini 001"
     },
     ",BAlr_~](#D~3Df;C]XM": {
         "namespace": "myImages",

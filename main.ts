@@ -48,6 +48,7 @@ namespace SpriteKind {
     export const WOAH = SpriteKind.create()
     export const LOCKONTECHONLGY = SpriteKind.create()
     export const evil2 = SpriteKind.create()
+    export const evil3FINALLE = SpriteKind.create()
 }
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile0`, function (sprite, location) {
     for (let index = 0; index < 1; index++) {
@@ -3171,6 +3172,9 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile70`, function (sprite, 
 })
 /**
  */
+let projectile9: Sprite = null
+let robo_mini_003: Sprite = null
+let projectile8: Sprite = null
 let robo_mini_002: Sprite = null
 let moving = false
 let HELLOEVERYONEMARKPLIERHEREPLAYINGFIVENIGHTSATFREDDYS: Sprite = null
@@ -3496,7 +3500,42 @@ game.onUpdate(function () {
     }
     for (let valuefnaf3 of tiles.getTilesByType(assets.tile`myTile158`)) {
         if (isInSpawnRange(valuefnaf3.x, valuefnaf3.y)) {
-            robo_mini_002 = sprites.create(assets.image`robot mini 001`, SpriteKind.evil2)
+            robo_mini_002 = sprites.create(img`
+                . . e . e . e . . . e . . . e . 
+                . e 3 e 3 e 3 e . e 3 e . e e . 
+                e 3 5 3 3 3 5 3 e 3 5 3 e 3 e . 
+                . e 3 3 2 3 3 3 2 3 3 2 3 3 e . 
+                . . e 3 3 f f f f f f f 3 e . . 
+                . . . e f b b b b b b b f . . . 
+                . . f . f b e d d d e b f . . . 
+                . f e f f e d a 1 a d e f . . . 
+                f 2 a e f e d 2 a 2 d e f f . . 
+                f 2 a e f e d 2 1 2 d e f b f . 
+                f 2 a e f b e d d d e b f b f . 
+                . f e f f b b b b b b b f b f . 
+                . . f . . f f f f f f f . f . . 
+                . . . . f f b b e b b e . . . . 
+                . . . . f b f b e b e b e . . . 
+                . . . f f f f f . e e e e e . . 
+                `, SpriteKind.evil2)
+            projectile8 = sprites.createProjectileFromSprite(img`
+                . . . . . . . f . . . . . . . . 
+                . . . . . . f c f . . . . . . . 
+                . . . . . f c b c f . . . . . . 
+                . . . . f c b d b c f . . . . . 
+                . . . f e b d 1 d b e f . . . . 
+                . . f c b a 1 1 1 a b c f . . . 
+                . f c b d 1 a 1 a 1 d b c f . . 
+                f c b d 1 1 1 a 1 1 1 d b c f . 
+                . f c b d 1 a 1 a 1 d b c f . . 
+                . . f c b a 1 1 1 a b c f . . . 
+                . . . f e b d 1 d b e f . . . . 
+                . . . . f c b d b c f . . . . . 
+                . . . . . f c b c f . . . . . . 
+                . . . . . . f c f . . . . . . . 
+                . . . . . . . f . . . . . . . . 
+                . . . . . . . . . . . . . . . . 
+                `, robo_mini_002, -100, 0)
             tiles.placeOnTile(robo_mini_002, valuefnaf3)
             sprites.setDataNumber(robo_mini_002, "spawnCol", valuefnaf3.column)
             sprites.setDataNumber(robo_mini_002, "spawnRow", valuefnaf3.row)
@@ -3508,6 +3547,58 @@ game.onUpdate(function () {
             if (!(isInSpawnRange(sprites.readDataNumber(valuefnaf3, "spawnCol") * tileUtil.tilemapProperty(tileUtil.currentTilemap(), tileUtil.TilemapProperty.TileWidth), sprites.readDataNumber(valuefnaf3, "spawnCol") * tileUtil.tilemapProperty(tileUtil.currentTilemap(), tileUtil.TilemapProperty.TileWidth)))) {
                 sprites.destroy(valuefnaf3)
                 tiles.setTileAt(tiles.getTileLocation(sprites.readDataNumber(valuefnaf3, "spawnCol"), sprites.readDataNumber(valuefnaf3, "spawnRow")), assets.tile`myTile158`)
+            }
+        }
+    }
+    for (let FNAFAMBIENCEUGWHAUWUHSUHWUHAUHDUHEDUWEHUAH of tiles.getTilesByType(assets.tile`myTile159`)) {
+        if (isInSpawnRange(FNAFAMBIENCEUGWHAUWUHSUHWUHAUHDUHEDUWEHUAH.x, FNAFAMBIENCEUGWHAUWUHSUHWUHAUHDUHEDUWEHUAH.y)) {
+            robo_mini_003 = sprites.create(img`
+                . e . . . e . . . e . e . e . . 
+                . e e . e 3 e . e 3 e 3 e 3 e . 
+                . e 3 e 3 5 3 e 3 5 3 3 3 5 3 e 
+                . e 3 3 2 3 3 2 3 3 3 2 3 3 e . 
+                . . e 3 f f f f f f f 3 3 e . . 
+                . . . f b b b b b b b f e . . . 
+                . . . f b e d d d e b f . f . . 
+                . . . f e d a 1 a d e f f e f . 
+                . . f f e d 2 a 2 d e f e a 2 f 
+                . f b f e d 2 1 2 d e f e a 2 f 
+                . f b f b e d d d e b f e a 2 f 
+                . f b f b b b b b b b f f e f . 
+                . . f . f f f f f f f . . f . . 
+                . . . . e b b e b b f f . . . . 
+                . . . e b e b e b f b f . . . . 
+                . . e e e e e . f f f f f . . . 
+                `, SpriteKind.evil3FINALLE)
+            projectile9 = sprites.createProjectileFromSprite(img`
+                . . . . . . . f . . . . . . . . 
+                . . . . . . f c f . . . . . . . 
+                . . . . . f c b c f . . . . . . 
+                . . . . f c b d b c f . . . . . 
+                . . . f e b d 1 d b e f . . . . 
+                . . f c b a 1 1 1 a b c f . . . 
+                . f c b d 1 a 1 a 1 d b c f . . 
+                f c b d 1 1 1 a 1 1 1 d b c f . 
+                . f c b d 1 a 1 a 1 d b c f . . 
+                . . f c b a 1 1 1 a b c f . . . 
+                . . . f e b d 1 d b e f . . . . 
+                . . . . f c b d b c f . . . . . 
+                . . . . . f c b c f . . . . . . 
+                . . . . . . f c f . . . . . . . 
+                . . . . . . . f . . . . . . . . 
+                . . . . . . . . . . . . . . . . 
+                `, robo_mini_003, 100, 0)
+            tiles.placeOnTile(robo_mini_003, FNAFAMBIENCEUGWHAUWUHSUHWUHAUHDUHEDUWEHUAH)
+            sprites.setDataNumber(robo_mini_003, "spawnCol", FNAFAMBIENCEUGWHAUWUHSUHWUHAUHDUHEDUWEHUAH.column)
+            sprites.setDataNumber(robo_mini_003, "spawnRow", FNAFAMBIENCEUGWHAUWUHSUHWUHAUHDUHEDUWEHUAH.row)
+            tiles.setTileAt(FNAFAMBIENCEUGWHAUWUHSUHWUHAUHDUHEDUWEHUAH, assets.tile`transparency8`)
+        }
+    }
+    for (let FNAFAMBIENCEUGWHAUWUHSUHWUHAUHDUHEDUWEHUAH of sprites.allOfKind(SpriteKind.evil3FINALLE)) {
+        if (!(isInSpawnRange(FNAFAMBIENCEUGWHAUWUHSUHWUHAUHDUHEDUWEHUAH.x, FNAFAMBIENCEUGWHAUWUHSUHWUHAUHDUHEDUWEHUAH.y))) {
+            if (!(isInSpawnRange(sprites.readDataNumber(FNAFAMBIENCEUGWHAUWUHSUHWUHAUHDUHEDUWEHUAH, "spawnCol") * tileUtil.tilemapProperty(tileUtil.currentTilemap(), tileUtil.TilemapProperty.TileWidth), sprites.readDataNumber(FNAFAMBIENCEUGWHAUWUHSUHWUHAUHDUHEDUWEHUAH, "spawnCol") * tileUtil.tilemapProperty(tileUtil.currentTilemap(), tileUtil.TilemapProperty.TileWidth)))) {
+                sprites.destroy(FNAFAMBIENCEUGWHAUWUHSUHWUHAUHDUHEDUWEHUAH)
+                tiles.setTileAt(tiles.getTileLocation(sprites.readDataNumber(FNAFAMBIENCEUGWHAUWUHSUHWUHAUHDUHEDUWEHUAH, "spawnCol"), sprites.readDataNumber(FNAFAMBIENCEUGWHAUWUHSUHWUHAUHDUHEDUWEHUAH, "spawnRow")), assets.tile`myTile159`)
             }
         }
     }
