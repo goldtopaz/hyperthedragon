@@ -49,6 +49,7 @@ namespace SpriteKind {
     export const LOCKONTECHONLGY = SpriteKind.create()
     export const evil2 = SpriteKind.create()
     export const evil3FINALLE = SpriteKind.create()
+    export const projectile2 = SpriteKind.create()
 }
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile0`, function (sprite, location) {
     for (let index = 0; index < 1; index++) {
@@ -92,16 +93,6 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile1`, function (sprite, l
     statusbar.value += -150
     info.setScore(0)
 })
-sprites.onOverlap(SpriteKind.Player, SpriteKind.Pickup27, function (sprite, otherSprite) {
-    for (let index = 0; index < 1; index++) {
-        effects.clearParticles(Hyper_the_dragon)
-        otherSprite.destroy(effects.coolRadial, 500)
-        music.playMelody("E C E A G B A C5 ", 500)
-        Hyper_the_dragon.startEffect(effects.halo)
-        Hyper_the_dragon.startEffect(effects.fire)
-        _2014nostalgia = true
-    }
-})
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile79`, function (sprite, location) {
     for (let index = 0; index < 1; index++) {
         info.changeLifeBy(1)
@@ -142,7 +133,6 @@ function Change_level (Level_Number: number) {
     if (Level_Number == 1) {
         color.startFade(color.Black, color.originalPalette, 5000)
         tiles.setCurrentTilemap(tilemap`crystal tundra`)
-        effects.clouds.startScreenEffect()
         scroller.setLayerImage(scroller.BackgroundLayer.Layer0, img`
             2222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222
             2222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222
@@ -1454,22 +1444,10 @@ controller.B.onEvent(ControllerButtonEvent.Pressed, function () {
     }
     if (_2014nostalgia == true) {
         if (jumpcount < 2 && rightdir == false) {
-            animation.runImageAnimation(
-            Hyper_the_dragon,
-            assets.animation`hes animated now2`,
-            50,
-            true
-            )
             music.magicWand.play()
             Hyper_the_dragon.vy = -145
         }
         if (jumpcount < 2 && rightdir == true) {
-            animation.runImageAnimation(
-            Hyper_the_dragon,
-            assets.animation`hes animated now`,
-            50,
-            true
-            )
             music.magicWand.play()
             Hyper_the_dragon.vy = -145
         }
@@ -2666,20 +2644,21 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.Pickup19, function (sprite, othe
         statusbar.value += 25
     }
 })
+sprites.onOverlap(SpriteKind.Player, SpriteKind.evil2, function (sprite, otherSprite) {
+    statusbar.value += -25
+    music.play(music.createSoundEffect(WaveShape.Noise, 2199, 1, 255, 0, 300, SoundExpressionEffect.None, InterpolationCurve.Curve), music.PlaybackMode.UntilDone)
+    otherSprite.destroy(effects.disintegrate, 500)
+    otherSprite.destroy(effects.fire, 500)
+    projectile.setVelocity(10000, 0)
+    projectile.setVelocity(-10000, 0)
+    effects.clearParticles(Hyper_the_dragon)
+    heyyallscotthere = true
+})
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Pickup15, function (sprite, otherSprite) {
     for (let index = 0; index < 1; index++) {
         otherSprite.destroy(effects.rings, 500)
         music.playMelody("C5 C F C B D F F ", 500)
         music.setTempo(120)
-    }
-})
-sprites.onOverlap(SpriteKind.Player, SpriteKind.Pickup26, function (sprite, otherSprite) {
-    for (let index = 0; index < 1; index++) {
-        effects.clearParticles(Hyper_the_dragon)
-        music.playMelody("E D G E A E G E ", 600)
-        statusbar.value += 25
-        otherSprite.destroy(effects.rings, 500)
-        Hyper_the_dragon.startEffect(effects.rings)
     }
 })
 info.onScore(100, function () {
@@ -2716,6 +2695,7 @@ statusbars.onZero(StatusBarKind.Health, function (status) {
         eatyourvegtables = false
         IdontevenknowanymoreconmeonguyslikethisgameisthegameyouknowwhatImean = false
         GOLDIESVSTHEWATERHATSERBULTUMATERAPBATTLE = false
+        SHROYUKENYATTA_mega_man_x = false
         controller.moveSprite(Hyper_the_dragon, 130, 0)
         effects.clearParticles(Hyper_the_dragon)
         Hyper_the_dragon.ay = 100
@@ -2764,6 +2744,15 @@ function isInSpawnRange (x: number, y: number) {
     }
     return true
 }
+sprites.onOverlap(SpriteKind.Player, SpriteKind.projectile2, function (sprite, otherSprite) {
+    statusbar.value += -25
+    music.play(music.createSoundEffect(WaveShape.Noise, 2199, 1, 255, 0, 300, SoundExpressionEffect.None, InterpolationCurve.Curve), music.PlaybackMode.UntilDone)
+    otherSprite.destroy(effects.ashes, 500)
+    otherSprite.destroy(effects.fire, 500)
+    projectile.setVelocity(10000, 0)
+    projectile.setVelocity(-10000, 0)
+    effects.clearParticles(Hyper_the_dragon)
+})
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile47`, function (sprite, location) {
     game.over(true)
     scene.setBackgroundImage(img`
@@ -2978,6 +2967,17 @@ info.onScore(500, function () {
         music.play(music.createSong(hex`00f4010408020208001c000e050046006603320000040a002d0000006400140001320002010002240004000800012708000c00012510001400012c18001c0001271c002000012524002800012c09010e02026400000403780000040a000301000000640001c80000040100000000640001640000040100000000fa0004af00000401c80000040a00019600000414000501006400140005010000002c0104dc00000401fa0000040a0001c8000004140005d0076400140005d0070000c800029001f40105c201f4010a0005900114001400039001000005c201f4010500058403050032000584030000fa00049001000005c201f4010500058403c80032000584030500640005840300009001049001000005c201f4010500058403c80064000584030500c8000584030000f40105ac0d000404a00f00000a0004ac0d2003010004a00f0000280004ac0d9001010004a00f0000280002d00700040408070f0064000408070000c80003c800c8000e7d00c80019000e64000f0032000e78000000fa00032c01c8000ee100c80019000ec8000f0032000edc000000fa0003f401c8000ea901c80019000e90010f0032000ea4010000fa0001c8000004014b000000c800012c01000401c8000000c8000190010004012c010000c80002c800000404c8000f0064000496000000c80002c2010004045e010f006400042c010000640002c409000404c4096400960004f6090000f40102b80b000404b80b64002c0104f40b0000f401022003000004200300040a000420030000ea01029001000004900100040a000490010000900102d007000410d0076400960010d0070000c80048000000010001010400050001040800090001041000110001041400150001041c001d0001042400250001042800290001062c002d0001063000310001063800390001083c003d00010a`), music.PlaybackMode.InBackground)
     }
 })
+sprites.onOverlap(SpriteKind.Projectile, SpriteKind.evil2, function (sprite, otherSprite) {
+    pauseUntil(() => true)
+    otherSprite.destroy(effects.disintegrate, 500)
+    sprites.destroyAllSpritesOfKind(SpriteKind.projectile2, effects.spray, 500)
+    music.play(music.createSoundEffect(WaveShape.Noise, 1902, 3290, 255, 255, 300, SoundExpressionEffect.Vibrato, InterpolationCurve.Curve), music.PlaybackMode.UntilDone)
+    music.play(music.createSoundEffect(WaveShape.Noise, 2763, 3367, 185, 185, 300, SoundExpressionEffect.Tremolo, InterpolationCurve.Linear), music.PlaybackMode.UntilDone)
+    music.play(music.createSoundEffect(WaveShape.Noise, 1600, 1, 255, 0, 300, SoundExpressionEffect.None, InterpolationCurve.Curve), music.PlaybackMode.UntilDone)
+    if (GOLDIESVSTHEWATERHATSERBULTUMATERAPBATTLE == true) {
+        info.changeScoreBy(10)
+    }
+})
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Pickup23, function (sprite, otherSprite) {
     for (let index = 0; index < 1; index++) {
         otherSprite.destroy(effects.rings, 500)
@@ -3173,8 +3173,8 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile70`, function (sprite, 
 /**
  */
 let projectile9: Sprite = null
-let robo_mini_003: Sprite = null
 let projectile8: Sprite = null
+let robo_mini_003: Sprite = null
 let robo_mini_002: Sprite = null
 let moving = false
 let HELLOEVERYONEMARKPLIERHEREPLAYINGFIVENIGHTSATFREDDYS: Sprite = null
@@ -3189,6 +3189,7 @@ let projectile2: Sprite = null
 let projectile: Sprite = null
 let rightdir = false
 let welcome_to_crystal_tundra: Sprite = null
+let heyyallscotthere = false
 let SHROYUKENYATTA_mega_man_x = false
 let GOLDIESVSTHEWATERHATSERBULTUMATERAPBATTLE = false
 let eatyourvegtables = false
@@ -3447,6 +3448,7 @@ let supersayianswagger = false
 eatyourvegtables = false
 GOLDIESVSTHEWATERHATSERBULTUMATERAPBATTLE = false
 SHROYUKENYATTA_mega_man_x = false
+heyyallscotthere = false
 for (let value999 of tiles.getTilesByType(assets.tile`myTile37`)) {
     welcome_to_crystal_tundra = sprites.create(assets.image`welcome to crystal tundra`, SpriteKind.sign1)
     tiles.placeOnTile(welcome_to_crystal_tundra, value999)
@@ -3518,24 +3520,6 @@ game.onUpdate(function () {
                 . . . . f b f b e b e b e . . . 
                 . . . f f f f f . e e e e e . . 
                 `, SpriteKind.evil2)
-            projectile8 = sprites.createProjectileFromSprite(img`
-                . . . . . . . f . . . . . . . 
-                . . . . . . f c f . . . . . . 
-                . . . . . f c b c f . . . . . 
-                . . . . f c b d b c f . . . . 
-                . . . f e b d 1 d b e f . . . 
-                . . f c b a 1 1 1 a b c f . . 
-                . f c b d 1 a 1 a 1 d b c f . 
-                f c b d 1 1 1 a 1 1 1 d b c f 
-                . f c b d 1 a 1 a 1 d b c f . 
-                . . f c b a 1 1 1 a b c f . . 
-                . . . f e b d 1 d b e f . . . 
-                . . . . f c b d b c f . . . . 
-                . . . . . f c b c f . . . . . 
-                . . . . . . f c f . . . . . . 
-                . . . . . . . f . . . . . . . 
-                `, robo_mini_002, -100, 0)
-            projectile8.setVelocity(-100, 0)
             tiles.placeOnTile(robo_mini_002, valuefnaf3)
             sprites.setDataNumber(robo_mini_002, "spawnCol", valuefnaf3.column)
             sprites.setDataNumber(robo_mini_002, "spawnRow", valuefnaf3.row)
@@ -3570,24 +3554,6 @@ game.onUpdate(function () {
                 . . . e b e b e b f b f . . . . 
                 . . e e e e e . f f f f f . . . 
                 `, SpriteKind.evil3FINALLE)
-            projectile9 = sprites.createProjectileFromSprite(img`
-                . . . . . . . f . . . . . . . 
-                . . . . . . f c f . . . . . . 
-                . . . . . f c b c f . . . . . 
-                . . . . f c b d b c f . . . . 
-                . . . f e b d 1 d b e f . . . 
-                . . f c b a 1 1 1 a b c f . . 
-                . f c b d 1 a 1 a 1 d b c f . 
-                f c b d 1 1 1 a 1 1 1 d b c f 
-                . f c b d 1 a 1 a 1 d b c f . 
-                . . f c b a 1 1 1 a b c f . . 
-                . . . f e b d 1 d b e f . . . 
-                . . . . f c b d b c f . . . . 
-                . . . . . f c b c f . . . . . 
-                . . . . . . f c f . . . . . . 
-                . . . . . . . f . . . . . . . 
-                `, robo_mini_003, 100, 0)
-            projectile9.setVelocity(100, 0)
             tiles.placeOnTile(robo_mini_003, FNAFAMBIENCEUGWHAUWUHSUHWUHAUHDUHEDUWEHUAH)
             sprites.setDataNumber(robo_mini_003, "spawnCol", FNAFAMBIENCEUGWHAUWUHSUHWUHAUHDUHEDUWEHUAH.column)
             sprites.setDataNumber(robo_mini_003, "spawnRow", FNAFAMBIENCEUGWHAUWUHSUHWUHAUHDUHEDUWEHUAH.row)
@@ -3643,4 +3609,50 @@ forever(function () {
     music.playTone(349, music.beat(BeatFraction.Whole))
     music.playTone(294, music.beat(BeatFraction.Double))
     music.playTone(262, music.beat(BeatFraction.Breve))
+})
+forever(function () {
+    timer.throttle("action", 1000, function () {
+        projectile8 = sprites.createProjectileFromSprite(img`
+            . . . . . . . f . . . . . . . 
+            . . . . . . f c f . . . . . . 
+            . . . . . f c b c f . . . . . 
+            . . . . f c b d b c f . . . . 
+            . . . f e b d 1 d b e f . . . 
+            . . f c b a 1 1 1 a b c f . . 
+            . f c b d 1 a 1 a 1 d b c f . 
+            f c b d 1 1 1 a 1 1 1 d b c f 
+            . f c b d 1 a 1 a 1 d b c f . 
+            . . f c b a 1 1 1 a b c f . . 
+            . . . f e b d 1 d b e f . . . 
+            . . . . f c b d b c f . . . . 
+            . . . . . f c b c f . . . . . 
+            . . . . . . f c f . . . . . . 
+            . . . . . . . f . . . . . . . 
+            `, robo_mini_002, -50, 0)
+        projectile8.setVelocity(-50, 0)
+        projectile8.setKind(SpriteKind.projectile2)
+    })
+})
+forever(function () {
+    timer.throttle("action", 1000, function () {
+        projectile9 = sprites.createProjectileFromSprite(img`
+            . . . . . . . f . . . . . . . 
+            . . . . . . f c f . . . . . . 
+            . . . . . f c b c f . . . . . 
+            . . . . f c b d b c f . . . . 
+            . . . f e b d 1 d b e f . . . 
+            . . f c b a 1 1 1 a b c f . . 
+            . f c b d 1 a 1 a 1 d b c f . 
+            f c b d 1 1 1 a 1 1 1 d b c f 
+            . f c b d 1 a 1 a 1 d b c f . 
+            . . f c b a 1 1 1 a b c f . . 
+            . . . f e b d 1 d b e f . . . 
+            . . . . f c b d b c f . . . . 
+            . . . . . f c b c f . . . . . 
+            . . . . . . f c f . . . . . . 
+            . . . . . . . f . . . . . . . 
+            `, robo_mini_003, 30, 0)
+        projectile9.setVelocity(50, 0)
+        projectile9.setKind(SpriteKind.projectile2)
+    })
 })
