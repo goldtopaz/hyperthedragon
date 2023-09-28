@@ -3519,23 +3519,23 @@ game.onUpdate(function () {
                 . . . f f f f f . e e e e e . . 
                 `, SpriteKind.evil2)
             projectile8 = sprites.createProjectileFromSprite(img`
-                . . . . . . . f . . . . . . . . 
-                . . . . . . f c f . . . . . . . 
-                . . . . . f c b c f . . . . . . 
-                . . . . f c b d b c f . . . . . 
-                . . . f e b d 1 d b e f . . . . 
-                . . f c b a 1 1 1 a b c f . . . 
-                . f c b d 1 a 1 a 1 d b c f . . 
-                f c b d 1 1 1 a 1 1 1 d b c f . 
-                . f c b d 1 a 1 a 1 d b c f . . 
-                . . f c b a 1 1 1 a b c f . . . 
-                . . . f e b d 1 d b e f . . . . 
-                . . . . f c b d b c f . . . . . 
-                . . . . . f c b c f . . . . . . 
-                . . . . . . f c f . . . . . . . 
-                . . . . . . . f . . . . . . . . 
-                . . . . . . . . . . . . . . . . 
+                . . . . . . . f . . . . . . . 
+                . . . . . . f c f . . . . . . 
+                . . . . . f c b c f . . . . . 
+                . . . . f c b d b c f . . . . 
+                . . . f e b d 1 d b e f . . . 
+                . . f c b a 1 1 1 a b c f . . 
+                . f c b d 1 a 1 a 1 d b c f . 
+                f c b d 1 1 1 a 1 1 1 d b c f 
+                . f c b d 1 a 1 a 1 d b c f . 
+                . . f c b a 1 1 1 a b c f . . 
+                . . . f e b d 1 d b e f . . . 
+                . . . . f c b d b c f . . . . 
+                . . . . . f c b c f . . . . . 
+                . . . . . . f c f . . . . . . 
+                . . . . . . . f . . . . . . . 
                 `, robo_mini_002, -100, 0)
+            projectile8.setVelocity(-100, 0)
             tiles.placeOnTile(robo_mini_002, valuefnaf3)
             sprites.setDataNumber(robo_mini_002, "spawnCol", valuefnaf3.column)
             sprites.setDataNumber(robo_mini_002, "spawnRow", valuefnaf3.row)
@@ -3571,23 +3571,23 @@ game.onUpdate(function () {
                 . . e e e e e . f f f f f . . . 
                 `, SpriteKind.evil3FINALLE)
             projectile9 = sprites.createProjectileFromSprite(img`
-                . . . . . . . f . . . . . . . . 
-                . . . . . . f c f . . . . . . . 
-                . . . . . f c b c f . . . . . . 
-                . . . . f c b d b c f . . . . . 
-                . . . f e b d 1 d b e f . . . . 
-                . . f c b a 1 1 1 a b c f . . . 
-                . f c b d 1 a 1 a 1 d b c f . . 
-                f c b d 1 1 1 a 1 1 1 d b c f . 
-                . f c b d 1 a 1 a 1 d b c f . . 
-                . . f c b a 1 1 1 a b c f . . . 
-                . . . f e b d 1 d b e f . . . . 
-                . . . . f c b d b c f . . . . . 
-                . . . . . f c b c f . . . . . . 
-                . . . . . . f c f . . . . . . . 
-                . . . . . . . f . . . . . . . . 
-                . . . . . . . . . . . . . . . . 
+                . . . . . . . f . . . . . . . 
+                . . . . . . f c f . . . . . . 
+                . . . . . f c b c f . . . . . 
+                . . . . f c b d b c f . . . . 
+                . . . f e b d 1 d b e f . . . 
+                . . f c b a 1 1 1 a b c f . . 
+                . f c b d 1 a 1 a 1 d b c f . 
+                f c b d 1 1 1 a 1 1 1 d b c f 
+                . f c b d 1 a 1 a 1 d b c f . 
+                . . f c b a 1 1 1 a b c f . . 
+                . . . f e b d 1 d b e f . . . 
+                . . . . f c b d b c f . . . . 
+                . . . . . f c b c f . . . . . 
+                . . . . . . f c f . . . . . . 
+                . . . . . . . f . . . . . . . 
                 `, robo_mini_003, 100, 0)
+            projectile9.setVelocity(100, 0)
             tiles.placeOnTile(robo_mini_003, FNAFAMBIENCEUGWHAUWUHSUHWUHAUHDUHEDUWEHUAH)
             sprites.setDataNumber(robo_mini_003, "spawnCol", FNAFAMBIENCEUGWHAUWUHSUHWUHAUHDUHEDUWEHUAH.column)
             sprites.setDataNumber(robo_mini_003, "spawnRow", FNAFAMBIENCEUGWHAUWUHSUHWUHAUHDUHEDUWEHUAH.row)
