@@ -1713,6 +1713,8 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
             projectile3.startEffect(effects.coolRadial)
             projectile3.startEffect(effects.bubbles)
             projectile3.follow(Robot_mini_001)
+            projectile3.follow(robo_mini_002)
+            projectile3.follow(robo_mini_003)
             music.beamUp.play()
             music.buzzer.play()
         }
@@ -1790,7 +1792,8 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
             projectile4.startEffect(effects.spray)
             projectile4.startEffect(effects.bubbles)
             projectile4.follow(Robot_mini_001)
-            projectile4.follow(Robot_mini_001)
+            projectile4.follow(robo_mini_002)
+            projectile4.follow(robo_mini_003)
             music.beamUp.play()
             music.buzzer.play()
         }
@@ -2651,6 +2654,11 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile154`, function (sprite,
         Hyper_the_dragon.startEffect(effects.halo, 500)
     }
 })
+scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile39`, function (sprite, location) {
+    Hyper_the_dragon.setPosition(20, 199)
+    statusbar.value += -150
+    info.setScore(0)
+})
 controller.combos.attachCombo("DOWN", function () {
     if (info.player2.score() == 5) {
         for (let index = 0; index < 1; index++) {
@@ -3050,7 +3058,6 @@ info.onScore(500, function () {
     }
 })
 sprites.onOverlap(SpriteKind.Projectile, SpriteKind.evil2, function (sprite, otherSprite) {
-    pauseUntil(() => true)
     otherSprite.destroy(effects.disintegrate, 500)
     sprites.destroyAllSpritesOfKind(SpriteKind.projectile2, effects.spray, 500)
     music.play(music.createSoundEffect(WaveShape.Noise, 1902, 3290, 255, 255, 300, SoundExpressionEffect.Vibrato, InterpolationCurve.Curve), music.PlaybackMode.UntilDone)
@@ -3059,6 +3066,7 @@ sprites.onOverlap(SpriteKind.Projectile, SpriteKind.evil2, function (sprite, oth
     if (GOLDIESVSTHEWATERHATSERBULTUMATERAPBATTLE == true) {
         info.changeScoreBy(10)
     }
+    longjohnsilver = true
 })
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Pickup23, function (sprite, otherSprite) {
     for (let index = 0; index < 1; index++) {
@@ -3256,8 +3264,6 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile70`, function (sprite, 
  */
 let projectile9: Sprite = null
 let projectile8: Sprite = null
-let robo_mini_003: Sprite = null
-let robo_mini_002: Sprite = null
 let moving = false
 let HELLOEVERYONEMARKPLIERHEREPLAYINGFIVENIGHTSATFREDDYS: Sprite = null
 let harharharharhararharharhararfreddyfazbear: Sprite = null
@@ -3265,12 +3271,15 @@ let projectile7: Sprite = null
 let projectile6: Sprite = null
 let projectile5: Sprite = null
 let projectile4: Sprite = null
+let robo_mini_003: Sprite = null
+let robo_mini_002: Sprite = null
 let Robot_mini_001: Sprite = null
 let projectile3: Sprite = null
 let projectile2: Sprite = null
 let projectile: Sprite = null
 let rightdir = false
 let welcome_to_crystal_tundra: Sprite = null
+let longjohnsilver = false
 let heyyallscotthere = false
 let SHROYUKENYATTA_mega_man_x = false
 let GOLDIESVSTHEWATERHATSERBULTUMATERAPBATTLE = false
@@ -3689,7 +3698,7 @@ tileUtil.coverAllTiles(assets.tile`myTile66`, assets.tile`transparency8`)
 tileUtil.coverAllTiles(assets.tile`myTile114`, assets.tile`transparency8`)
 tileUtil.coverAllTiles(assets.tile`tile174`, assets.tile`transparency8`)
 tileUtil.coverAllTiles(assets.tile`myTile37`, assets.tile`transparency8`)
-let spawnDistance = 130
+let spawnDistance = 9000
 jumpcount = 0
 let collectthonchad = 0
 megamanx2renefrence = 0
@@ -3701,6 +3710,7 @@ eatyourvegtables = false
 GOLDIESVSTHEWATERHATSERBULTUMATERAPBATTLE = false
 SHROYUKENYATTA_mega_man_x = false
 heyyallscotthere = false
+longjohnsilver = false
 for (let value999 of tiles.getTilesByType(assets.tile`myTile37`)) {
     welcome_to_crystal_tundra = sprites.create(assets.image`welcome to crystal tundra`, SpriteKind.sign1)
     tiles.placeOnTile(welcome_to_crystal_tundra, value999)
@@ -3710,28 +3720,6 @@ game.onUpdate(function () {
     moving = controller.right.isPressed() || controller.left.isPressed()
     if (!(moving)) {
         animation.stopAnimation(animation.AnimationTypes.All, Hyper_the_dragon)
-    }
-})
-game.onUpdate(function () {
-    if (Hyper_the_dragon.isHittingTile(CollisionDirection.Right) && Hyper_the_dragon.vy >= 0) {
-        Hyper_the_dragon.vy = 0
-        Hyper_the_dragon.ay = 0
-        Hyper_the_dragon.setImage(assets.image`hes on a wall 1`)
-        for (let index = 0; index < 1; index++) {
-            music.play(music.createSoundEffect(WaveShape.Square, 200, 1, 255, 0, 100, SoundExpressionEffect.None, InterpolationCurve.Curve), music.PlaybackMode.UntilDone)
-        }
-    } else if (false) {
-        Hyper_the_dragon.ay = 500
-    }
-    if (Hyper_the_dragon.isHittingTile(CollisionDirection.Left) && Hyper_the_dragon.vy >= 0) {
-        Hyper_the_dragon.vy = 0
-        Hyper_the_dragon.ay = 0
-        Hyper_the_dragon.setImage(assets.image`hes on a wall 2`)
-        for (let index = 0; index < 1; index++) {
-            music.play(music.createSoundEffect(WaveShape.Square, 200, 1, 255, 0, 100, SoundExpressionEffect.None, InterpolationCurve.Curve), music.PlaybackMode.UntilDone)
-        }
-    } else {
-        Hyper_the_dragon.ay = 500
     }
 })
 game.onUpdate(function () {
@@ -3822,6 +3810,28 @@ game.onUpdate(function () {
     }
 })
 game.onUpdate(function () {
+    if (Hyper_the_dragon.isHittingTile(CollisionDirection.Right) && Hyper_the_dragon.vy >= 0) {
+        Hyper_the_dragon.vy = 0
+        Hyper_the_dragon.ay = 0
+        Hyper_the_dragon.setImage(assets.image`hes on a wall 1`)
+        for (let index = 0; index < 1; index++) {
+            music.play(music.createSoundEffect(WaveShape.Square, 200, 1, 255, 0, 100, SoundExpressionEffect.None, InterpolationCurve.Curve), music.PlaybackMode.UntilDone)
+        }
+    } else if (false) {
+        Hyper_the_dragon.ay = 500
+    }
+    if (Hyper_the_dragon.isHittingTile(CollisionDirection.Left) && Hyper_the_dragon.vy >= 0) {
+        Hyper_the_dragon.vy = 0
+        Hyper_the_dragon.ay = 0
+        Hyper_the_dragon.setImage(assets.image`hes on a wall 2`)
+        for (let index = 0; index < 1; index++) {
+            music.play(music.createSoundEffect(WaveShape.Square, 200, 1, 255, 0, 100, SoundExpressionEffect.None, InterpolationCurve.Curve), music.PlaybackMode.UntilDone)
+        }
+    } else {
+        Hyper_the_dragon.ay = 500
+    }
+})
+game.onUpdate(function () {
 	
 })
 forever(function () {
@@ -3886,25 +3896,165 @@ forever(function () {
     })
 })
 forever(function () {
-    timer.throttle("action", 1000, function () {
-        projectile9 = sprites.createProjectileFromSprite(img`
-            . . . . . . . f . . . . . . . 
-            . . . . . . f c f . . . . . . 
-            . . . . . f c b c f . . . . . 
-            . . . . f c b d b c f . . . . 
-            . . . f e b d 1 d b e f . . . 
-            . . f c b a 1 1 1 a b c f . . 
-            . f c b d 1 a 1 a 1 d b c f . 
-            f c b d 1 1 1 a 1 1 1 d b c f 
-            . f c b d 1 a 1 a 1 d b c f . 
-            . . f c b a 1 1 1 a b c f . . 
-            . . . f e b d 1 d b e f . . . 
-            . . . . f c b d b c f . . . . 
-            . . . . . f c b c f . . . . . 
-            . . . . . . f c f . . . . . . 
-            . . . . . . . f . . . . . . . 
-            `, robo_mini_003, 30, 0)
-        projectile9.setVelocity(50, 0)
-        projectile9.setKind(SpriteKind.projectile2)
-    })
+    if (longjohnsilver == false) {
+        timer.throttle("action", 1000, function () {
+            projectile9 = sprites.createProjectileFromSprite(img`
+                . . . . . . . f . . . . . . . 
+                . . . . . . f c f . . . . . . 
+                . . . . . f c b c f . . . . . 
+                . . . . f c b d b c f . . . . 
+                . . . f e b d 1 d b e f . . . 
+                . . f c b a 1 1 1 a b c f . . 
+                . f c b d 1 a 1 a 1 d b c f . 
+                f c b d 1 1 1 a 1 1 1 d b c f 
+                . f c b d 1 a 1 a 1 d b c f . 
+                . . f c b a 1 1 1 a b c f . . 
+                . . . f e b d 1 d b e f . . . 
+                . . . . f c b d b c f . . . . 
+                . . . . . f c b c f . . . . . 
+                . . . . . . f c f . . . . . . 
+                . . . . . . . f . . . . . . . 
+                `, robo_mini_003, 30, 0)
+            projectile9.setVelocity(50, 0)
+            projectile9.setKind(SpriteKind.projectile2)
+        })
+    }
+    if (longjohnsilver == true) {
+        timer.after(1, function () {
+            projectile9 = sprites.createProjectileFromSprite(img`
+                . . . . . . . f . . . . . . . . 
+                . . . . . . f 6 f . . . . . . . 
+                . . . . . f 6 7 6 f . . . . . . 
+                . . . . f 6 2 2 2 2 f . . . . . 
+                . . . f e 7 2 2 2 2 e f . . . . 
+                . . f 6 7 a 2 1 1 a 7 6 f . . . 
+                . f 6 7 8 1 2 2 2 2 8 7 6 f . . 
+                f 6 7 8 1 1 1 a 2 2 1 8 7 6 f . 
+                . f 6 7 8 1 a 1 2 2 8 7 6 f . . 
+                . . f 6 7 a 2 2 2 2 7 6 f . . . 
+                . . . f e 7 8 1 8 7 e f . . . . 
+                . . . . f 6 7 8 7 6 f . . . . . 
+                . . . . . f 6 7 6 f . . . . . . 
+                . . . . . . f 6 f . . . . . . . 
+                . . . . . . . f . . . . . . . . 
+                . . . . . . . . . . . . . . . . 
+                `, robo_mini_003, 30, 0)
+            projectile9.setVelocity(50, 0)
+            projectile9.setKind(SpriteKind.projectile2)
+            projectile9.setKind(SpriteKind.projectile2)
+        })
+        timer.after(10001, function () {
+            projectile9 = sprites.createProjectileFromSprite(img`
+                . . . . . . . f . . . . . . . . 
+                . . . . . . f 6 f . . . . . . . 
+                . . . . . f 6 7 6 f . . . . . . 
+                . . . . f 6 7 8 7 6 f . . . . . 
+                . . . f e 2 2 1 2 2 e f . . . . 
+                . . f 6 7 2 2 1 2 2 7 6 f . . . 
+                . f 6 7 8 2 2 1 2 2 8 7 6 f . . 
+                f 6 7 8 1 2 2 2 2 2 1 8 7 6 f . 
+                . f 6 7 8 2 2 2 2 2 8 7 6 f . . 
+                . . f 6 7 a 1 1 2 2 7 6 f . . . 
+                . . . f e 7 8 1 2 2 e f . . . . 
+                . . . . f 6 7 8 7 6 f . . . . . 
+                . . . . . f 6 7 6 f . . . . . . 
+                . . . . . . f 6 f . . . . . . . 
+                . . . . . . . f . . . . . . . . 
+                . . . . . . . . . . . . . . . . 
+                `, robo_mini_003, 30, 0)
+            projectile9.setVelocity(50, 0)
+            projectile9.setKind(SpriteKind.projectile2)
+        })
+        timer.after(20001, function () {
+            projectile9 = sprites.createProjectileFromSprite(img`
+                . . . . . . . f . . . . . . . . 
+                . . . . . . f 6 f . . . . . . . 
+                . . . . . f 6 7 6 f . . . . . . 
+                . . . . f 6 7 8 7 6 f . . . . . 
+                . . . f e 7 2 2 2 2 e f . . . . 
+                . . f 6 7 a 2 2 2 2 7 6 f . . . 
+                . f 6 7 8 1 a 1 2 2 8 7 6 f . . 
+                f 6 7 8 1 1 2 2 2 2 1 8 7 6 f . 
+                . f 6 7 8 1 2 2 2 2 8 7 6 f . . 
+                . . f 6 7 a 1 1 2 2 7 6 f . . . 
+                . . . f e 7 2 2 2 2 e f . . . . 
+                . . . . f 6 2 2 2 2 f . . . . . 
+                . . . . . f 6 7 6 f . . . . . . 
+                . . . . . . f 6 f . . . . . . . 
+                . . . . . . . f . . . . . . . . 
+                . . . . . . . . . . . . . . . . 
+                `, robo_mini_003, 30, 0)
+            projectile9.setVelocity(50, 0)
+            projectile9.setKind(SpriteKind.projectile2)
+        })
+        timer.after(30001, function () {
+            projectile9 = sprites.createProjectileFromSprite(img`
+                . . . . . . . f . . . . . . . . 
+                . . . . . . f 6 f . . . . . . . 
+                . . . . . f 6 7 6 f . . . . . . 
+                . . . . f 6 7 2 2 6 f . . . . . 
+                . . . f e 7 2 2 2 2 e f . . . . 
+                . . f 6 7 2 2 1 1 2 2 6 f . . . 
+                . f 6 7 2 2 a 1 a 2 2 7 6 f . . 
+                f 6 7 8 1 1 1 a 2 2 2 8 7 6 f . 
+                . f 6 7 8 1 a 2 2 2 8 7 6 f . . 
+                . . f 6 7 a 2 2 2 a 7 6 f . . . 
+                . . . f e 2 2 2 8 7 e f . . . . 
+                . . . . f 2 2 2 2 2 f . . . . . 
+                . . . . . f 2 2 2 f . . . . . . 
+                . . . . . . f 6 f . . . . . . . 
+                . . . . . . . f . . . . . . . . 
+                . . . . . . . . . . . . . . . . 
+                `, robo_mini_003, 30, 0)
+            projectile9.setVelocity(50, 0)
+            projectile9.setKind(SpriteKind.projectile2)
+        })
+        timer.after(40001, function () {
+            projectile9 = sprites.createProjectileFromSprite(img`
+                . . . . . . . f . . . . . . . . 
+                . . . . . . f 6 f . . . . . . . 
+                . . . . . f 6 7 6 f . . . . . . 
+                . . . . f 6 7 2 2 6 f . . . . . 
+                . . . f e 7 2 2 2 7 e f . . . . 
+                . . f 6 7 2 2 2 2 a 7 6 f . . . 
+                . f 6 7 2 2 2 2 2 1 8 7 6 f . . 
+                f 6 7 8 1 1 1 2 2 1 1 8 7 6 f . 
+                . f 6 7 8 1 a 2 2 1 8 7 6 f . . 
+                . . f 6 2 2 2 2 2 2 2 6 f . . . 
+                . . . f 2 2 2 2 2 2 2 f . . . . 
+                . . . . f 6 7 8 7 6 f . . . . . 
+                . . . . . f 6 7 6 f . . . . . . 
+                . . . . . . f 6 f . . . . . . . 
+                . . . . . . . f . . . . . . . . 
+                . . . . . . . . . . . . . . . . 
+                `, robo_mini_003, 30, 0)
+            projectile9.setVelocity(50, 0)
+            projectile9.setKind(SpriteKind.projectile2)
+        })
+        timer.after(50001, function () {
+            projectile9 = sprites.createProjectileFromSprite(img`
+                . . . . . . . f . . . . . . . . 
+                . . . . . . f 6 f . . . . . . . 
+                . . . . . f 6 7 6 f . . . . . . 
+                . . . . f 6 2 2 2 6 f . . . . . 
+                . . . f e 2 2 2 2 2 e f . . . . 
+                . . f 6 2 2 1 1 1 2 2 6 f . . . 
+                . f 6 7 2 2 a 1 a 2 2 7 6 f . . 
+                f 6 7 8 2 2 1 a 1 2 2 8 7 6 f . 
+                . f 6 7 2 2 a 1 a 2 2 7 6 f . . 
+                . . f 6 2 2 1 1 1 2 2 6 f . . . 
+                . . . f e 2 2 2 2 2 e f . . . . 
+                . . . . f 6 2 2 2 6 f . . . . . 
+                . . . . . f 6 7 6 f . . . . . . 
+                . . . . . . f 6 f . . . . . . . 
+                . . . . . . . f . . . . . . . . 
+                . . . . . . . . . . . . . . . . 
+                `, robo_mini_003, 30, 0)
+            projectile9.setVelocity(50, 0)
+            projectile9.setKind(SpriteKind.projectile2)
+        })
+        timer.after(60001, function () {
+            longjohnsilver = false
+        })
+    }
 })
