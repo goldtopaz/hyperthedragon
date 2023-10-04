@@ -2735,14 +2735,13 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.Pickup19, function (sprite, othe
     }
 })
 sprites.onOverlap(SpriteKind.Player, SpriteKind.evil2, function (sprite, otherSprite) {
-    statusbar.value += -25
-    music.play(music.createSoundEffect(WaveShape.Noise, 2199, 1, 255, 0, 300, SoundExpressionEffect.None, InterpolationCurve.Curve), music.PlaybackMode.UntilDone)
-    otherSprite.destroy(effects.disintegrate, 500)
-    otherSprite.destroy(effects.fire, 500)
-    projectile.setVelocity(10000, 0)
-    projectile.setVelocity(-10000, 0)
-    effects.clearParticles(Hyper_the_dragon)
-    heyyallscotthere = true
+    if (longjohnsilver == false) {
+        statusbar.value += -25
+        music.play(music.createSoundEffect(WaveShape.Noise, 2199, 1, 255, 0, 300, SoundExpressionEffect.None, InterpolationCurve.Curve), music.PlaybackMode.UntilDone)
+        projectile.setVelocity(10000, 0)
+        projectile.setVelocity(-10000, 0)
+        effects.clearParticles(Hyper_the_dragon)
+    }
 })
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Pickup15, function (sprite, otherSprite) {
     for (let index = 0; index < 1; index++) {
@@ -3058,7 +3057,8 @@ info.onScore(500, function () {
     }
 })
 sprites.onOverlap(SpriteKind.Projectile, SpriteKind.evil2, function (sprite, otherSprite) {
-    otherSprite.destroy(effects.disintegrate, 500)
+    robo_mini_002.startEffect(effects.fire, 500)
+    robo_mini_002.startEffect(effects.ashes, 500)
     sprites.destroyAllSpritesOfKind(SpriteKind.projectile2, effects.spray, 500)
     music.play(music.createSoundEffect(WaveShape.Noise, 1902, 3290, 255, 255, 300, SoundExpressionEffect.Vibrato, InterpolationCurve.Curve), music.PlaybackMode.UntilDone)
     music.play(music.createSoundEffect(WaveShape.Noise, 2763, 3367, 185, 185, 300, SoundExpressionEffect.Tremolo, InterpolationCurve.Linear), music.PlaybackMode.UntilDone)
@@ -3262,7 +3262,6 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile70`, function (sprite, 
 })
 /**
  */
-let projectile9: Sprite = null
 let projectile8: Sprite = null
 let moving = false
 let HELLOEVERYONEMARKPLIERHEREPLAYINGFIVENIGHTSATFREDDYS: Sprite = null
@@ -3280,7 +3279,6 @@ let projectile: Sprite = null
 let rightdir = false
 let welcome_to_crystal_tundra: Sprite = null
 let longjohnsilver = false
-let heyyallscotthere = false
 let SHROYUKENYATTA_mega_man_x = false
 let GOLDIESVSTHEWATERHATSERBULTUMATERAPBATTLE = false
 let eatyourvegtables = false
@@ -3709,7 +3707,7 @@ let supersayianswagger = false
 eatyourvegtables = false
 GOLDIESVSTHEWATERHATSERBULTUMATERAPBATTLE = false
 SHROYUKENYATTA_mega_man_x = false
-heyyallscotthere = false
+let heyyallscotthere = false
 longjohnsilver = false
 for (let value999 of tiles.getTilesByType(assets.tile`myTile37`)) {
     welcome_to_crystal_tundra = sprites.create(assets.image`welcome to crystal tundra`, SpriteKind.sign1)
@@ -3873,188 +3871,140 @@ forever(function () {
     music.playTone(262, music.beat(BeatFraction.Breve))
 })
 forever(function () {
-    timer.throttle("action", 1000, function () {
-        projectile8 = sprites.createProjectileFromSprite(img`
-            . . . . . . . f . . . . . . . 
-            . . . . . . f c f . . . . . . 
-            . . . . . f c b c f . . . . . 
-            . . . . f c b d b c f . . . . 
-            . . . f e b d 1 d b e f . . . 
-            . . f c b a 1 1 1 a b c f . . 
-            . f c b d 1 a 1 a 1 d b c f . 
-            f c b d 1 1 1 a 1 1 1 d b c f 
-            . f c b d 1 a 1 a 1 d b c f . 
-            . . f c b a 1 1 1 a b c f . . 
-            . . . f e b d 1 d b e f . . . 
-            . . . . f c b d b c f . . . . 
-            . . . . . f c b c f . . . . . 
-            . . . . . . f c f . . . . . . 
-            . . . . . . . f . . . . . . . 
-            `, robo_mini_002, -50, 0)
-        projectile8.setVelocity(-50, 0)
-        projectile8.setKind(SpriteKind.projectile2)
-    })
+	
 })
 forever(function () {
-    if (longjohnsilver == false) {
-        timer.throttle("action", 1000, function () {
-            projectile9 = sprites.createProjectileFromSprite(img`
-                . . . . . . . f . . . . . . . 
-                . . . . . . f c f . . . . . . 
-                . . . . . f c b c f . . . . . 
-                . . . . f c b d b c f . . . . 
-                . . . f e b d 1 d b e f . . . 
-                . . f c b a 1 1 1 a b c f . . 
-                . f c b d 1 a 1 a 1 d b c f . 
-                f c b d 1 1 1 a 1 1 1 d b c f 
-                . f c b d 1 a 1 a 1 d b c f . 
-                . . f c b a 1 1 1 a b c f . . 
-                . . . f e b d 1 d b e f . . . 
-                . . . . f c b d b c f . . . . 
-                . . . . . f c b c f . . . . . 
-                . . . . . . f c f . . . . . . 
-                . . . . . . . f . . . . . . . 
-                `, robo_mini_003, 30, 0)
-            projectile9.setVelocity(50, 0)
-            projectile9.setKind(SpriteKind.projectile2)
-        })
-    }
-    if (longjohnsilver == true) {
-        timer.after(1, function () {
-            projectile9 = sprites.createProjectileFromSprite(img`
-                . . . . . . . f . . . . . . . . 
-                . . . . . . f 6 f . . . . . . . 
-                . . . . . f 6 7 6 f . . . . . . 
-                . . . . f 6 2 2 2 2 f . . . . . 
-                . . . f e 7 2 2 2 2 e f . . . . 
-                . . f 6 7 a 2 1 1 a 7 6 f . . . 
-                . f 6 7 8 1 2 2 2 2 8 7 6 f . . 
-                f 6 7 8 1 1 1 a 2 2 1 8 7 6 f . 
-                . f 6 7 8 1 a 1 2 2 8 7 6 f . . 
-                . . f 6 7 a 2 2 2 2 7 6 f . . . 
-                . . . f e 7 8 1 8 7 e f . . . . 
-                . . . . f 6 7 8 7 6 f . . . . . 
-                . . . . . f 6 7 6 f . . . . . . 
-                . . . . . . f 6 f . . . . . . . 
-                . . . . . . . f . . . . . . . . 
-                . . . . . . . . . . . . . . . . 
-                `, robo_mini_003, 30, 0)
-            projectile9.setVelocity(50, 0)
-            projectile9.setKind(SpriteKind.projectile2)
-            projectile9.setKind(SpriteKind.projectile2)
-        })
-        timer.after(10001, function () {
-            projectile9 = sprites.createProjectileFromSprite(img`
-                . . . . . . . f . . . . . . . . 
-                . . . . . . f 6 f . . . . . . . 
-                . . . . . f 6 7 6 f . . . . . . 
-                . . . . f 6 7 8 7 6 f . . . . . 
-                . . . f e 2 2 1 2 2 e f . . . . 
-                . . f 6 7 2 2 1 2 2 7 6 f . . . 
-                . f 6 7 8 2 2 1 2 2 8 7 6 f . . 
-                f 6 7 8 1 2 2 2 2 2 1 8 7 6 f . 
-                . f 6 7 8 2 2 2 2 2 8 7 6 f . . 
-                . . f 6 7 a 1 1 2 2 7 6 f . . . 
-                . . . f e 7 8 1 2 2 e f . . . . 
-                . . . . f 6 7 8 7 6 f . . . . . 
-                . . . . . f 6 7 6 f . . . . . . 
-                . . . . . . f 6 f . . . . . . . 
-                . . . . . . . f . . . . . . . . 
-                . . . . . . . . . . . . . . . . 
-                `, robo_mini_003, 30, 0)
-            projectile9.setVelocity(50, 0)
-            projectile9.setKind(SpriteKind.projectile2)
-        })
-        timer.after(20001, function () {
-            projectile9 = sprites.createProjectileFromSprite(img`
-                . . . . . . . f . . . . . . . . 
-                . . . . . . f 6 f . . . . . . . 
-                . . . . . f 6 7 6 f . . . . . . 
-                . . . . f 6 7 8 7 6 f . . . . . 
-                . . . f e 7 2 2 2 2 e f . . . . 
-                . . f 6 7 a 2 2 2 2 7 6 f . . . 
-                . f 6 7 8 1 a 1 2 2 8 7 6 f . . 
-                f 6 7 8 1 1 2 2 2 2 1 8 7 6 f . 
-                . f 6 7 8 1 2 2 2 2 8 7 6 f . . 
-                . . f 6 7 a 1 1 2 2 7 6 f . . . 
-                . . . f e 7 2 2 2 2 e f . . . . 
-                . . . . f 6 2 2 2 2 f . . . . . 
-                . . . . . f 6 7 6 f . . . . . . 
-                . . . . . . f 6 f . . . . . . . 
-                . . . . . . . f . . . . . . . . 
-                . . . . . . . . . . . . . . . . 
-                `, robo_mini_003, 30, 0)
-            projectile9.setVelocity(50, 0)
-            projectile9.setKind(SpriteKind.projectile2)
-        })
-        timer.after(30001, function () {
-            projectile9 = sprites.createProjectileFromSprite(img`
-                . . . . . . . f . . . . . . . . 
-                . . . . . . f 6 f . . . . . . . 
-                . . . . . f 6 7 6 f . . . . . . 
-                . . . . f 6 7 2 2 6 f . . . . . 
-                . . . f e 7 2 2 2 2 e f . . . . 
-                . . f 6 7 2 2 1 1 2 2 6 f . . . 
-                . f 6 7 2 2 a 1 a 2 2 7 6 f . . 
-                f 6 7 8 1 1 1 a 2 2 2 8 7 6 f . 
-                . f 6 7 8 1 a 2 2 2 8 7 6 f . . 
-                . . f 6 7 a 2 2 2 a 7 6 f . . . 
-                . . . f e 2 2 2 8 7 e f . . . . 
-                . . . . f 2 2 2 2 2 f . . . . . 
-                . . . . . f 2 2 2 f . . . . . . 
-                . . . . . . f 6 f . . . . . . . 
-                . . . . . . . f . . . . . . . . 
-                . . . . . . . . . . . . . . . . 
-                `, robo_mini_003, 30, 0)
-            projectile9.setVelocity(50, 0)
-            projectile9.setKind(SpriteKind.projectile2)
-        })
-        timer.after(40001, function () {
-            projectile9 = sprites.createProjectileFromSprite(img`
-                . . . . . . . f . . . . . . . . 
-                . . . . . . f 6 f . . . . . . . 
-                . . . . . f 6 7 6 f . . . . . . 
-                . . . . f 6 7 2 2 6 f . . . . . 
-                . . . f e 7 2 2 2 7 e f . . . . 
-                . . f 6 7 2 2 2 2 a 7 6 f . . . 
-                . f 6 7 2 2 2 2 2 1 8 7 6 f . . 
-                f 6 7 8 1 1 1 2 2 1 1 8 7 6 f . 
-                . f 6 7 8 1 a 2 2 1 8 7 6 f . . 
-                . . f 6 2 2 2 2 2 2 2 6 f . . . 
-                . . . f 2 2 2 2 2 2 2 f . . . . 
-                . . . . f 6 7 8 7 6 f . . . . . 
-                . . . . . f 6 7 6 f . . . . . . 
-                . . . . . . f 6 f . . . . . . . 
-                . . . . . . . f . . . . . . . . 
-                . . . . . . . . . . . . . . . . 
-                `, robo_mini_003, 30, 0)
-            projectile9.setVelocity(50, 0)
-            projectile9.setKind(SpriteKind.projectile2)
-        })
-        timer.after(50001, function () {
-            projectile9 = sprites.createProjectileFromSprite(img`
-                . . . . . . . f . . . . . . . . 
-                . . . . . . f 6 f . . . . . . . 
-                . . . . . f 6 7 6 f . . . . . . 
-                . . . . f 6 2 2 2 6 f . . . . . 
-                . . . f e 2 2 2 2 2 e f . . . . 
-                . . f 6 2 2 1 1 1 2 2 6 f . . . 
-                . f 6 7 2 2 a 1 a 2 2 7 6 f . . 
-                f 6 7 8 2 2 1 a 1 2 2 8 7 6 f . 
-                . f 6 7 2 2 a 1 a 2 2 7 6 f . . 
-                . . f 6 2 2 1 1 1 2 2 6 f . . . 
-                . . . f e 2 2 2 2 2 e f . . . . 
-                . . . . f 6 2 2 2 6 f . . . . . 
-                . . . . . f 6 7 6 f . . . . . . 
-                . . . . . . f 6 f . . . . . . . 
-                . . . . . . . f . . . . . . . . 
-                . . . . . . . . . . . . . . . . 
-                `, robo_mini_003, 30, 0)
-            projectile9.setVelocity(50, 0)
-            projectile9.setKind(SpriteKind.projectile2)
-        })
-        timer.after(60001, function () {
-            longjohnsilver = false
-        })
-    }
+    timer.throttle("action", 1000, function () {
+        if (longjohnsilver == false) {
+            timer.throttle("action", 1000, function () {
+                projectile8 = sprites.createProjectileFromSprite(img`
+                    . . . . . . . f . . . . . . . 
+                    . . . . . . f c f . . . . . . 
+                    . . . . . f c b c f . . . . . 
+                    . . . . f c b d b c f . . . . 
+                    . . . f e b d 1 d b e f . . . 
+                    . . f c b a 1 1 1 a b c f . . 
+                    . f c b d 1 a 1 a 1 d b c f . 
+                    f c b d 1 1 1 a 1 1 1 d b c f 
+                    . f c b d 1 a 1 a 1 d b c f . 
+                    . . f c b a 1 1 1 a b c f . . 
+                    . . . f e b d 1 d b e f . . . 
+                    . . . . f c b d b c f . . . . 
+                    . . . . . f c b c f . . . . . 
+                    . . . . . . f c f . . . . . . 
+                    . . . . . . . f . . . . . . . 
+                    `, robo_mini_002, -50, 0)
+                projectile8.setVelocity(-50, 0)
+                projectile8.setKind(SpriteKind.projectile2)
+            })
+        }
+        if (longjohnsilver == true) {
+            timer.after(1, function () {
+                robo_mini_002.setImage(img`
+                    . . . . . . . . . . . . . . . . 
+                    . . . . . . . . . . . . . . . . 
+                    . . . . . . . . . . . . . . . . 
+                    . . . . . . . . . . . . . . . . 
+                    . . . . . f f f f f f f . . . . 
+                    . . . . f e e e e e e e f . . . 
+                    . . . . f e a a a a a e f . . . 
+                    . . . . f e a d d d a e f . . . 
+                    . . . . f e a d 1 d a e f . . . 
+                    . . . . f e a d d d a e f . . . 
+                    . . . . f e a a a a a e f . . . 
+                    . . . . f e e e e e e e f . . . 
+                    . . . . . f f f f f f f . . . . 
+                    . . . . . . . . . . . . . . . . 
+                    . . . . . . . . . . . . . . . . 
+                    . . . . . . . . . . . . . . . . 
+                    `)
+            })
+            timer.after(1001, function () {
+                robo_mini_002.setImage(img`
+                    . . e . e . e . . . e . . . e . 
+                    . e a e a e a e . e a e . e e . 
+                    e a 1 a 1 a a a e a a a e a e . 
+                    . e a 1 a e e e e e e e a a e . 
+                    . . e a e f f f f f f f e e . . 
+                    . . . e f e e e e e e e f . . . 
+                    . . . . f e a a a a a e f . . . 
+                    . . . . f e a d d d a e f . . . 
+                    . . . . f e a d 1 d a e f . . . 
+                    . . . . f e a d d d a e f . . . 
+                    . . . . f e a a a a a e f . . . 
+                    . . . . f e e e e e e e f . . . 
+                    . . . . . f f f f f f f . . . . 
+                    . . . . . . . . . . . . . . . . 
+                    . . . . . . . . . . . . . . . . 
+                    . . . . . . . . . . . . . . . . 
+                    `)
+            })
+            timer.after(2001, function () {
+                robo_mini_002.setImage(img`
+                    . . e . e . e . . . e . . . e . 
+                    . e a e a e a e . e a e . e e . 
+                    e a 1 a 1 a a a e a a a e a e . 
+                    . e a 1 a e e e e e e e a a e . 
+                    . . e a e f f f f f f f e e . . 
+                    . . . e f e e e e e e e f . . . 
+                    . . . . f e a a a a a e f . . . 
+                    . . . . f e a d d d a e f . . . 
+                    . . . . f e a d 1 d a e f e . . 
+                    . . . . f e a d d d a e f a e . 
+                    . . . . f e a a a a a e f a e . 
+                    . . . . f e e e e e e e f a e . 
+                    . . . . . f f f f f f f . e . . 
+                    . . . . . . . . . . . . . . . . 
+                    . . . . . . . . . . . . . . . . 
+                    . . . . . . . . . . . . . . . . 
+                    `)
+            })
+            timer.after(3001, function () {
+                robo_mini_002.setImage(img`
+                    . . e . e . e . . . e . . . e . 
+                    . e a e a e a e . e a e . e e . 
+                    e a 1 a 1 a a a e a a a e a e . 
+                    . e a 1 a e e e e e e e a a e . 
+                    . . e a e f f f f f f f e e . . 
+                    . . . e f e e e e e e e f . . . 
+                    . . . . f e a a a a a e f . . . 
+                    . . . . f e a d d d a e f . . . 
+                    . . . . f e a d 1 d a e f e . . 
+                    . . . . f e a d d d a e f a e . 
+                    . . . . f e a a a a a e f a e . 
+                    . . . . f e e e e e e e f a e . 
+                    . . . . . f f f f f f f . e . . 
+                    . . . . e e a a e a a e . . . . 
+                    . . . . e a a a e a a a e . . . 
+                    . . . e e e e e . e e e e e . . 
+                    `)
+            })
+            timer.after(4001, function () {
+                robo_mini_002.setImage(img`
+                    . . e . e . e . . . e . . . e . 
+                    . e a e a e a e . e a e . e e . 
+                    e a 1 a 1 a a a e a a a e a e . 
+                    . e a 1 a e e e e e e e a a e . 
+                    . . e a e f f f f f f f e e . . 
+                    . . . e f e e e e e e e f . . . 
+                    . . f . f e a a a a a e f . . . 
+                    . f a f f e a d d d a e f . . . 
+                    f 2 a a f e a d 1 d a e f e . . 
+                    f 2 a e f e a d d d a e f a e . 
+                    f 2 a a f e a a a a a e f a e . 
+                    . f a f f e e e e e e e f a e . 
+                    . . f . . f f f f f f f . e . . 
+                    . . . . e e a a e a a e . . . . 
+                    . . . . e a a a e a a a e . . . 
+                    . . . e e e e e . e e e e e . . 
+                    `)
+            })
+            timer.after(5001, function () {
+            	
+            })
+            timer.after(6001, function () {
+                longjohnsilver = false
+            })
+        }
+    })
 })
