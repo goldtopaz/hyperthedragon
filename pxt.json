@@ -1,6 +1,6 @@
 {
     "name": "hyper the dragon game of all time",
-    "version": "4.0.1",
+    "version": "5.0.0",
     "description": "",
     "dependencies": {
         "device": "*",
