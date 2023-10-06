@@ -73,25 +73,22 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile114`, function (sprite,
         info.changeScoreBy(10)
     }
 })
-controller.combos.attachCombo("", function () {
-	
-})
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile80`, function (sprite, location) {
-    Hyper_the_dragon.setPosition(20, 199)
-    statusbar.value += -150
-    color.startFade(color.GrayScale, color.originalPalette)
-    info.setScore(0)
+    if (mrsandmanbringmeadrink == false) {
+        statusbar.value += -150
+        info.setScore(0)
+    }
 })
 info.onScore(400, function () {
     for (let index = 0; index < 1; index++) {
         info.changeLifeBy(4)
-        music.play(music.stringPlayable("G F A F G A G F ", 800), music.PlaybackMode.InBackground)
-        music.play(music.createSong(hex`00e0010408020208001c000e050046006603320000040a002d0000006400140001320002010002240004000800012708000c00012510001400012c18001c0001271c002000012524002800012c09010e02026400000403780000040a000301000000640001c80000040100000000640001640000040100000000fa0004af00000401c80000040a00019600000414000501006400140005010000002c0104dc00000401fa0000040a0001c8000004140005d0076400140005d0070000c800029001f40105c201f4010a0005900114001400039001000005c201f4010500058403050032000584030000fa00049001000005c201f4010500058403c80032000584030500640005840300009001049001000005c201f4010500058403c80064000584030500c8000584030000f40105ac0d000404a00f00000a0004ac0d2003010004a00f0000280004ac0d9001010004a00f0000280002d00700040408070f0064000408070000c80003c800c8000e7d00c80019000e64000f0032000e78000000fa00032c01c8000ee100c80019000ec8000f0032000edc000000fa0003f401c8000ea901c80019000e90010f0032000ea4010000fa0001c8000004014b000000c800012c01000401c8000000c8000190010004012c010000c80002c800000404c8000f0064000496000000c80002c2010004045e010f006400042c010000640002c409000404c4096400960004f6090000f40102b80b000404b80b64002c0104f40b0000f401022003000004200300040a000420030000ea01029001000004900100040a000490010000900102d007000410d0076400960010d0070000c80048000000010001010400050001040800090001041000110001041400150001041c001d0001042400250001042800290001062c002d0001063000310001063800390001083c003d00010a`), music.PlaybackMode.InBackground)
     }
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile1`, function (sprite, location) {
-    statusbar.value += -150
-    info.setScore(0)
+    if (mrsandmanbringmeadrink == false) {
+        statusbar.value += -150
+        info.setScore(0)
+    }
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile79`, function (sprite, location) {
     for (let index = 0; index < 1; index++) {
@@ -105,13 +102,13 @@ info.onScore(600, function () {
     for (let index = 0; index < 1; index++) {
         info.changeLifeBy(6)
         info.changeScoreBy(100)
-        music.play(music.stringPlayable("D G E A D B G C5 ", 400), music.PlaybackMode.InBackground)
-        music.play(music.createSong(hex`0090010408020600001c00010a006400f401640000040000000000000000000000000005000004240004000800012708000c00012510001400012c18001c0001271c002000012524002800012c03001c0001dc00690000045e0100040000000000000000000005640001040003240004000800012708000c00012510001400012c18001c0001271c002000012524002800012c06001c00010a006400f401640000040000000000000000000000000000000002480000000400011b04000800012008000c0001201000140001201400180001201c002000012024002800012028002c0001242c003000012430003400012438003c0001273c004000012a07001c00020a006400f401640000040000000000000000000000000000000003240004000800012708000c00012510001400012c18001c0001271c002000012524002800012c08001c000e050046006603320000040a002d0000006400140001320002010002240004000800012708000c00012510001400012c18001c0001271c002000012524002800012c09010e02026400000403780000040a000301000000640001c80000040100000000640001640000040100000000fa0004af00000401c80000040a00019600000414000501006400140005010000002c0104dc00000401fa0000040a0001c8000004140005d0076400140005d0070000c800029001f40105c201f4010a0005900114001400039001000005c201f4010500058403050032000584030000fa00049001000005c201f4010500058403c80032000584030500640005840300009001049001000005c201f4010500058403c80064000584030500c8000584030000f40105ac0d000404a00f00000a0004ac0d2003010004a00f0000280004ac0d9001010004a00f0000280002d00700040408070f0064000408070000c80003c800c8000e7d00c80019000e64000f0032000e78000000fa00032c01c8000ee100c80019000ec8000f0032000edc000000fa0003f401c8000ea901c80019000e90010f0032000ea4010000fa0001c8000004014b000000c800012c01000401c8000000c8000190010004012c010000c80002c800000404c8000f0064000496000000c80002c2010004045e010f006400042c010000640002c409000404c4096400960004f6090000f40102b80b000404b80b64002c0104f40b0000f401022003000004200300040a000420030000ea01029001000004900100040a000490010000900102d007000410d0076400960010d0070000c80048000000010001010400050001040800090001041000110001041400150001041c001d0001042400250001042800290001062c002d0001063000310001063800390001083c003d00010a`), music.PlaybackMode.InBackground)
     }
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile38`, function (sprite, location) {
-    statusbar.value += -150
-    info.setScore(0)
+    if (mrsandmanbringmeadrink == false) {
+        statusbar.value += -150
+        info.setScore(0)
+    }
 })
 controller.up.onEvent(ControllerButtonEvent.Pressed, function () {
     controller.moveSprite(Hyper_the_dragon, 0, 0)
@@ -1564,8 +1561,10 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile113`, function (sprite,
     }
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile15`, function (sprite, location) {
-    statusbar.value += -150
-    info.setScore(0)
+    if (mrsandmanbringmeadrink == false) {
+        statusbar.value += -150
+        info.setScore(0)
+    }
 })
 sprites.onOverlap(SpriteKind.Projectile, SpriteKind.badguy001, function (sprite, otherSprite) {
     otherSprite.destroy(effects.disintegrate, 500)
@@ -2556,54 +2555,6 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`radient shard5`, function (sp
         music.play(music.createSong(hex`0078000408010400001c00010a006400f4016400000400000000000000000000000000050000040c0000000400012a04000800012c03001c0001dc00690000045e01000400000000000000000000056400010400030c0000000400012a04000800012c07001c00020a006400f4016400000400000000000000000000000000000000030c0000000400012a04000800012c08001c000e050046006603320000040a002d00000064001400013200020100020c0000000400012a04000800012c`), music.PlaybackMode.InBackground)
     }
 })
-controller.combos.attachCombo("B+DOWN", function () {
-    if (info.score() == 5) {
-        if (info.player4.score() == 5) {
-            for (let index = 0; index < 1; index++) {
-                game.showLongText("PRESS DOWN TO ACTIVATE AzzGAIN AFTER DEATH!", DialogLayout.Full)
-                statusbar.value = 1000000000
-                statusbar.max = 1000000000
-                music.playMelody("C E G E C E G C ", 500)
-                info.startCountdown(600)
-                music.beamUp.play()
-                music.wawawawaa.play()
-                music.magicWand.play()
-                effects.clearParticles(Hyper_the_dragon)
-                controller.moveSprite(Hyper_the_dragon, 300, 0)
-                Hyper_the_dragon.startEffect(effects.warmRadial)
-                Hyper_the_dragon.startEffect(effects.rings)
-                Hyper_the_dragon.startEffect(effects.coolRadial)
-                Hyper_the_dragon.startEffect(effects.halo)
-                if (Hyper_the_dragon.overlapsWith(Robot_mini_001)) {
-                    Robot_mini_001.destroy()
-                }
-                if (info.countdown() == 0) {
-                    effects.clearParticles(Hyper_the_dragon)
-                    statusbar.value = 150
-                    if (controller.down.isPressed()) {
-                        music.playMelody("C E G E C E G C ", 500)
-                        music.beamUp.play()
-                        music.wawawawaa.play()
-                        music.magicWand.play()
-                        effects.clearParticles(Hyper_the_dragon)
-                        controller.moveSprite(Hyper_the_dragon, 300, 0)
-                        Hyper_the_dragon.startEffect(effects.warmRadial)
-                        Hyper_the_dragon.startEffect(effects.rings)
-                        Hyper_the_dragon.startEffect(effects.coolRadial)
-                        Hyper_the_dragon.startEffect(effects.halo)
-                        if (Hyper_the_dragon.overlapsWith(Robot_mini_001)) {
-                            Robot_mini_001.destroy()
-                        }
-                        if (info.score() == 0) {
-                            effects.clearParticles(Hyper_the_dragon)
-                            statusbar.value = 150
-                        }
-                    }
-                }
-            }
-        }
-    }
-})
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile33`, function (sprite, location) {
     for (let index = 0; index < 1; index++) {
         tiles.replaceAllTiles(assets.tile`transparency8`, assets.tile`transparency8`)
@@ -2635,13 +2586,13 @@ controller.left.onEvent(ControllerButtonEvent.Pressed, function () {
 info.onScore(300, function () {
     for (let index = 0; index < 1; index++) {
         info.changeLifeBy(3)
-        music.play(music.stringPlayable("G F A F G A G F ", 700), music.PlaybackMode.InBackground)
-        music.play(music.createSong(hex`0068010408020208001c000e050046006603320000040a002d0000006400140001320002010002240004000800012708000c00012510001400012c18001c0001271c002000012524002800012c09010e02026400000403780000040a000301000000640001c80000040100000000640001640000040100000000fa0004af00000401c80000040a00019600000414000501006400140005010000002c0104dc00000401fa0000040a0001c8000004140005d0076400140005d0070000c800029001f40105c201f4010a0005900114001400039001000005c201f4010500058403050032000584030000fa00049001000005c201f4010500058403c80032000584030500640005840300009001049001000005c201f4010500058403c80064000584030500c8000584030000f40105ac0d000404a00f00000a0004ac0d2003010004a00f0000280004ac0d9001010004a00f0000280002d00700040408070f0064000408070000c80003c800c8000e7d00c80019000e64000f0032000e78000000fa00032c01c8000ee100c80019000ec8000f0032000edc000000fa0003f401c8000ea901c80019000e90010f0032000ea4010000fa0001c8000004014b000000c800012c01000401c8000000c8000190010004012c010000c80002c800000404c8000f0064000496000000c80002c2010004045e010f006400042c010000640002c409000404c4096400960004f6090000f40102b80b000404b80b64002c0104f40b0000f401022003000004200300040a000420030000ea01029001000004900100040a000490010000900102d007000410d0076400960010d0070000c80048000000010001010400050001040800090001041000110001041400150001041c001d0001042400250001042800290001062c002d0001063000310001063800390001083c003d00010a`), music.PlaybackMode.InBackground)
     }
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile132`, function (sprite, location) {
-    statusbar.value += -150
-    info.setScore(0)
+    if (mrsandmanbringmeadrink == false) {
+        statusbar.value += -150
+        info.setScore(0)
+    }
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile154`, function (sprite, location) {
     for (let index = 0; index < 1; index++) {
@@ -2654,77 +2605,14 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile154`, function (sprite,
         Hyper_the_dragon.startEffect(effects.halo, 500)
     }
 })
-scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile39`, function (sprite, location) {
-    Hyper_the_dragon.setPosition(20, 199)
-    statusbar.value += -150
-    info.setScore(0)
+scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile18`, function (sprite, location) {
+    if (mrsandmanbringmeadrink == false) {
+        statusbar.value += -150
+        info.setScore(0)
+    }
 })
 controller.combos.attachCombo("DOWN", function () {
-    if (info.player2.score() == 5) {
-        for (let index = 0; index < 1; index++) {
-            game.showLongText("PRESS A+DOWN TO ACTIVATE AGAIN AFTER DEATH!", DialogLayout.Full)
-            effects.clearParticles(Hyper_the_dragon)
-            music.playMelody("C D C E C D G C ", 500)
-            info.startCountdown(600)
-            effects.clearParticles(Hyper_the_dragon)
-            Hyper_the_dragon.startEffect(effects.warmRadial, 100)
-            statusbar.value = 1000000000
-            statusbar.max = 1000000000
-            for (let index = 0; index < 1; index++) {
-                characterAnimations.loopFrames(
-                Hyper_the_dragon,
-                assets.animation`burning blazer`,
-                70,
-                characterAnimations.rule(Predicate.MovingRight, Predicate.Moving)
-                )
-                characterAnimations.loopFrames(
-                Hyper_the_dragon,
-                assets.animation`burning blazer0`,
-                70,
-                characterAnimations.rule(Predicate.MovingLeft, Predicate.Moving)
-                )
-            }
-            controller.moveSprite(Hyper_the_dragon, 300, 0)
-            Hyper_the_dragon.startEffect(effects.fire)
-            Hyper_the_dragon.startEffect(effects.rings)
-            Hyper_the_dragon.startEffect(effects.warmRadial)
-            if (Hyper_the_dragon.overlapsWith(Robot_mini_001)) {
-                Robot_mini_001.destroy()
-            }
-            if (info.countdown() == 0) {
-                effects.clearParticles(Hyper_the_dragon)
-                statusbar.value = 150
-            }
-            if (controller.A.isPressed() && controller.down.isPressed()) {
-                effects.clearParticles(Hyper_the_dragon)
-                Hyper_the_dragon.startEffect(effects.warmRadial, 100)
-                statusbar.value = 750000
-                controller.moveSprite(Hyper_the_dragon, 300, 0)
-                characterAnimations.loopFrames(
-                Hyper_the_dragon,
-                assets.animation`burning blazer`,
-                70,
-                characterAnimations.rule(Predicate.MovingRight, Predicate.Moving)
-                )
-                characterAnimations.loopFrames(
-                Hyper_the_dragon,
-                assets.animation`burning blazer0`,
-                70,
-                characterAnimations.rule(Predicate.MovingLeft, Predicate.Moving)
-                )
-                Hyper_the_dragon.startEffect(effects.fire)
-                Hyper_the_dragon.startEffect(effects.rings)
-                Hyper_the_dragon.startEffect(effects.warmRadial)
-                if (Hyper_the_dragon.overlapsWith(Robot_mini_001)) {
-                    Robot_mini_001.destroy()
-                }
-                if (info.score() == 0) {
-                    effects.clearParticles(Hyper_the_dragon)
-                    statusbar.value = 150
-                }
-            }
-        }
-    }
+	
 })
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Pickup19, function (sprite, otherSprite) {
     for (let index = 0; index < 1; index++) {
@@ -2735,7 +2623,7 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.Pickup19, function (sprite, othe
     }
 })
 sprites.onOverlap(SpriteKind.Player, SpriteKind.evil2, function (sprite, otherSprite) {
-    if (longjohnsilver == false) {
+    if (longjohnsilver2 == false) {
         statusbar.value += -25
         music.play(music.createSoundEffect(WaveShape.Noise, 2199, 1, 255, 0, 300, SoundExpressionEffect.None, InterpolationCurve.Curve), music.PlaybackMode.UntilDone)
         projectile.setVelocity(10000, 0)
@@ -2750,13 +2638,6 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.Pickup15, function (sprite, othe
         music.setTempo(120)
     }
 })
-info.onScore(100, function () {
-    for (let index = 0; index < 1; index++) {
-        info.changeLifeBy(1)
-        music.play(music.stringPlayable("G F A F G A G F ", 500), music.PlaybackMode.InBackground)
-        music.play(music.createSong(hex`0078000408020208001c000e050046006603320000040a002d0000006400140001320002010002240004000800012708000c00012510001400012c18001c0001271c002000012524002800012c09010e02026400000403780000040a000301000000640001c80000040100000000640001640000040100000000fa0004af00000401c80000040a00019600000414000501006400140005010000002c0104dc00000401fa0000040a0001c8000004140005d0076400140005d0070000c800029001f40105c201f4010a0005900114001400039001000005c201f4010500058403050032000584030000fa00049001000005c201f4010500058403c80032000584030500640005840300009001049001000005c201f4010500058403c80064000584030500c8000584030000f40105ac0d000404a00f00000a0004ac0d2003010004a00f0000280004ac0d9001010004a00f0000280002d00700040408070f0064000408070000c80003c800c8000e7d00c80019000e64000f0032000e78000000fa00032c01c8000ee100c80019000ec8000f0032000edc000000fa0003f401c8000ea901c80019000e90010f0032000ea4010000fa0001c8000004014b000000c800012c01000401c8000000c8000190010004012c010000c80002c800000404c8000f0064000496000000c80002c2010004045e010f006400042c010000640002c409000404c4096400960004f6090000f40102b80b000404b80b64002c0104f40b0000f401022003000004200300040a000420030000ea01029001000004900100040a000490010000900102d007000410d0076400960010d0070000c80048000000010001010400050001040800090001041000110001041400150001041c001d0001042400250001042800290001062c002d0001063000310001063800390001083c003d00010a`), music.PlaybackMode.InBackground)
-    }
-})
 sprites.onOverlap(SpriteKind.Player, SpriteKind.pickup13, function (sprite, otherSprite) {
     for (let index = 0; index < 1; index++) {
         otherSprite.destroy(effects.rings, 500)
@@ -2765,38 +2646,37 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.pickup13, function (sprite, othe
     }
 })
 statusbars.onZero(StatusBarKind.Health, function (status) {
-    timer.throttle("action", 1, function () {
+    timer.after(1, function () {
+        color.startFade(color.Black, color.originalPalette, 500)
+        statusbar.value = 150
+        statusbar.max = 750
         controller.moveSprite(Hyper_the_dragon, 0, 0)
+        tiles.placeOnRandomTile(Hyper_the_dragon, assets.tile`myTile36`)
+        effects.clearParticles(Hyper_the_dragon)
         music.play(music.stringPlayable("D G A F G E F D ", 500), music.PlaybackMode.UntilDone)
+        effects.clearParticles(Hyper_the_dragon)
         info.setScore(0)
         info.changeLifeBy(-1)
-        effects.clearParticles(Hyper_the_dragon)
-    })
-    timer.debounce("action", 1, function () {
-        timer.throttle("action", 500, function () {
-            color.startFade(color.Black, color.originalPalette, 2000)
-            controller.moveSprite(Hyper_the_dragon, 0, 0)
-            info.setScore(0)
-        })
-        info.setScore(0)
+        Hyper_the_dragon.ay = 0
         _2014nostalgia = false
         yo_what = false
         eatyourvegtables = false
         IdontevenknowanymoreconmeonguyslikethisgameisthegameyouknowwhatImean = false
         GOLDIESVSTHEWATERHATSERBULTUMATERAPBATTLE = false
         SHROYUKENYATTA_mega_man_x = false
-        controller.moveSprite(Hyper_the_dragon, 130, 0)
-        effects.clearParticles(Hyper_the_dragon)
-        Hyper_the_dragon.ay = 100
-        tiles.placeOnRandomTile(Hyper_the_dragon, assets.tile`myTile36`)
-        statusbar.value = 150
+        mrsandmanbringmeadrink = false
+        longjohnsilver = false
+    })
+    timer.after(501, function () {
+        controller.moveSprite(Hyper_the_dragon, 150, 0)
+        Hyper_the_dragon.ay = -160
     })
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile40`, function (sprite, location) {
-    Hyper_the_dragon.setPosition(20, 199)
-    statusbar.value += -150
-    color.startFade(color.GrayScale, color.originalPalette)
-    info.setScore(0)
+    if (mrsandmanbringmeadrink == false) {
+        statusbar.value += -150
+        info.setScore(0)
+    }
 })
 controller.right.onEvent(ControllerButtonEvent.Pressed, function () {
     animation.runImageAnimation(
@@ -2812,8 +2692,10 @@ controller.right.onEvent(ControllerButtonEvent.Pressed, function () {
     }
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile17`, function (sprite, location) {
-    statusbar.value += -150
-    info.setScore(0)
+    if (mrsandmanbringmeadrink == false) {
+        statusbar.value += -150
+        info.setScore(0)
+    }
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile153`, function (sprite, location) {
 	
@@ -3008,6 +2890,9 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.Pickup20, function (sprite, othe
         music.playMelody("C5 C F C B D F F ", 500)
     }
 })
+controller.down.onEvent(ControllerButtonEvent.Pressed, function () {
+	
+})
 info.onLifeZero(function () {
     game.over(false, effects.melt)
     game.setGameOverMessage(false, "Get you life together, keep on trying no matter what pops up in your life, and don't give up on what matters!")
@@ -3052,14 +2937,13 @@ spriteutils.createRenderable(50, function (screen2) {
 info.onScore(500, function () {
     for (let index = 0; index < 1; index++) {
         info.changeLifeBy(5)
-        music.play(music.stringPlayable("G F A F G A G F ", 900), music.PlaybackMode.InBackground)
-        music.play(music.createSong(hex`00f4010408020208001c000e050046006603320000040a002d0000006400140001320002010002240004000800012708000c00012510001400012c18001c0001271c002000012524002800012c09010e02026400000403780000040a000301000000640001c80000040100000000640001640000040100000000fa0004af00000401c80000040a00019600000414000501006400140005010000002c0104dc00000401fa0000040a0001c8000004140005d0076400140005d0070000c800029001f40105c201f4010a0005900114001400039001000005c201f4010500058403050032000584030000fa00049001000005c201f4010500058403c80032000584030500640005840300009001049001000005c201f4010500058403c80064000584030500c8000584030000f40105ac0d000404a00f00000a0004ac0d2003010004a00f0000280004ac0d9001010004a00f0000280002d00700040408070f0064000408070000c80003c800c8000e7d00c80019000e64000f0032000e78000000fa00032c01c8000ee100c80019000ec8000f0032000edc000000fa0003f401c8000ea901c80019000e90010f0032000ea4010000fa0001c8000004014b000000c800012c01000401c8000000c8000190010004012c010000c80002c800000404c8000f0064000496000000c80002c2010004045e010f006400042c010000640002c409000404c4096400960004f6090000f40102b80b000404b80b64002c0104f40b0000f401022003000004200300040a000420030000ea01029001000004900100040a000490010000900102d007000410d0076400960010d0070000c80048000000010001010400050001040800090001041000110001041400150001041c001d0001042400250001042800290001062c002d0001063000310001063800390001083c003d00010a`), music.PlaybackMode.InBackground)
     }
 })
 sprites.onOverlap(SpriteKind.Projectile, SpriteKind.evil2, function (sprite, otherSprite) {
-    robo_mini_002.startEffect(effects.fire, 500)
-    robo_mini_002.startEffect(effects.ashes, 500)
-    sprites.destroyAllSpritesOfKind(SpriteKind.projectile2, effects.spray, 500)
+    otherSprite.startEffect(effects.fire, 100)
+    otherSprite.startEffect(effects.ashes, 100)
+    sprites.destroyAllSpritesOfKind(SpriteKind.projectile2, effects.disintegrate, 100)
+    sprites.destroyAllSpritesOfKind(SpriteKind.projectile2, effects.fire, 100)
     music.play(music.createSoundEffect(WaveShape.Noise, 1902, 3290, 255, 255, 300, SoundExpressionEffect.Vibrato, InterpolationCurve.Curve), music.PlaybackMode.UntilDone)
     music.play(music.createSoundEffect(WaveShape.Noise, 2763, 3367, 185, 185, 300, SoundExpressionEffect.Tremolo, InterpolationCurve.Linear), music.PlaybackMode.UntilDone)
     music.play(music.createSoundEffect(WaveShape.Noise, 1600, 1, 255, 0, 300, SoundExpressionEffect.None, InterpolationCurve.Curve), music.PlaybackMode.UntilDone)
@@ -3067,6 +2951,7 @@ sprites.onOverlap(SpriteKind.Projectile, SpriteKind.evil2, function (sprite, oth
         info.changeScoreBy(10)
     }
     longjohnsilver = true
+    longjohnsilver2 = true
 })
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Pickup23, function (sprite, otherSprite) {
     for (let index = 0; index < 1; index++) {
@@ -3092,55 +2977,11 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.Pickup7, function (sprite, other
         music.play(music.stringPlayable("F E C5 E F E A E ", 500), music.PlaybackMode.UntilDone)
     }
 })
-controller.combos.attachCombo("A+DOWN", function () {
-    if (info.player3.score() == 5) {
-        for (let index = 0; index < 1; index++) {
-            game.showLongText("PRESS A+DOWN TO ACTIVATE AGAIN AFTER DEATH!", DialogLayout.Full)
-            effects.clearParticles(Hyper_the_dragon)
-            statusbar.value = 1000000000
-            statusbar.max = 1000000000
-            music.playMelody("C D E F G F E D ", 501)
-            info.startCountdown(600)
-            music.zapped.play()
-            music.powerUp.play()
-            music.beamUp.play()
-            Hyper_the_dragon.startEffect(effects.fountain)
-            Hyper_the_dragon.startEffect(effects.bubbles)
-            Hyper_the_dragon.startEffect(effects.blizzard)
-            controller.moveSprite(Hyper_the_dragon, 300, 0)
-            if (Hyper_the_dragon.overlapsWith(Robot_mini_001)) {
-                Robot_mini_001.destroy()
-            }
-            if (info.countdown() == 0) {
-                effects.clearParticles(Hyper_the_dragon)
-                statusbar.value = 150
-            }
-            if (controller.B.isPressed() && controller.down.isPressed()) {
-                effects.clearParticles(Hyper_the_dragon)
-                statusbar.value = 150
-                music.playMelody("C D E F G F E D ", 501)
-                music.zapped.play()
-                music.powerUp.play()
-                music.beamUp.play()
-                Hyper_the_dragon.startEffect(effects.fountain)
-                Hyper_the_dragon.startEffect(effects.bubbles)
-                Hyper_the_dragon.startEffect(effects.blizzard)
-                controller.moveSprite(Hyper_the_dragon, 300, 0)
-                if (Hyper_the_dragon.overlapsWith(Robot_mini_001)) {
-                    Robot_mini_001.destroy()
-                }
-                if (info.score() == 0) {
-                    effects.clearParticles(Hyper_the_dragon)
-                    statusbar.value = 150
-                }
-            }
-        }
-    }
-})
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile41`, function (sprite, location) {
-    statusbar.value += -150
-    color.startFade(color.GrayScale, color.originalPalette)
-    info.setScore(0)
+    if (mrsandmanbringmeadrink == false) {
+        statusbar.value += -150
+        info.setScore(0)
+    }
 })
 sprites.onOverlap(SpriteKind.Player, SpriteKind.pickup24, function (sprite, otherSprite) {
     for (let index = 0; index < 1; index++) {
@@ -3179,14 +3020,16 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`transparency16`, function (sp
     Change_level(Current_Level)
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile56`, function (sprite, location) {
-    Hyper_the_dragon.setPosition(20, 199)
-    info.changeLifeBy(-1)
-    color.startFade(color.GrayScale, color.originalPalette)
-    info.setScore(0)
+    if (mrsandmanbringmeadrink == false) {
+        statusbar.value += -150
+        info.setScore(0)
+    }
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile55`, function (sprite, location) {
-    statusbar.value += -150
-    info.setScore(0)
+    if (mrsandmanbringmeadrink == false) {
+        statusbar.value += -150
+        info.setScore(0)
+    }
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`radient shard6`, function (sprite, location) {
     for (let index = 0; index < 1; index++) {
@@ -3241,6 +3084,17 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile14`, function (sprite, 
         })
     }
 })
+scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile28`, function (sprite, location) {
+    for (let index = 0; index < 1; index++) {
+        tiles.replaceAllTiles(assets.tile`transparency8`, assets.tile`transparency8`)
+        tiles.setTileAt(location, assets.tile`transparency8`)
+        effects.clearParticles(Hyper_the_dragon)
+        Hyper_the_dragon.startEffect(effects.rings, 500)
+        Hyper_the_dragon.startEffect(effects.coolRadial, 500)
+        Hyper_the_dragon.startEffect(effects.halo, 500)
+        GOLDIESVSTHEWATERHATSERBULTUMATERAPBATTLE = true
+    }
+})
 sprites.onOverlap(SpriteKind.Player, SpriteKind.pickup14, function (sprite, otherSprite) {
     for (let index = 0; index < 1; index++) {
         otherSprite.destroy(effects.rings, 500)
@@ -3256,10 +3110,13 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.pickup22, function (sprite, othe
     }
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile70`, function (sprite, location) {
-    Hyper_the_dragon.setPosition(20, 199)
-    statusbar.value += -150
-    info.setScore(0)
+    if (mrsandmanbringmeadrink == false) {
+        statusbar.value += -150
+        info.setScore(0)
+    }
 })
+/**
+ */
 /**
  */
 let projectile8: Sprite = null
@@ -3278,6 +3135,8 @@ let projectile2: Sprite = null
 let projectile: Sprite = null
 let rightdir = false
 let welcome_to_crystal_tundra: Sprite = null
+let mrsandmanbringmeadrink = false
+let longjohnsilver2 = false
 let longjohnsilver = false
 let SHROYUKENYATTA_mega_man_x = false
 let GOLDIESVSTHEWATERHATSERBULTUMATERAPBATTLE = false
@@ -3709,6 +3568,8 @@ GOLDIESVSTHEWATERHATSERBULTUMATERAPBATTLE = false
 SHROYUKENYATTA_mega_man_x = false
 let heyyallscotthere = false
 longjohnsilver = false
+longjohnsilver2 = false
+mrsandmanbringmeadrink = false
 for (let value999 of tiles.getTilesByType(assets.tile`myTile37`)) {
     welcome_to_crystal_tundra = sprites.create(assets.image`welcome to crystal tundra`, SpriteKind.sign1)
     tiles.placeOnTile(welcome_to_crystal_tundra, value999)
@@ -3874,7 +3735,7 @@ forever(function () {
 	
 })
 forever(function () {
-    timer.throttle("action", 1000, function () {
+    timer.throttle("action", 10000, function () {
         if (longjohnsilver == false) {
             timer.throttle("action", 1000, function () {
                 projectile8 = sprites.createProjectileFromSprite(img`
@@ -3919,12 +3780,12 @@ forever(function () {
                     . . . . . . . . . . . . . . . . 
                     `)
             })
-            timer.after(1001, function () {
+            timer.after(10001, function () {
                 robo_mini_002.setImage(img`
                     . . e . e . e . . . e . . . e . 
                     . e a e a e a e . e a e . e e . 
-                    e a 1 a 1 a a a e a a a e a e . 
-                    . e a 1 a e e e e e e e a a e . 
+                    e a d a d a a a e a a a e a e . 
+                    . e a d a e e e e e e e a a e . 
                     . . e a e f f f f f f f e e . . 
                     . . . e f e e e e e e e f . . . 
                     . . . . f e a a a a a e f . . . 
@@ -3939,12 +3800,12 @@ forever(function () {
                     . . . . . . . . . . . . . . . . 
                     `)
             })
-            timer.after(2001, function () {
+            timer.after(20001, function () {
                 robo_mini_002.setImage(img`
                     . . e . e . e . . . e . . . e . 
                     . e a e a e a e . e a e . e e . 
-                    e a 1 a 1 a a a e a a a e a e . 
-                    . e a 1 a e e e e e e e a a e . 
+                    e a d a d a a a e a a a e a e . 
+                    . e a d a e e e e e e e a a e . 
                     . . e a e f f f f f f f e e . . 
                     . . . e f e e e e e e e f . . . 
                     . . . . f e a a a a a e f . . . 
@@ -3959,12 +3820,12 @@ forever(function () {
                     . . . . . . . . . . . . . . . . 
                     `)
             })
-            timer.after(3001, function () {
+            timer.after(30001, function () {
                 robo_mini_002.setImage(img`
                     . . e . e . e . . . e . . . e . 
                     . e a e a e a e . e a e . e e . 
-                    e a 1 a 1 a a a e a a a e a e . 
-                    . e a 1 a e e e e e e e a a e . 
+                    e a d a d a a a e a a a e a e . 
+                    . e a d a e e e e e e e a a e . 
                     . . e a e f f f f f f f e e . . 
                     . . . e f e e e e e e e f . . . 
                     . . . . f e a a a a a e f . . . 
@@ -3979,12 +3840,12 @@ forever(function () {
                     . . . e e e e e . e e e e e . . 
                     `)
             })
-            timer.after(4001, function () {
+            timer.after(40001, function () {
                 robo_mini_002.setImage(img`
                     . . e . e . e . . . e . . . e . 
                     . e a e a e a e . e a e . e e . 
-                    e a 1 a 1 a a a e a a a e a e . 
-                    . e a 1 a e e e e e e e a a e . 
+                    e a d a d a a a e a a a e a e . 
+                    . e a d a e e e e e e e a a e . 
                     . . e a e f f f f f f f e e . . 
                     . . . e f e e e e e e e f . . . 
                     . . f . f e a a a a a e f . . . 
@@ -3999,10 +3860,28 @@ forever(function () {
                     . . . e e e e e . e e e e e . . 
                     `)
             })
-            timer.after(5001, function () {
-            	
+            timer.after(50001, function () {
+                robo_mini_002.setImage(img`
+                    . . e . e . e . . . e . . . e . 
+                    . e 3 e 3 e 3 e . e 3 e . e e . 
+                    e 3 5 3 3 3 5 3 e 3 5 3 e 3 e . 
+                    . e 3 3 2 3 3 3 2 3 3 2 3 3 e . 
+                    . . e 3 3 f f f f f f f 3 e . . 
+                    . . . e f b b b b b b b f . . . 
+                    . . f . f b e d d d e b f . . . 
+                    . f e f f e d a 1 a d e f . . . 
+                    f 2 a e f e d 2 a 2 d e f f . . 
+                    f 2 a e f e d 2 1 2 d e f b f . 
+                    f 2 a e f b e d d d e b f b f . 
+                    . f e f f b b b b b b b f b f . 
+                    . . f . . f f f f f f f . f . . 
+                    . . . . f f b b e b b e . . . . 
+                    . . . . f b f b e b e b e . . . 
+                    . . . f f f f f . e e e e e . . 
+                    `)
+                extraEffects.createSpreadEffectOnAnchor(robo_mini_002, extraEffects.createSingleColorSpreadEffectData(2, ExtraEffectPresetShape.Explosion), 100)
             })
-            timer.after(6001, function () {
+            timer.after(60001, function () {
                 longjohnsilver = false
             })
         }
