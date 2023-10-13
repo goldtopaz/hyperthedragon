@@ -50,7 +50,17 @@ namespace SpriteKind {
     export const evil2 = SpriteKind.create()
     export const evil3FINALLE = SpriteKind.create()
     export const projectile2 = SpriteKind.create()
+    export const badguy004 = SpriteKind.create()
 }
+sprites.onOverlap(SpriteKind.Player, SpriteKind.badguy004, function (sprite, otherSprite) {
+    otherSprite.destroy(effects.disintegrate, 500)
+    otherSprite.destroy(effects.fire, 500)
+    statusbar.value += -25
+    music.play(music.createSoundEffect(WaveShape.Noise, 2199, 1, 255, 0, 300, SoundExpressionEffect.None, InterpolationCurve.Curve), music.PlaybackMode.UntilDone)
+    projectile.setVelocity(10000, 0)
+    projectile.setVelocity(-10000, 0)
+    effects.clearParticles(Hyper_the_dragon)
+})
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile0`, function (sprite, location) {
     for (let index = 0; index < 1; index++) {
         tiles.replaceAllTiles(assets.tile`transparency8`, assets.tile`transparency8`)
@@ -1417,125 +1427,231 @@ function Change_level (Level_Number: number) {
     }
 }
 controller.B.onEvent(ControllerButtonEvent.Pressed, function () {
-    if (Hyper_the_dragon.vy == 0 && rightdir == true) {
-        animation.runImageAnimation(
-        Hyper_the_dragon,
-        [img`
-            ......222222222222.22222222......
-            .....2aaaaaaaaaaaa2aaaaaaaa2.....
-            ....2a1df3355eee55af5eee35fa2....
-            ...222a1dff3e353e5ede353eff3a2...
-            ..2aaaafffdeffff1e5e1fffefffaa2..
-            ..2aafffffef1ffeeeeffff1ed1a22...
-            ...2afffffeeeeeddddeedf1e1a2.....
-            ...2afffffddddffdffddedeea2......
-            ...2aafffd1111ffdff11dea1a222....
-            ..222affd11111ffdff111da1aaaa2...
-            .2aaaaafd11111ffdff111da1a5a3a2..
-            .2aafffafd1111ffdff111dad1aaa2...
-            ..2aaffafff111ffdff11daaaaa22....
-            ...2afffafff11ffdff11a22222......
-            ....2afffaffddddddddd1aaaa2......
-            ....2aafffaf1ddda1ddd1111a2......
-            .....22aaafff11dda1ddd11aa2......
-            ....2aa222aeeeeeeea111aaa2.......
-            ....2afaaaaff353aeeaaaa22....22..
-            ...2af5ef3ff3fff3ae2222222..2aa2.
-            ...2aff3fff5f353aae2eeeeee22aaa2.
-            ...2a3fff3ffaa33aa2effedfaa2affa2
-            ...2ae3553faffaaffefffefafaaf5fa2
-            ....2ae33fa5eefefe5fffea5faff5fa2
-            .....2ae3fafeffeffe35ea3faf35ffa2
-            .....2aaaa2a35a5a35ee2aaaafff1fa2
-            .....2aff3eaaaafaaaa2afa1ff11ffa2
-            ...22efffeea333553a22afad1fffffa2
-            ..2eeefff5eaaaaaaa22affad1ffdda2.
-            .2ef1eff3e2aaf5a2222afffa1fddda2.
-            2edefdeeeaaaaafaa22aafffad1faaa2.
-            2eedef1eaafaf5aafeaffafaafffaa2..
-            2e1edefafffa1faffefffaaaaff35a2..
-            .2e1aaafffaad1affeffaafdaa35aa2..
-            ..2aafffffaaaaaffaeaafffda3aa2...
-            ..2aaaaaaaaffffaffaef33fa2a22....
-            ...222222a3aaafaffa2e355a22......
-            ........2a3355aaafa22e5a2........
-            .........2aaaa222aa2.2e2.........
-            ..........2222...22...2..........
-            `],
-        500,
-        true
-        )
-        music.jumpUp.play()
-        Hyper_the_dragon.vy = -160
-        jumpcount = 0
-    }
-    if (Hyper_the_dragon.vy == 0 && rightdir == false) {
-        animation.runImageAnimation(
-        Hyper_the_dragon,
-        [img`
-            ......22222222.222222222222......
-            .....2aaaaaaaa2aaaaaaaaaaaa2.....
-            ....2af53eee5fa55eee5533fd1a2....
-            ...2a3ffe353ede5e353e3ffd1a222...
-            ..2aafffefff1e5e1ffffedfffaaaa2..
-            ...22a1de1ffffeeeeff1fefffffaa2..
-            .....2a1e1fdeeddddeeeeefffffa2...
-            ......2aeededdffdffddddfffffa2...
-            ....222a1aed11ffdff1111dfffaa2...
-            ...2aaaa1ad111ffdff11111dffa222..
-            ..2a3a5a1ad111ffdff11111dfaaaaa2.
-            ...2aaa1dad111ffdff1111dfafffaa2.
-            ....22aaaaad11ffdff111fffaffaa2..
-            ......22222a11ffdff11fffafffa2...
-            ......2aaaa1dddddddddffafffa2....
-            ......2a1111ddd1addd1fafffaa2....
-            ......2aa11ddd1add11fffaaa22.....
-            .......2aaa111aeeeeeeea222aa2....
-            ..22....22aaaaeea353ffaaaafa2....
-            .2aa2..2222222ea3fff3ff3fe5fa2...
-            .2aaa22eeeeee2eaa353f5fff3ffa2...
-            2affa2aafdeffe2aa33aaff3fff3a2...
-            2af5faafafefffeffaaffaf3553ea2...
-            2af5ffaf5aefff5efefee5af33ea2....
-            2aff53faf3ae53effeffefaf3ea2.....
-            2af1fffaaaa2ee53a5a53a2aaaa2.....
-            2aff11ff1afa2aaaafaaaae3ffa2.....
-            2afffff1dafa22a355333aeefffe22...
-            .2addff1daffa22aaaaaaae5fffeee2..
-            .2adddf1afffa2222a5faa2e3ffe1fe2.
-            .2aaaf1dafffaa22aafaaaaaeeedfede2
-            ..2aafffaafaffaefaa5fafaae1fedee2
-            ..2a53ffaaaafffeffaf1afffafede1e2
-            ..2aa53aadfaaffeffa1daafffaaa1e2.
-            ...2aa3adfffaaeaffaaaaafffffaa2..
-            ....22a2af33feaffaffffaaaaaaaa2..
-            ......22a553e2affafaaa3a222222...
-            ........2a5e22afaaa5533a2........
-            .........2e2.2aa222aaaa2.........
-            ..........2...22...2222..........
-            `],
-        500,
-        true
-        )
-        Hyper_the_dragon.vy = -160
-        music.jumpUp.play()
-        jumpcount = 0
-    }
-    if (_2014nostalgia == true) {
-        if (jumpcount < 2 && rightdir == false) {
-            music.magicWand.play()
-            Hyper_the_dragon.vy = -145
+    if (false == mrsandman3FINALE) {
+        if (Hyper_the_dragon.vy == 0 && rightdir == true) {
+            animation.runImageAnimation(
+            Hyper_the_dragon,
+            [img`
+                ......222222222222.22222222......
+                .....2aaaaaaaaaaaa2aaaaaaaa2.....
+                ....2a1df3355eee55af5eee35fa2....
+                ...222a1dff3e353e5ede353eff3a2...
+                ..2aaaafffdeffff1e5e1fffefffaa2..
+                ..2aafffffef1ffeeeeffff1ed1a22...
+                ...2afffffeeeeeddddeedf1e1a2.....
+                ...2afffffddddffdffddedeea2......
+                ...2aafffd1111ffdff11dea1a222....
+                ..222affd11111ffdff111da1aaaa2...
+                .2aaaaafd11111ffdff111da1a5a3a2..
+                .2aafffafd1111ffdff111dad1aaa2...
+                ..2aaffafff111ffdff11daaaaa22....
+                ...2afffafff11ffdff11a22222......
+                ....2afffaffddddddddd1aaaa2......
+                ....2aafffaf1ddda1ddd1111a2......
+                .....22aaafff11dda1ddd11aa2......
+                ....2aa222aeeeeeeea111aaa2.......
+                ....2afaaaaff353aeeaaaa22....22..
+                ...2af5ef3ff3fff3ae2222222..2aa2.
+                ...2aff3fff5f353aae2eeeeee22aaa2.
+                ...2a3fff3ffaa33aa2effedfaa2affa2
+                ...2ae3553faffaaffefffefafaaf5fa2
+                ....2ae33fa5eefefe5fffea5faff5fa2
+                .....2ae3fafeffeffe35ea3faf35ffa2
+                .....2aaaa2a35a5a35ee2aaaafff1fa2
+                .....2aff3eaaaafaaaa2afa1ff11ffa2
+                ...22efffeea333553a22afad1fffffa2
+                ..2eeefff5eaaaaaaa22affad1ffdda2.
+                .2ef1eff3e2aaf5a2222afffa1fddda2.
+                2edefdeeeaaaaafaa22aafffad1faaa2.
+                2eedef1eaafaf5aafeaffafaafffaa2..
+                2e1edefafffa1faffefffaaaaff35a2..
+                .2e1aaafffaad1affeffaafdaa35aa2..
+                ..2aafffffaaaaaffaeaafffda3aa2...
+                ..2aaaaaaaaffffaffaef33fa2a22....
+                ...222222a3aaafaffa2e355a22......
+                ........2a3355aaafa22e5a2........
+                .........2aaaa222aa2.2e2.........
+                ..........2222...22...2..........
+                `],
+            500,
+            true
+            )
+            music.jumpUp.play()
+            Hyper_the_dragon.vy = -160
+            jumpcount = 0
         }
-        if (jumpcount < 2 && rightdir == true) {
-            music.magicWand.play()
+        if (Hyper_the_dragon.vy == 0 && rightdir == false) {
+            animation.runImageAnimation(
+            Hyper_the_dragon,
+            [img`
+                ......22222222.222222222222......
+                .....2aaaaaaaa2aaaaaaaaaaaa2.....
+                ....2af53eee5fa55eee5533fd1a2....
+                ...2a3ffe353ede5e353e3ffd1a222...
+                ..2aafffefff1e5e1ffffedfffaaaa2..
+                ...22a1de1ffffeeeeff1fefffffaa2..
+                .....2a1e1fdeeddddeeeeefffffa2...
+                ......2aeededdffdffddddfffffa2...
+                ....222a1aed11ffdff1111dfffaa2...
+                ...2aaaa1ad111ffdff11111dffa222..
+                ..2a3a5a1ad111ffdff11111dfaaaaa2.
+                ...2aaa1dad111ffdff1111dfafffaa2.
+                ....22aaaaad11ffdff111fffaffaa2..
+                ......22222a11ffdff11fffafffa2...
+                ......2aaaa1dddddddddffafffa2....
+                ......2a1111ddd1addd1fafffaa2....
+                ......2aa11ddd1add11fffaaa22.....
+                .......2aaa111aeeeeeeea222aa2....
+                ..22....22aaaaeea353ffaaaafa2....
+                .2aa2..2222222ea3fff3ff3fe5fa2...
+                .2aaa22eeeeee2eaa353f5fff3ffa2...
+                2affa2aafdeffe2aa33aaff3fff3a2...
+                2af5faafafefffeffaaffaf3553ea2...
+                2af5ffaf5aefff5efefee5af33ea2....
+                2aff53faf3ae53effeffefaf3ea2.....
+                2af1fffaaaa2ee53a5a53a2aaaa2.....
+                2aff11ff1afa2aaaafaaaae3ffa2.....
+                2afffff1dafa22a355333aeefffe22...
+                .2addff1daffa22aaaaaaae5fffeee2..
+                .2adddf1afffa2222a5faa2e3ffe1fe2.
+                .2aaaf1dafffaa22aafaaaaaeeedfede2
+                ..2aafffaafaffaefaa5fafaae1fedee2
+                ..2a53ffaaaafffeffaf1afffafede1e2
+                ..2aa53aadfaaffeffa1daafffaaa1e2.
+                ...2aa3adfffaaeaffaaaaafffffaa2..
+                ....22a2af33feaffaffffaaaaaaaa2..
+                ......22a553e2affafaaa3a222222...
+                ........2a5e22afaaa5533a2........
+                .........2e2.2aa222aaaa2.........
+                ..........2...22...2222..........
+                `],
+            500,
+            true
+            )
+            Hyper_the_dragon.vy = -160
+            music.jumpUp.play()
+            jumpcount = 0
+        }
+        if (_2014nostalgia == true) {
+            if (jumpcount < 2 && rightdir == false) {
+                music.magicWand.play()
+                Hyper_the_dragon.vy = -145
+            }
+            if (jumpcount < 2 && rightdir == true) {
+                music.magicWand.play()
+                Hyper_the_dragon.vy = -145
+            }
+        }
+        if (eatyourvegtables) {
             Hyper_the_dragon.vy = -145
+            music.powerUp.play()
+        }
+        jumpcount += 1
+    }
+    if (true == mrsandman3FINALE) {
+        if (Hyper_the_dragon.vy == 0 && rightdir == true) {
+            animation.runImageAnimation(
+            Hyper_the_dragon,
+            [img`
+                ......222222222222.22222222......
+                .....2aaaaaaaaaaaa2aaaaaaaa2.....
+                ....2a1df3355eee55af5eee35fa2....
+                ...222a1dff3e353e5ede353eff3a2...
+                ..2aaaafffdeffff1e5e1fffefffaa2..
+                ..2aafffffef1ffeeeeffff1ed1a22...
+                ...2afffffeeeeeddddeedf1e1a2.....
+                ...2afffffddddffdffddedeea2......
+                ...2aafffd1111ffdff11dea1a222....
+                ..222affd11111ffdff111da1aaaa2...
+                .2aaaaafd11111ffdff111da1a5a3a2..
+                .2aafffafd1111ffdff111dad1aaa2...
+                ..2aaffafff111ffdff11daaaaa22....
+                ...2afffafff11ffdff11a22222......
+                ....2afffaffddddddddd1aaaa2......
+                ....2aafffaf1ddda1ddd1111a2......
+                .....22aaafff11dda1ddd11aa2......
+                ....2aa222aeeeeeeea111aaa2.......
+                ....2afaaaaff353aeeaaaa22....22..
+                ...2af5ef3ff3fff3ae2222222..2aa2.
+                ...2aff3fff5f353aae2eeeeee22aaa2.
+                ...2a3fff3ffaa33aa2effedfaa2affa2
+                ...2ae3553faffaaffefffefafaaf5fa2
+                ....2ae33fa5eefefe5fffea5faff5fa2
+                .....2ae3fafeffeffe35ea3faf35ffa2
+                .....2aaaa2a35a5a35ee2aaaafff1fa2
+                .....2aff3eaaaafaaaa2afa1ff11ffa2
+                ...22efffeea333553a22afad1fffffa2
+                ..2eeefff5eaaaaaaa22affad1ffdda2.
+                .2ef1eff3e2aaf5a2222afffa1fddda2.
+                2edefdeeeaaaaafaa22aafffad1faaa2.
+                2eedef1eaafaf5aafeaffafaafffaa2..
+                2e1edefafffa1faffefffaaaaff35a2..
+                .2e1aaafffaad1affeffaafdaa35aa2..
+                ..2aafffffaaaaaffaeaafffda3aa2...
+                ..2aaaaaaaaffffaffaef33fa2a22....
+                ...222222a3aaafaffa2e355a22......
+                ........2a3355aaafa22e5a2........
+                .........2aaaa222aa2.2e2.........
+                ..........2222...22...2..........
+                `],
+            500,
+            true
+            )
+            music.jumpUp.play()
+            Hyper_the_dragon.vy = -200
+        }
+        if (Hyper_the_dragon.vy == 0 && rightdir == false) {
+            animation.runImageAnimation(
+            Hyper_the_dragon,
+            [img`
+                ......22222222.222222222222......
+                .....2aaaaaaaa2aaaaaaaaaaaa2.....
+                ....2af53eee5fa55eee5533fd1a2....
+                ...2a3ffe353ede5e353e3ffd1a222...
+                ..2aafffefff1e5e1ffffedfffaaaa2..
+                ...22a1de1ffffeeeeff1fefffffaa2..
+                .....2a1e1fdeeddddeeeeefffffa2...
+                ......2aeededdffdffddddfffffa2...
+                ....222a1aed11ffdff1111dfffaa2...
+                ...2aaaa1ad111ffdff11111dffa222..
+                ..2a3a5a1ad111ffdff11111dfaaaaa2.
+                ...2aaa1dad111ffdff1111dfafffaa2.
+                ....22aaaaad11ffdff111fffaffaa2..
+                ......22222a11ffdff11fffafffa2...
+                ......2aaaa1dddddddddffafffa2....
+                ......2a1111ddd1addd1fafffaa2....
+                ......2aa11ddd1add11fffaaa22.....
+                .......2aaa111aeeeeeeea222aa2....
+                ..22....22aaaaeea353ffaaaafa2....
+                .2aa2..2222222ea3fff3ff3fe5fa2...
+                .2aaa22eeeeee2eaa353f5fff3ffa2...
+                2affa2aafdeffe2aa33aaff3fff3a2...
+                2af5faafafefffeffaaffaf3553ea2...
+                2af5ffaf5aefff5efefee5af33ea2....
+                2aff53faf3ae53effeffefaf3ea2.....
+                2af1fffaaaa2ee53a5a53a2aaaa2.....
+                2aff11ff1afa2aaaafaaaae3ffa2.....
+                2afffff1dafa22a355333aeefffe22...
+                .2addff1daffa22aaaaaaae5fffeee2..
+                .2adddf1afffa2222a5faa2e3ffe1fe2.
+                .2aaaf1dafffaa22aafaaaaaeeedfede2
+                ..2aafffaafaffaefaa5fafaae1fedee2
+                ..2a53ffaaaafffeffaf1afffafede1e2
+                ..2aa53aadfaaffeffa1daafffaaa1e2.
+                ...2aa3adfffaaeaffaaaaafffffaa2..
+                ....22a2af33feaffaffffaaaaaaaa2..
+                ......22a553e2affafaaa3a222222...
+                ........2a5e22afaaa5533a2........
+                .........2e2.2aa222aaaa2.........
+                ..........2...22...2222..........
+                `],
+            500,
+            true
+            )
+            Hyper_the_dragon.vy = -200
+            music.jumpUp.play()
         }
     }
-    if (eatyourvegtables) {
-        Hyper_the_dragon.vy = -145
-        music.powerUp.play()
-    }
-    jumpcount += 1
 })
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Pickup17, function (sprite, otherSprite) {
     for (let index = 0; index < 1; index++) {
@@ -1572,8 +1688,19 @@ sprites.onOverlap(SpriteKind.Projectile, SpriteKind.badguy001, function (sprite,
     music.play(music.createSoundEffect(WaveShape.Noise, 1902, 3290, 255, 255, 300, SoundExpressionEffect.Vibrato, InterpolationCurve.Curve), music.PlaybackMode.UntilDone)
     music.play(music.createSoundEffect(WaveShape.Noise, 2763, 3367, 185, 185, 300, SoundExpressionEffect.Tremolo, InterpolationCurve.Linear), music.PlaybackMode.UntilDone)
     music.play(music.createSoundEffect(WaveShape.Noise, 1600, 1, 255, 0, 300, SoundExpressionEffect.None, InterpolationCurve.Curve), music.PlaybackMode.UntilDone)
+    music.play(music.createSoundEffect(WaveShape.Noise, 2199, 1, 255, 0, 300, SoundExpressionEffect.None, InterpolationCurve.Curve), music.PlaybackMode.UntilDone)
     if (GOLDIESVSTHEWATERHATSERBULTUMATERAPBATTLE == true) {
         info.changeScoreBy(10)
+    }
+})
+scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile32`, function (sprite, location) {
+    for (let index = 0; index < 1; index++) {
+        tiles.replaceAllTiles(assets.tile`transparency8`, assets.tile`transparency8`)
+        tiles.setTileAt(location, assets.tile`transparency8`)
+        Hyper_the_dragon.startEffect(effects.rings, 500)
+        Hyper_the_dragon.startEffect(effects.coolRadial, 500)
+        Hyper_the_dragon.startEffect(effects.halo, 500)
+        info.player2.changeScoreBy(1)
     }
 })
 controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
@@ -2578,9 +2705,9 @@ controller.left.onEvent(ControllerButtonEvent.Pressed, function () {
     true
     )
     rightdir = false
-    for (let index = 0; index < 0; index++) {
-        music.thump.play()
-        music.footstep.play()
+    for (let index = 0; index < 1; index++) {
+        music.play(music.melodyPlayable(music.thump), music.PlaybackMode.UntilDone)
+        music.play(music.melodyPlayable(music.footstep), music.PlaybackMode.UntilDone)
     }
 })
 info.onScore(300, function () {
@@ -2612,7 +2739,46 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile18`, function (sprite, 
     }
 })
 controller.combos.attachCombo("DOWN", function () {
-	
+    if (info.player2.score() == 5) {
+        mrsandmanbringmeadrink = true
+        mrsandman3FINALE = true
+        if (mrsandmanbringmeadrink == true) {
+            effects.clearParticles(Hyper_the_dragon)
+            music.playMelody("C D C E C D G C ", 700)
+            effects.clearParticles(Hyper_the_dragon)
+            statusbar.value = 1000000000
+            statusbar.max = 1000000000
+            statusbar.setColor(14, 6)
+            for (let index = 0; index < 1; index++) {
+                characterAnimations.loopFrames(
+                Hyper_the_dragon,
+                assets.animation`burning blazer`,
+                70,
+                characterAnimations.rule(Predicate.MovingRight, Predicate.Moving)
+                )
+                characterAnimations.loopFrames(
+                Hyper_the_dragon,
+                assets.animation`burning blazer`,
+                70,
+                characterAnimations.rule(Predicate.MovingLeft, Predicate.Moving)
+                )
+            }
+            controller.moveSprite(Hyper_the_dragon, 350, 0)
+            Hyper_the_dragon.startEffect(effects.fire)
+            Hyper_the_dragon.startEffect(effects.rings)
+            Hyper_the_dragon.startEffect(effects.warmRadial)
+        }
+    }
+})
+scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile29`, function (sprite, location) {
+    for (let index = 0; index < 1; index++) {
+        tiles.replaceAllTiles(assets.tile`transparency8`, assets.tile`transparency8`)
+        tiles.setTileAt(location, assets.tile`transparency8`)
+        Hyper_the_dragon.startEffect(effects.rings, 500)
+        Hyper_the_dragon.startEffect(effects.coolRadial, 500)
+        Hyper_the_dragon.startEffect(effects.halo, 500)
+        info.player2.changeScoreBy(1)
+    }
 })
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Pickup19, function (sprite, otherSprite) {
     for (let index = 0; index < 1; index++) {
@@ -2626,6 +2792,7 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.evil2, function (sprite, otherSp
     if (longjohnsilver2 == false) {
         statusbar.value += -25
         music.play(music.createSoundEffect(WaveShape.Noise, 2199, 1, 255, 0, 300, SoundExpressionEffect.None, InterpolationCurve.Curve), music.PlaybackMode.UntilDone)
+        music.play(music.createSoundEffect(WaveShape.Noise, 2199, 1, 255, 0, 300, SoundExpressionEffect.None, InterpolationCurve.Curve), music.PlaybackMode.UntilDone)
         projectile.setVelocity(10000, 0)
         projectile.setVelocity(-10000, 0)
         effects.clearParticles(Hyper_the_dragon)
@@ -2636,6 +2803,14 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.Pickup15, function (sprite, othe
         otherSprite.destroy(effects.rings, 500)
         music.playMelody("C5 C F C B D F F ", 500)
         music.setTempo(120)
+    }
+})
+scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile157`, function (sprite, location) {
+    for (let index = 0; index < 1; index++) {
+        tiles.replaceAllTiles(assets.tile`transparency8`, assets.tile`transparency8`)
+        tiles.setTileAt(location, assets.tile`transparency8`)
+        color.startFade(color.Adventure, color.originalPalette, 500)
+        tiles.setCurrentTilemap(tilemap`level41`)
     }
 })
 sprites.onOverlap(SpriteKind.Player, SpriteKind.pickup13, function (sprite, otherSprite) {
@@ -2650,6 +2825,7 @@ statusbars.onZero(StatusBarKind.Health, function (status) {
         color.startFade(color.Black, color.originalPalette, 500)
         statusbar.value = 150
         statusbar.max = 750
+        statusbar.setColor(7, 10)
         controller.moveSprite(Hyper_the_dragon, 0, 0)
         tiles.placeOnRandomTile(Hyper_the_dragon, assets.tile`myTile36`)
         effects.clearParticles(Hyper_the_dragon)
@@ -2666,8 +2842,13 @@ statusbars.onZero(StatusBarKind.Health, function (status) {
         SHROYUKENYATTA_mega_man_x = false
         mrsandmanbringmeadrink = false
         longjohnsilver = false
+        mrsandmanbringmeadrink = false
+        mrsandman3FINALE = false
+        epicrapbattlewildkratzvsganguskhan = false
+        music.stopAllSounds()
     })
     timer.after(501, function () {
+        epicrapbattlewildkratzvsganguskhan = true
         controller.moveSprite(Hyper_the_dragon, 150, 0)
         Hyper_the_dragon.ay = -160
     })
@@ -2686,9 +2867,9 @@ controller.right.onEvent(ControllerButtonEvent.Pressed, function () {
     true
     )
     rightdir = true
-    for (let index = 0; index < 0; index++) {
-        music.thump.play()
-        music.footstep.play()
+    for (let index = 0; index < 1; index++) {
+        music.play(music.melodyPlayable(music.thump), music.PlaybackMode.UntilDone)
+        music.play(music.melodyPlayable(music.footstep), music.PlaybackMode.UntilDone)
     }
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile17`, function (sprite, location) {
@@ -2699,6 +2880,9 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile17`, function (sprite, 
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile153`, function (sprite, location) {
 	
+})
+scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile66`, function (sprite, location) {
+    tiles.placeOnRandomTile(Hyper_the_dragon, assets.tile`tile178`)
 })
 function isInSpawnRange (x: number, y: number) {
     if (x < scene.cameraProperty(CameraProperty.Left) - 0) {
@@ -2868,6 +3052,7 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.badguy001, function (sprite, oth
     statusbar.value += -25
     music.play(music.createSoundEffect(WaveShape.Noise, 1600, 1, 255, 0, 300, SoundExpressionEffect.None, InterpolationCurve.Curve), music.PlaybackMode.UntilDone)
     music.play(music.createSoundEffect(WaveShape.Noise, 1902, 3438, 255, 255, 300, SoundExpressionEffect.None, InterpolationCurve.Curve), music.PlaybackMode.UntilDone)
+    music.play(music.createSoundEffect(WaveShape.Noise, 2199, 1, 255, 0, 300, SoundExpressionEffect.None, InterpolationCurve.Curve), music.PlaybackMode.UntilDone)
     otherSprite.destroy(effects.disintegrate, 500)
     otherSprite.destroy(effects.fire, 500)
     projectile.setVelocity(10000, 0)
@@ -2892,6 +3077,17 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.Pickup20, function (sprite, othe
 })
 controller.down.onEvent(ControllerButtonEvent.Pressed, function () {
 	
+})
+sprites.onOverlap(SpriteKind.Projectile, SpriteKind.badguy004, function (sprite, otherSprite) {
+    otherSprite.destroy(effects.disintegrate, 500)
+    otherSprite.destroy(effects.fire, 500)
+    music.play(music.createSoundEffect(WaveShape.Noise, 1902, 3290, 255, 255, 300, SoundExpressionEffect.Vibrato, InterpolationCurve.Curve), music.PlaybackMode.UntilDone)
+    music.play(music.createSoundEffect(WaveShape.Noise, 2763, 3367, 185, 185, 300, SoundExpressionEffect.Tremolo, InterpolationCurve.Linear), music.PlaybackMode.UntilDone)
+    music.play(music.createSoundEffect(WaveShape.Noise, 1600, 1, 255, 0, 300, SoundExpressionEffect.None, InterpolationCurve.Curve), music.PlaybackMode.UntilDone)
+    music.play(music.createSoundEffect(WaveShape.Noise, 2199, 1, 255, 0, 300, SoundExpressionEffect.None, InterpolationCurve.Curve), music.PlaybackMode.UntilDone)
+    if (GOLDIESVSTHEWATERHATSERBULTUMATERAPBATTLE == true) {
+        info.changeScoreBy(10)
+    }
 })
 info.onLifeZero(function () {
     game.over(false, effects.melt)
@@ -2947,6 +3143,7 @@ sprites.onOverlap(SpriteKind.Projectile, SpriteKind.evil2, function (sprite, oth
     music.play(music.createSoundEffect(WaveShape.Noise, 1902, 3290, 255, 255, 300, SoundExpressionEffect.Vibrato, InterpolationCurve.Curve), music.PlaybackMode.UntilDone)
     music.play(music.createSoundEffect(WaveShape.Noise, 2763, 3367, 185, 185, 300, SoundExpressionEffect.Tremolo, InterpolationCurve.Linear), music.PlaybackMode.UntilDone)
     music.play(music.createSoundEffect(WaveShape.Noise, 1600, 1, 255, 0, 300, SoundExpressionEffect.None, InterpolationCurve.Curve), music.PlaybackMode.UntilDone)
+    music.play(music.createSoundEffect(WaveShape.Noise, 2199, 1, 255, 0, 300, SoundExpressionEffect.None, InterpolationCurve.Curve), music.PlaybackMode.UntilDone)
     if (GOLDIESVSTHEWATERHATSERBULTUMATERAPBATTLE == true) {
         info.changeScoreBy(10)
     }
@@ -2975,6 +3172,16 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.Pickup7, function (sprite, other
         info.player3.changeScoreBy(1)
         otherSprite.destroy(effects.rings, 500)
         music.play(music.stringPlayable("F E C5 E F E A E ", 500), music.PlaybackMode.UntilDone)
+    }
+})
+scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile31`, function (sprite, location) {
+    for (let index = 0; index < 1; index++) {
+        tiles.replaceAllTiles(assets.tile`transparency8`, assets.tile`transparency8`)
+        tiles.setTileAt(location, assets.tile`transparency8`)
+        Hyper_the_dragon.startEffect(effects.rings, 500)
+        Hyper_the_dragon.startEffect(effects.coolRadial, 500)
+        Hyper_the_dragon.startEffect(effects.halo, 500)
+        info.player2.changeScoreBy(1)
     }
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile41`, function (sprite, location) {
@@ -3061,21 +3268,18 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile35`, function (sprite, 
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile14`, function (sprite, location) {
     for (let index = 0; index < 1; index++) {
-        info.changeScoreBy(25)
         tiles.replaceAllTiles(assets.tile`transparency8`, assets.tile`transparency8`)
         tiles.setTileAt(location, assets.tile`transparency8`)
         music.play(music.stringPlayable("C5 F D B A C G A ", 500), music.PlaybackMode.InBackground)
-        timer.throttle("action", 3000, function () {
-            Hyper_the_dragon.startEffect(effects.smiles)
-            Hyper_the_dragon.startEffect(effects.confetti)
-            Hyper_the_dragon.startEffect(effects.starField)
-            statusbar.setColor(2, 0)
-            statusbar.value = 1e+24
-            statusbar.value = 1e+29
-            music.play(music.createSong(hex`00c80004080b0200001c00010a006400f401640000040000000000000000000000000005000004fd0100000400011e04000800012208000c00011e0c001000012210001400011e14001800012218001c0001251c002000012220002400011e24002800012228002c00011e2c003000012230003400011e38003c00011e3c004000012240004400011e44004800011948004c0001204c005000011950005400011e54005800011b58005c00011e5c006000011d60006400011964006800021d2768006c000222276c007000021e2770007400021b2774007800021d2778007c0001197c008000021e2780008400021e278400880002222788008c00011e8c009000012290009400011e94009800012298009c0001259c00a0000122a000a400011ea400a80002222aa800ac00021e29ac00b00002222ab000b400021e29b800bc00021e2cbc00c0000122c000c400021e29c400c80002192ac800cc00022029cc00d00002192ad000d400021e29d400d800021b2cd800dc00021e29dc00e000021d2ae000e40002192ae400e800021d2ae800ec0002222aec00f000021e2af000f400021b2af400f800021d2af800fc00021929fc000001021e2a04010801011908010c01011d0c011001012010011401010614011801011918011c01011b20012401011924012801011b28012c01011d2c013001012034013801012538013c0101203c014001011d44014801012448014c01012a4c01500101275401580101275c016001012701001c000f05001202c102c20100040500280000006400280003140006020004e40004000800011b0c001000011914001800011b18001c0001181c002000011b2400280001192c003000011b34003800011838003c0001143c004000011940004400011848004c0001165000540001185c00600001186c007000011470007400011974007800011478007c0001187c008000011684008800011b8c009000011994009800011b98009c0001189c00a000011ba400a8000119ac00b000011bb400b8000118b800bc000114bc00c0000119c000c4000118c800cc000116d000d4000118dc00e0000118ec00f0000114f000f4000119f400f8000114f800fc000118fc0000010116`), music.PlaybackMode.InBackground)
-            controller.moveSprite(Hyper_the_dragon, 250, 0)
-        })
-        timer.after(3000, function () {
+        Hyper_the_dragon.startEffect(effects.smiles)
+        Hyper_the_dragon.startEffect(effects.confetti)
+        Hyper_the_dragon.startEffect(effects.starField)
+        statusbar.setColor(6, 0)
+        statusbar.value = 1e+24
+        statusbar.value = 1e+29
+        music.play(music.createSong(hex`00c80004080b0200001c00010a006400f401640000040000000000000000000000000005000004fd0100000400011e04000800012208000c00011e0c001000012210001400011e14001800012218001c0001251c002000012220002400011e24002800012228002c00011e2c003000012230003400011e38003c00011e3c004000012240004400011e44004800011948004c0001204c005000011950005400011e54005800011b58005c00011e5c006000011d60006400011964006800021d2768006c000222276c007000021e2770007400021b2774007800021d2778007c0001197c008000021e2780008400021e278400880002222788008c00011e8c009000012290009400011e94009800012298009c0001259c00a0000122a000a400011ea400a80002222aa800ac00021e29ac00b00002222ab000b400021e29b800bc00021e2cbc00c0000122c000c400021e29c400c80002192ac800cc00022029cc00d00002192ad000d400021e29d400d800021b2cd800dc00021e29dc00e000021d2ae000e40002192ae400e800021d2ae800ec0002222aec00f000021e2af000f400021b2af400f800021d2af800fc00021929fc000001021e2a04010801011908010c01011d0c011001012010011401010614011801011918011c01011b20012401011924012801011b28012c01011d2c013001012034013801012538013c0101203c014001011d44014801012448014c01012a4c01500101275401580101275c016001012701001c000f05001202c102c20100040500280000006400280003140006020004e40004000800011b0c001000011914001800011b18001c0001181c002000011b2400280001192c003000011b34003800011838003c0001143c004000011940004400011848004c0001165000540001185c00600001186c007000011470007400011974007800011478007c0001187c008000011684008800011b8c009000011994009800011b98009c0001189c00a000011ba400a8000119ac00b000011bb400b8000118b800bc000114bc00c0000119c000c4000118c800cc000116d000d4000118dc00e0000118ec00f0000114f000f4000119f400f8000114f800fc000118fc0000010116`), music.PlaybackMode.InBackground)
+        controller.moveSprite(Hyper_the_dragon, 350, 0)
+        timer.after(13500, function () {
             statusbar.value = 150
             statusbar.max = 750
             statusbar.setColor(7, 14)
@@ -3084,15 +3288,24 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile14`, function (sprite, 
         })
     }
 })
+scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile30`, function (sprite, location) {
+    for (let index = 0; index < 1; index++) {
+        tiles.replaceAllTiles(assets.tile`transparency8`, assets.tile`transparency8`)
+        tiles.setTileAt(location, assets.tile`transparency8`)
+        Hyper_the_dragon.startEffect(effects.rings, 500)
+        Hyper_the_dragon.startEffect(effects.coolRadial, 500)
+        Hyper_the_dragon.startEffect(effects.halo, 500)
+        info.player2.changeScoreBy(1)
+    }
+})
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile28`, function (sprite, location) {
     for (let index = 0; index < 1; index++) {
         tiles.replaceAllTiles(assets.tile`transparency8`, assets.tile`transparency8`)
         tiles.setTileAt(location, assets.tile`transparency8`)
-        effects.clearParticles(Hyper_the_dragon)
         Hyper_the_dragon.startEffect(effects.rings, 500)
         Hyper_the_dragon.startEffect(effects.coolRadial, 500)
         Hyper_the_dragon.startEffect(effects.halo, 500)
-        GOLDIESVSTHEWATERHATSERBULTUMATERAPBATTLE = true
+        info.player2.changeScoreBy(1)
     }
 })
 sprites.onOverlap(SpriteKind.Player, SpriteKind.pickup14, function (sprite, otherSprite) {
@@ -3120,6 +3333,8 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile70`, function (sprite, 
 /**
  */
 let projectile8: Sprite = null
+let NOTArobo_mini_001 = false
+let robo_mini_004: Sprite = null
 let moving = false
 let HELLOEVERYONEMARKPLIERHEREPLAYINGFIVENIGHTSATFREDDYS: Sprite = null
 let harharharharhararharharhararfreddyfazbear: Sprite = null
@@ -3132,9 +3347,11 @@ let robo_mini_002: Sprite = null
 let Robot_mini_001: Sprite = null
 let projectile3: Sprite = null
 let projectile2: Sprite = null
-let projectile: Sprite = null
 let rightdir = false
+let projectile: Sprite = null
 let welcome_to_crystal_tundra: Sprite = null
+let epicrapbattlewildkratzvsganguskhan = false
+let mrsandman3FINALE = false
 let mrsandmanbringmeadrink = false
 let longjohnsilver2 = false
 let longjohnsilver = false
@@ -3570,6 +3787,8 @@ let heyyallscotthere = false
 longjohnsilver = false
 longjohnsilver2 = false
 mrsandmanbringmeadrink = false
+mrsandman3FINALE = false
+epicrapbattlewildkratzvsganguskhan = false
 for (let value999 of tiles.getTilesByType(assets.tile`myTile37`)) {
     welcome_to_crystal_tundra = sprites.create(assets.image`welcome to crystal tundra`, SpriteKind.sign1)
     tiles.placeOnTile(welcome_to_crystal_tundra, value999)
@@ -3582,6 +3801,41 @@ game.onUpdate(function () {
     }
 })
 game.onUpdate(function () {
+    for (let valueover9000000000000000000000000000000000000000000000000000000 of tiles.getTilesByType(assets.tile`myTile150`)) {
+        if (isInSpawnRange(valueover9000000000000000000000000000000000000000000000000000000.x, valueover9000000000000000000000000000000000000000000000000000000.y)) {
+            robo_mini_004 = sprites.create(img`
+                . f . . . f . . . f . . . . . . 
+                . f f . f b f . f b f . f f f f 
+                . f b f b d b f b d b f b b b f 
+                . f b b d b b b b b b b d b f . 
+                . f b d b f f f f f f f b b f . 
+                f b d b f b b b b b b b f b b f 
+                . f b b f b e d d d e b f b f . 
+                . . f b f b d a 1 a d b f b b f 
+                . f b b f b d 5 a 5 d b f b f . 
+                f b d b f b d 5 1 5 d b f b f . 
+                . f b b f b d d d d d b f b b f 
+                f b d b f b b b b b b b f b f . 
+                f b d d b f f f f f f f b b f . 
+                f f b d b b b b b b b b b d b f 
+                f . f b f b f b f b f b f b f . 
+                . . . f . f . f . f . f . f . . 
+                `, SpriteKind.badguy004)
+            tiles.placeOnTile(robo_mini_004, valueover9000000000000000000000000000000000000000000000000000000)
+            sprites.setDataNumber(robo_mini_004, "spawnCol", valueover9000000000000000000000000000000000000000000000000000000.column)
+            sprites.setDataNumber(robo_mini_004, "spawnRow", valueover9000000000000000000000000000000000000000000000000000000.row)
+            tiles.setTileAt(valueover9000000000000000000000000000000000000000000000000000000, assets.tile`transparency8`)
+            NOTArobo_mini_001 = true
+        }
+    }
+    for (let valueover9000000000000000000000000000000000000000000000000000000 of sprites.allOfKind(SpriteKind.badguy004)) {
+        if (!(isInSpawnRange(valueover9000000000000000000000000000000000000000000000000000000.x, valueover9000000000000000000000000000000000000000000000000000000.y))) {
+            if (!(isInSpawnRange(sprites.readDataNumber(valueover9000000000000000000000000000000000000000000000000000000, "spawnCol") * tileUtil.tilemapProperty(tileUtil.currentTilemap(), tileUtil.TilemapProperty.TileWidth), sprites.readDataNumber(valueover9000000000000000000000000000000000000000000000000000000, "spawnCol") * tileUtil.tilemapProperty(tileUtil.currentTilemap(), tileUtil.TilemapProperty.TileWidth)))) {
+                sprites.destroy(valueover9000000000000000000000000000000000000000000000000000000)
+                tiles.setTileAt(tiles.getTileLocation(sprites.readDataNumber(valueover9000000000000000000000000000000000000000000000000000000, "spawnCol"), sprites.readDataNumber(valueover9000000000000000000000000000000000000000000000000000000, "spawnRow")), assets.tile`myTile150`)
+            }
+        }
+    }
     for (let value27 of tiles.getTilesByType(assets.tile`tile174`)) {
         if (isInSpawnRange(value27.x, value27.y)) {
             Robot_mini_001 = sprites.create(assets.image`robot mini 001`, SpriteKind.badguy001)
@@ -3694,42 +3948,54 @@ game.onUpdate(function () {
 	
 })
 forever(function () {
-    for (let index = 0; index < 4; index++) {
-        music.playTone(330, music.beat(BeatFraction.Half))
-        music.playTone(494, music.beat(BeatFraction.Half))
-        music.playTone(523, music.beat(BeatFraction.Half))
+    if (epicrapbattlewildkratzvsganguskhan == false) {
+        for (let index = 0; index < 4; index++) {
+            music.playTone(330, music.beat(BeatFraction.Half))
+            music.playTone(494, music.beat(BeatFraction.Half))
+            music.playTone(523, music.beat(BeatFraction.Half))
+            music.playTone(440, music.beat(BeatFraction.Half))
+            music.playTone(494, music.beat(BeatFraction.Half))
+            music.playTone(392, music.beat(BeatFraction.Half))
+            music.playTone(440, music.beat(BeatFraction.Half))
+            music.playTone(349, music.beat(BeatFraction.Half))
+        }
+        music.playTone(294, music.beat(BeatFraction.Half))
+        music.playTone(294, music.beat(BeatFraction.Half))
         music.playTone(440, music.beat(BeatFraction.Half))
-        music.playTone(494, music.beat(BeatFraction.Half))
+        music.playTone(440, music.beat(BeatFraction.Half))
+        music.playTone(523, music.beat(BeatFraction.Whole))
+        music.playTone(523, music.beat(BeatFraction.Whole))
+        music.playTone(494, music.beat(BeatFraction.Whole))
+        music.playTone(494, music.beat(BeatFraction.Whole))
+        music.playTone(440, music.beat(BeatFraction.Double))
+        music.rest(music.beat(BeatFraction.Half))
+        music.playTone(262, music.beat(BeatFraction.Whole))
+        music.playTone(262, music.beat(BeatFraction.Whole))
         music.playTone(392, music.beat(BeatFraction.Half))
-        music.playTone(440, music.beat(BeatFraction.Half))
-        music.playTone(349, music.beat(BeatFraction.Half))
+        music.playTone(392, music.beat(BeatFraction.Half))
+        music.playTone(440, music.beat(BeatFraction.Whole))
+        music.playTone(494, music.beat(BeatFraction.Double))
+        music.playTone(440, music.beat(BeatFraction.Double))
+        music.rest(music.beat(BeatFraction.Half))
+        music.playTone(523, music.beat(BeatFraction.Whole))
+        music.playTone(523, music.beat(BeatFraction.Whole))
+        music.playTone(440, music.beat(BeatFraction.Whole))
+        music.playTone(440, music.beat(BeatFraction.Whole))
+        music.playTone(349, music.beat(BeatFraction.Whole))
+        music.playTone(349, music.beat(BeatFraction.Whole))
+        music.playTone(294, music.beat(BeatFraction.Double))
+        music.playTone(262, music.beat(BeatFraction.Breve))
     }
-    music.playTone(294, music.beat(BeatFraction.Half))
-    music.playTone(294, music.beat(BeatFraction.Half))
-    music.playTone(440, music.beat(BeatFraction.Half))
-    music.playTone(440, music.beat(BeatFraction.Half))
-    music.playTone(523, music.beat(BeatFraction.Whole))
-    music.playTone(523, music.beat(BeatFraction.Whole))
-    music.playTone(494, music.beat(BeatFraction.Whole))
-    music.playTone(494, music.beat(BeatFraction.Whole))
-    music.playTone(440, music.beat(BeatFraction.Double))
-    music.rest(music.beat(BeatFraction.Half))
-    music.playTone(262, music.beat(BeatFraction.Whole))
-    music.playTone(262, music.beat(BeatFraction.Whole))
-    music.playTone(392, music.beat(BeatFraction.Half))
-    music.playTone(392, music.beat(BeatFraction.Half))
-    music.playTone(440, music.beat(BeatFraction.Whole))
-    music.playTone(494, music.beat(BeatFraction.Double))
-    music.playTone(440, music.beat(BeatFraction.Double))
-    music.rest(music.beat(BeatFraction.Half))
-    music.playTone(523, music.beat(BeatFraction.Whole))
-    music.playTone(523, music.beat(BeatFraction.Whole))
-    music.playTone(440, music.beat(BeatFraction.Whole))
-    music.playTone(440, music.beat(BeatFraction.Whole))
-    music.playTone(349, music.beat(BeatFraction.Whole))
-    music.playTone(349, music.beat(BeatFraction.Whole))
-    music.playTone(294, music.beat(BeatFraction.Double))
-    music.playTone(262, music.beat(BeatFraction.Breve))
+})
+forever(function () {
+    if (NOTArobo_mini_001 == true) {
+        timer.throttle("action", 1000, function () {
+            robo_mini_004.vx = 50
+        })
+        timer.debounce("action", 1000, function () {
+            robo_mini_004.vx = -50
+        })
+    }
 })
 forever(function () {
 	
